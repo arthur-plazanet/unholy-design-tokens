@@ -3,19 +3,6 @@
  */
 
 :root {
-  --border-width-default: 2px;
-  --border-style-default: solid;
-  --border-radius-default: 0;
-  --breakpoint-mobile: 640px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
-  --breakpoint-desktop-xl: 1280px;
-  --breakpoint-desktop-xxl: 1820px;
-  --shadow-default: 0.25;
-  --shadow-hover: 0.25;
-  --shadow-active: 0.25;
-  --shadow-focus: 0.25;
-  --shadow-disabled: 0;
   --spacing-unit: 1rem;
   --spacing-min: 1.125rem;
   --spacing-max: 3rem;

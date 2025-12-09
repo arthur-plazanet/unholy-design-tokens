@@ -1,30 +1,13 @@
-@layer cube {
-  @layer objects {
-    :root {  
-    --cube-block-card-border-color: #9aa2a2;
-    --cube-block-card-radius: [object Object];
-    --cube-block-card-padding: calc(1 * var(--space-unit));
-    --cube-block-button-padding-x: calc(0.75 * var(--space-unit));
-    --cube-block-button-padding-y: calc(0.5 * var(--space-unit));
-    --cube-block-button-radius: [object Object];
-    --cube-block-button-color: #020303;
-    --cube-block-button-background: #e3c567;
-    --cube-block-button-hover-background: #d9af30;
-    --cube-composition-flow-flow-space: calc(1 * var(--space-unit));
-    --cube-composition-stack-gap: calc(1 * var(--space-unit));
-    --cube-composition-stack-align: start;
-    --cube-composition-cluster-gap: calc(0.75 * var(--space-unit));
-    --cube-composition-cluster-align: center;
-    --cube-composition-center-max-width: 72ch;
-    --cube-composition-center-padding-inline: calc(1 * var(--space-unit));
-    --cube-utility-spacing-mt-0: margin-block-start: 0;
-    --cube-utility-spacing-mt-s: margin-block-start: calc(0.75 * var(--space-unit));
-    --cube-utility-spacing-mb-m: margin-block-end: calc(1 * var(--space-unit));
-    --cube-utility-display-flex: display: flex;
-    --cube-utility-display-grid: display: grid;
-    --cube-utility-text-center: text-align: center;
-    --cube-utility-text-dim: opacity: 0.7;
-  }
-}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
 
-  }
+:root {
+  --cube-composition-stack-align: start;
+  --cube-composition-cluster-align: center;
+  --cube-composition-center-max-width: 72ch;
+  --cube-composition-flow-flow-space: var(--spacing-md);
+  --cube-composition-stack-gap: var(--spacing-md);
+  --cube-composition-cluster-gap: var(--spacing-sm);
+  --cube-composition-center-padding-inline: var(--spacing-md);
+}

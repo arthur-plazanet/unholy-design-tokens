@@ -44,6 +44,10 @@
         "type": "color",
         "value": "{color.accent.100}"
       },
+      "neutral": {
+        "type": "color",
+        "value": "{color.neutral.500}"
+      },
 
       "neutral-strong": {
         "type": "color",

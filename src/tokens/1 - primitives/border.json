@@ -3,6 +3,9 @@
     "width": {
       "default": {
         "value": "2px"
+      },
+      "scale-value": {
+        "value": "1.25"
       }
     },
     "style": {
@@ -14,13 +17,6 @@
       "default": {
         "value": 0
       }
-    }
-  },
-  //
-  "color": {
-    "shadow": {
-      "dark": { "value": "#000000ff" },
-      "light": { "value": "rgba(0, 0, 0, 0.25)" }
     }
   }
 }

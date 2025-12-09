@@ -4,8 +4,6 @@
  */
 
 :root {
-  --color-shadow-dark: #616970;
-  --color-shadow-light: rgba(255, 255, 255, 0.25);
   --color-arylide-yellow-100: #f9f3e1;
   --color-arylide-yellow-200: #f4e8c3;
   --color-arylide-yellow-300: #eedca5;
@@ -46,6 +44,8 @@
   --color-white-smoke-800: #626262;
   --color-white-smoke-900: #313131;
   --color-white-smoke-default: #f5f5f5;
+  --color-shadow-dark: #616970;
+  --color-shadow-light: rgba(255, 255, 255, 0.25);
   --color-primary-bg-hue: 0deg;
   --color-primary-bg-lightness: 0%;
   --color-primary-bg-opacity: 1;
@@ -193,6 +193,7 @@
   --color-bg-accent: var(--color-accent-500);
   --color-bg-accent-hover: var(--color-accent-600);
   --color-bg-accent-subtle: var(--color-accent-100);
+  --color-bg-neutral: var(--color-neutral-500);
   --color-bg-neutral-strong: var(--color-neutral-900);
   --color-bg-info: var(--color-accent-100);
   --color-bg-warning: var(--color-primary-100);

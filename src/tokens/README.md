@@ -44,15 +44,29 @@ Everything else (shadows, spacing, radii…) is standardized.
 
 # 🎨 Token System: Simple Mental Model
 
-Forget layers and theory.
+---
 
-Think of tokens like **CSS variables that come in three kinds**:
+## **Primitives**
+
+Primitives are raw values:
+
+```css
+--color-purple-600: #6f53db;
+--color-white: #ffffff;
+--radius-lg: 8px;
+```
+
+These are the building blocks of your design system.
+See [src/tokens/1 - primitives](./1%20-%20primitives/README.md).
 
 ---
 
-## 1️⃣ **Meaning tokens** (semantic)
+## 1️⃣ **Theming tokens** (semantic)
 
-Use these when you need a _color with meaning_.
+Tokens that describe a specific interface / theme.
+
+> [!NOTE] This is what designers use in tools (Figma, Sketch, etc).
+> As a developer, you mostly use these indirectly via intents / component tokens.
 
 Examples:
 
@@ -65,13 +79,14 @@ var(--color-inverse)     /* for dark backgrounds */
 
 ```
 
-They express meaning, NOT color value.
+They don't express direct color value, and are used as interface to map theming variables.
+They are usually the only ones that get updated during rebranding or theming.
 
 ---
 
-## 2️⃣ **Component tokens**
+## 2️⃣ **Intent tokens**
 
-Used _inside components_.
+Tokens that describe **what a component needs**.
 
 Example for a button:
 
@@ -84,25 +99,6 @@ Example for a button:
 ```
 
 These are **what components actually use**.
-
----
-
-## 3️⃣ **Runtime classes**
-
-You combine “tone” and “type” to set the right tokens:
-
-```html
-<button class="rt-button tone-brand type-primary">Save</button>
-```
-
-- `.tone-brand` → which color family
-- `.type-primary` → how it behaves visually
-
-Developers only set 2 classes.
-
-The classes set the tokens.
-
-The component uses the tokens.
 
 ---
 
@@ -121,28 +117,6 @@ The component uses the tokens.
   background: var(--button-primary-bg);
   color: var(--button-primary-fg);
   border-color: var(--button-primary-border);
-}
-```
-
-### Runtime classes:
-
-```css
-/* tone = color family */
-.tone-brand {
-  --button-primary-bg: var(--color-primary);
-  --button-primary-bg-hover: var(--color-primary-hover);
-  --button-primary-fg: var(--color-on-primary);
-}
-
-/* type = behavior/style */
-.type-primary {
-  --button-primary-border: transparent;
-}
-
-.type-ghost {
-  --button-primary-bg: transparent;
-  --button-primary-fg: var(--color-primary);
-  --button-primary-border: var(--color-primary);
 }
 ```
 

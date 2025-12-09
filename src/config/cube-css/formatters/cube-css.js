@@ -1,5 +1,3 @@
-import { usesReferences, getReferences } from 'style-dictionary/utils';
-
 export { cubeCssVariablesLayerFormatter, cubeCssLayerFormatter };
 
 const cubeCssLayerFormatter = (children) => {
@@ -19,9 +17,7 @@ const cubeCssVariablesLayerFormatter = {
         console.log('📟 - outputReferences → ', outputReferences);
         console.log('📟 - usesDtcg → ', usesDtcg);
         let value = JSON.stringify(token.value);
-        const originalValue = token.original.value;
         console.log('📟 - value → ', value);
-        console.log('📟 - originalValue → ', originalValue);
 
         const shouldOutputRef =
           usesReferences(originalValue) &&

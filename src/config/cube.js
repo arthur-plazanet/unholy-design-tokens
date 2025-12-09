@@ -1,43 +1,57 @@
-export default {
-  transformGroup: 'css',
-  buildPath: 'build/css/cube/',
-  files: [
-    // 2. CUBE: Composition → @layer objects
-    {
-      destination: 'cube.composition.css',
-      format: 'cube/css-variables-layer',
-      filter: (token) => {
-        if (token.attributes.category === 'cube') {
-        }
-        return token.attributes.category === 'cube';
-      },
-      options: {
-        layerName: 'objects', // ITCSS x CUBE
-        selector: ':root',
-        outputReferences: true,
-      },
+import { formats, transformGroups } from 'style-dictionary/enums';
+
+const cubeBuildPath = 'cube';
+
+const cubeFormat = 'cube/css-variables-layer';
+
+export default [
+  // 2. CUBE: Composition → @layer objects
+  {
+    destination: `${cubeBuildPath}/cube.composition.css`,
+    // format: cubeFormat,
+    format: formats.cssVariables,
+
+    filter: (token) =>
+      token.attributes?.category === 'cube' &&
+      token.attributes?.type === 'composition',
+    options: {
+      layerName: 'objects', // ITCSS x CUBE
+      selector: ':root',
+      outputReferences: true,
     },
-    // 3. CUBE: Block → @layer components
-    {
-      destination: 'cube.block.css',
-      format: 'cube/css-variables-layer',
-      filter: (token) => token.filePath.includes('/block'),
-      options: {
-        layerName: 'components',
-        selector: ':root',
-        outputReferences: true,
-      },
+  },
+  // 3. CUBE: Block → @layer components
+  {
+    destination: `${cubeBuildPath}/cube.block.css`,
+    // format: cubeFormat,
+    format: formats.cssVariables,
+
+    filter: (token) => {
+      console.log('📟 - token in cube block → ', token);
+      return (
+        token.attributes?.category === 'cube' &&
+        token.attributes?.type === 'block'
+      );
     },
-    // 4. CUBE: Utility → @layer utilities
-    {
-      destination: 'cube.utility.css',
-      format: 'cube/css-variables-layer',
-      filter: (token) => token.filePath.includes('/utility'),
-      options: {
-        layerName: 'utilities',
-        selector: ':root',
-        outputReferences: true,
-      },
+    options: {
+      layerName: 'components',
+      selector: ':root',
+      outputReferences: true,
     },
-  ],
-};
+  },
+  // 4. CUBE: Utility → @layer utilities
+  {
+    destination: `${cubeBuildPath}/cube.utility.css`,
+    // format: cubeFormat,
+    format: formats.cssVariables,
+
+    filter: (token) =>
+      token.attributes?.category === 'cube' &&
+      token.attributes?.type === 'utility',
+    options: {
+      layerName: 'utilities',
+      selector: ':root',
+      outputReferences: true,
+    },
+  },
+];

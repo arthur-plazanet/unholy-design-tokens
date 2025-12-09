@@ -66,10 +66,7 @@ export default {
         {
           destination: 'conditional.css',
           format: formats.cssVariables,
-          filter: (token) => token.attributes.type === 'conditional',
-          options: {
-            outputReferences: true,
-          },
+          filter: (token) => filterThemeTokens(token),
         },
         {
           destination: 'themes/private-theme.css',
@@ -83,21 +80,7 @@ export default {
           destination: 'themes/public-theme.css',
           format: 'public-theme',
           filter: (token) => filterThemeTokens(token),
-          options: {
-            outputReferences: true,
-          },
-        },
-        {
-          destination: 'spacing.css',
-          format: formats.cssVariables,
-          filter: (token) => {
-            console.log('📟 - token → ', token.attributes);
-            return (
-              token.attributes?.category === 'spacing' ||
-              token.attributes?.type === 'spacing'
-            );
-          },
-          options: {
+          options: {  
             outputReferences: true,
           },
         },
@@ -129,15 +112,6 @@ export default {
           destination: 'variants.css',
           format: formats.cssVariables,
           filter: (token) => {
-            if (token.$type === 'primitive') {
-              console.log('📟 - token in variants → ', token);
-            }
-            if (token.attributes?.$type === 'primitive') {
-              console.log(
-                '📟 - token.attributes in variants → ',
-                token.attributes
-              );
-            }
             const variants = ['variant', 'state', 'color'];
             return variants.includes(token.attributes?.category);
           },
@@ -146,13 +120,14 @@ export default {
               return [...defaultMessage, 'Variant tokens'];
             },
             outputReferences: true,
+
           },
         },
-        ...cube,
-
         ...generateThemeFiles(['component']),
       ],
     },
+
+    cube,
   },
   // Type declarations
   ts: {

@@ -1,14 +1,13 @@
-@layer cube {
-  @layer utilities {
-    :root {  
-    --cube-utility-spacing-mt-0: margin-block-start: 0;
-    --cube-utility-spacing-mt-s: margin-block-start: calc(0.75 * var(--space-unit));
-    --cube-utility-spacing-mb-m: margin-block-end: calc(1 * var(--space-unit));
-    --cube-utility-display-flex: display: flex;
-    --cube-utility-display-grid: display: grid;
-    --cube-utility-text-center: text-align: center;
-    --cube-utility-text-dim: opacity: 0.7;
-  }
-}
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
 
-  }
+:root {
+  --cube-utility-spacing-mt-0: margin-block-start: 0;
+  --cube-utility-display-flex: display: flex;
+  --cube-utility-display-grid: display: grid;
+  --cube-utility-text-center: text-align: center;
+  --cube-utility-text-dim: opacity: 0.7;
+  --cube-utility-spacing-mt-s: margin-block-start: var(--spacing-sm);
+  --cube-utility-spacing-mb-m: margin-block-end: var(--spacing-md);
+}

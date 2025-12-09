@@ -2,17 +2,17 @@
   "cube": {
     "block": {
       "card": {
-        "background": { "value": "{color.bg}" },
+        "bg": { "value": "{color.bg.neutral}" },
         "borderColor": { "value": "{color.border.subtle}" },
-        "radius": { "value": "{border.radius}" },
+        "radius": { "value": "{border.radius.medium}" },
         "padding": { "value": "{spacing.md}" }
       },
       "button": {
         "paddingX": { "value": "{spacing.sm}" },
         "paddingY": { "value": "{spacing.xs}" },
-        "radius": { "value": "{border.radius}" },
+        "radius": { "value": "{border.radius.medium}" },
         "color": { "value": "{color.text.primary}" },
-        "background": { "value": "{color.bg.primary}" },
+        "bg": { "value": "{color.bg.primary}" },
         "hoverBackground": { "value": "{color.bg.primary-hover}" }
       }
     }

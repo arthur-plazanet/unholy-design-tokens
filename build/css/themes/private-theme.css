@@ -8,8 +8,16 @@
 /* Border */
 /* -------------------------------------------------- */
   --_border--width-default: var(--border--width-default, 2px);
-  --_border--style-default: var(--border--style-default, solid);
+  --_border--width-scale-value: var(--border--width-scale-value, 1.25);
+  --_border--width-xsmall: var(--border--width-xsmall, calc(2px / 1.25));
+  --_border--width-small: var(--border--width-small, calc(2px * 1.25));
+  --_border--width-medium: var(--border--width-medium, 2px);
+  --_border--width-large: var(--border--width-large, calc(2px * 1.25 * 1.25 * 1.25));
+  --_border--style: var(--border--style, solid);
   --_border--radius-default: var(--border--radius-default, 0);
+  --_border--radius-light: var(--border--radius-light, calc(0 + 2px));
+  --_border--radius-medium: var(--border--radius-medium, calc(0 + 4px));
+  --_border--radius-heavy: var(--border--radius-heavy, calc(0 + 8px));
 
 /* -------------------------------------------------- */
 /* Breakpoint */

@@ -20,19 +20,16 @@ const themeCategories = [
  * @returns {boolean}
  */
 export function isPartOfTheme(token) {
-  console.log('📟 - token → ', token.attributes);
   return themeCategories.includes(token.attributes?.category);
 }
 
 export function filterThemeTokens(token) {
-  console.log('📟 - tokenss → ', token);
   return isPartOfTheme(token);
 }
 
 // Collect tokens into { publicName, value } entries
 function collectTokens(dictionary) {
   return dictionary.allTokens.map((p) => {
-    console.log('📟 - p → ', p);
     // Build a public CSS var name like --text-md, --space-lg, etc.
     // based on CTI (category/type/item) when available, else path.
     const path = p.attributes?.item
@@ -41,8 +38,11 @@ function collectTokens(dictionary) {
 
     // let name = path.category ? `${path.category}-${path.type}-${path.item}` : path.join('-');
     // remove duplicates/empties and kebab-case
-    const name = `${p?.attributes?.category}-${p.attributes?.type ? '-' + p.attributes.type : ''}${p.attributes.item ? '-' + p.attributes.item : ''}${p.attributes.subitem ? `-${p.attributes.subitem}` : ''}`;
-    console.log('📟 - name → ', name);
+    const name = `${p?.attributes?.category}-${
+      p.attributes?.type ? '-' + p.attributes.type : ''
+    }${p.attributes.item ? '-' + p.attributes.item : ''}${
+      p.attributes.subitem ? `-${p.attributes.subitem}` : ''
+    }`;
     return {
       publicName: `--${toKebab(name)}`,
       privateName: `--_${toKebab(name)}`,
@@ -56,7 +56,6 @@ export const publicThemeTemplate = {
   name: 'public-theme',
   format: ({ dictionary }) => {
     const toks = collectTokens(dictionary);
-    console.log('📟 - toks → ', toks);
     let header = `/**
  * Theme Overrides
  * List of CSS variables that can be used to override the default theme
@@ -70,7 +69,9 @@ export const publicThemeTemplate = {
       const type = t?.type;
       console.log('📟 - type → ', type);
       if (type && !usedTypes.has(type)) {
-        const sectionType = `${usedTypes.size > 0 ? '\n' : ''}/* -------------------------------------------------- */
+        const sectionType = `${
+          usedTypes.size > 0 ? '\n' : ''
+        }/* -------------------------------------------------- */
 /* ${capitalizeFirstLetter(type)} */
 /* -------------------------------------------------- */`;
 
@@ -105,7 +106,9 @@ export const privateThemeTemplate = {
       const type = t?.type;
       console.log('📟 - type → ', type);
       if (type && !usedTypes.has(type)) {
-        const sectionType = `${usedTypes.size > 0 ? '\n' : ''}/* -------------------------------------------------- */
+        const sectionType = `${
+          usedTypes.size > 0 ? '\n' : ''
+        }/* -------------------------------------------------- */
 /* ${capitalizeFirstLetter(type)} */
 /* -------------------------------------------------- */`;
 

@@ -15,11 +15,5 @@
     "disabled": {
       "value": 0
     }
-  },
-  "color": {
-    "shadow": {
-      "dark": { "value": "#616970" },
-      "light": { "value": "rgba(255, 255, 255, 0.25)" }
-    }
   }
 }

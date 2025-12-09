@@ -1,6 +1,5 @@
 {
   "spacing": {
-    "unit": { "value": "1rem" },
     "xxs": { "value": "calc(0.25 * var(--space-unit))" },
     "xs": { "value": "calc(0.5 * var(--space-unit))" },
     "sm": { "value": "calc(0.75 * var(--space-unit))" },
