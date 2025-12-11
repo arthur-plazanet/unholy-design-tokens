@@ -5,11 +5,11 @@
         "bg": { "value": "{color.bg.neutral}" },
         "borderColor": { "value": "{color.border.subtle}" },
         "radius": { "value": "{border.radius.medium}" },
-        "padding": { "value": "{spacing.md}" }
+        "padding": { "value": "{space.md}" }
       },
       "button": {
-        "paddingX": { "value": "{spacing.sm}" },
-        "paddingY": { "value": "{spacing.xs}" },
+        "paddingX": { "value": "{space.sm}" },
+        "paddingY": { "value": "{space.xs}" },
         "radius": { "value": "{border.radius.medium}" },
         "color": { "value": "{color.text.primary}" },
         "bg": { "value": "{color.bg.primary}" },

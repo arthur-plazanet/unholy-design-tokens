@@ -1,0 +1,11 @@
+{
+  "space": {
+    "xxs": { "value": "var(--spacing-xxs)" },
+    "xs": { "value": "var(--spacing-xs)" },
+    "sm": { "value": "var(--spacing-sm)" },
+    "md": { "value": "var(--spacing-md)" },
+    "lg": { "value": "var(--spacing-lg)" },
+    "xl": { "value": "var(--spacing-xl)" },
+    "xxl": { "value": "var(--spacing-xxl)" }
+  }
+}

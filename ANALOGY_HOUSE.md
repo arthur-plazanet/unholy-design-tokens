@@ -51,10 +51,6 @@ You now think:
 
 These parts are reusable, consistent, and easier to understand.
 
-> [!NOTE]
-> Now any builder don't need to know which materials a wall might use.
-> They just use "this wall"
-
 ## 🚪 Step 3 — You want to create rooms with purpose
 
 Now that you have standard parts, you want to create rooms with specific purposes:
@@ -73,9 +69,6 @@ When you think about building a bedroom, you don't think
 you think about
 
 > "a place to sleep".
-
-> [!NOTE]
-> Same
 
 ## 🛋️ Step 4 — People live inside (Components)
 

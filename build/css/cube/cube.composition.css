@@ -6,8 +6,8 @@
   --cube-composition-stack-align: start;
   --cube-composition-cluster-align: center;
   --cube-composition-center-max-width: 72ch;
-  --cube-composition-flow-flow-space: var(--spacing-md);
-  --cube-composition-stack-gap: var(--spacing-md);
-  --cube-composition-cluster-gap: var(--spacing-sm);
-  --cube-composition-center-padding-inline: var(--spacing-md);
+  --cube-composition-flow-flow-space: var(--space-md);
+  --cube-composition-stack-gap: var(--space-md);
+  --cube-composition-cluster-gap: var(--space-sm);
+  --cube-composition-center-padding-inline: var(--space-md);
 }

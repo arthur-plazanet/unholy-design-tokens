@@ -1,3 +1,5 @@
+# 🧩 Design Tokens
+
 ## 🧠 What is a design token?
 
 **design token = a variable containing a value** used for styling.
@@ -82,6 +84,8 @@ var(--color-inverse)     /* for dark backgrounds */
 They don't express direct color value, and are used as interface to map theming variables.
 They are usually the only ones that get updated during rebranding or theming.
 
+See [src/tokens/2 - semantic](./2%20-%20semantic/README.md).
+
 ---
 
 ## 2️⃣ **Intent tokens**
@@ -91,69 +95,18 @@ Tokens that describe **what a component needs**.
 Example for a button:
 
 ```css
---button-primary-bg
+--color-border-primary
+--color-border-primary-hover
+
 --button-primary-bg-hover
 --button-primary-fg
 --button-primary-border
 
 ```
 
-These are **what components actually use**.
+See [src/tokens/3 - intent](./3%20-%20intent/README.md).
 
 ---
-
-# 🧪 Concrete Example (Buttons)
-
-### HTML:
-
-```html
-<button class="rt-button tone-brand type-primary">Save</button>
-```
-
-### Component CSS:
-
-```css
-.rt-button {
-  background: var(--button-primary-bg);
-  color: var(--button-primary-fg);
-  border-color: var(--button-primary-border);
-}
-```
-
-### Result:
-
-- you don’t write colors
-- you don’t write hex
-- you don’t duplicate logic
-- **you only combine tone + type**
-
----
-
-# 🧱 Why this is good for developers
-
-### ✔ No more hunting for hex values
-
-### ✔ Themes (dark mode, rebranding) are free
-
-### ✔ Consistency across apps
-
-### ✔ Easy to refactor
-
-### ✔ Easy to debug (everything is a variable)
-
-### ✔ Easy for newcomers (only bg/fg/border matter)
-
----
-
-# 🚫 What NOT to do
-
-❌ Don’t hardcode hex
-
-❌ Don’t use Tailwind color utilities (`bg-purple-600`)
-
-❌ Don’t reference primitive colors directly
-
-❌ Don’t override component tokens in the app
 
 Always use:
 
@@ -167,50 +120,17 @@ Always use:
 
 ### When building a component:
 
-Use **component tokens**:
+1. Re-use **intent tokens** if possible:
+
+```css
+background: var(--color-bg-primary);
+```
+
+2. If not, create new **component tokens**:
 
 ```css
 background: var(--button-primary-bg);
 ```
 
-### When choosing a color family:
-
-Use **semantic** tokens:
-
-```css
-var(--color-danger)
-var(--color-success)
-
-```
-
-### When writing HTML:
-
-Pick **tone + type**:
-
-```html
-class="tone-danger type-ghost"
-```
-
----
-
-# ⚡ TL;DR for Developers
-
-- **Tokens = CSS variables for design**
-- You only need to worry about **bg / fg / border**
-- HTML uses **tone + type classes**
-- Components use **component tokens**
-- Semantic names keep everything consistent
-
-Everything else is handled automatically.
-
----
-
-If you want, I can also create:
-
-✨ A **1-page cheat-card** (for onboarding)
-
-✨ A **wallboard diagram**
-
-✨ A **video-style storyboard** showing the flow bg→token→class→component
-
-Just tell me!
+Component tokents are usually mapped to intent tokens. They are used to match specific component needs.
+See [designtoken.fyi](https://designtokens.fyi/#/terms/component/)

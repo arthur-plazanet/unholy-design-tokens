@@ -1,12 +1,14 @@
+import { generateFluidSpacing } from '../../formatters/spacing.js';
+
 const toKebab = (s) => s.replace(/_/g, '-').replace(/\./g, '-');
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 const themeCategories = [
+  'space',
   'spacing',
   'border',
-  'spacing',
   'border',
   'shadow',
   'breakpoint',
@@ -30,26 +32,35 @@ export function filterThemeTokens(token) {
 // Collect tokens into { publicName, value } entries
 function collectTokens(dictionary) {
   return dictionary.allTokens.map((p) => {
+    console.log('📟 - allTokens → ', dictionary.allTokens.length);
+    console.log('📟 - p → ', p);
     // Build a public CSS var name like --text-md, --space-lg, etc.
     // based on CTI (category/type/item) when available, else path.
     const path = p.attributes?.item
       ? [p.attributes.category, p.attributes.type, p.attributes.item]
       : p.path;
 
-    // let name = path.category ? `${path.category}-${path.type}-${path.item}` : path.join('-');
-    // remove duplicates/empties and kebab-case
-    const name = `${p?.attributes?.category}-${
-      p.attributes?.type ? '-' + p.attributes.type : ''
-    }${p.attributes.item ? '-' + p.attributes.item : ''}${
-      p.attributes.subitem ? `-${p.attributes.subitem}` : ''
-    }`;
+    let name = path.category
+      ? `${path.category}-${path.type}-${path.item}`
+      : path.join('-');
+
     return {
       publicName: `--${toKebab(name)}`,
       privateName: `--_${toKebab(name)}`,
       value: p.value,
-      type: p.attributes?.category,
+      category: p.attributes?.category,
     };
   });
+}
+
+function generateSectionHeader(type) {
+  return `${
+    type
+      ? `\n/* -------------------------------------------------- */\n/* ${capitalizeFirstLetter(
+          type
+        )} */\n/* -------------------------------------------------- */`
+      : ''
+  }`;
 }
 
 export const publicThemeTemplate = {
@@ -60,30 +71,25 @@ export const publicThemeTemplate = {
  * Theme Overrides
  * List of CSS variables that can be used to override the default theme
  * Simply uncomment the variables you want to use
- */
-:root {`;
+ */`;
+    let content = `${header}\n:root {`;
 
     const usedTypes = new Set();
     toks.forEach((t) => {
       console.log('📟 - t → ', t.category);
-      const type = t?.type;
-      console.log('📟 - type → ', type);
-      if (type && !usedTypes.has(type)) {
-        const sectionType = `${
-          usedTypes.size > 0 ? '\n' : ''
-        }/* -------------------------------------------------- */
-/* ${capitalizeFirstLetter(type)} */
-/* -------------------------------------------------- */`;
-
-        usedTypes.add(type);
-        if (sectionType) {
-          header += `\n${sectionType}`;
+      const category = t?.category;
+      console.log('📟 - category → ', category);
+      if (category && !usedTypes.has(category)) {
+        const sectionHeader = generateSectionHeader(category);
+        usedTypes.add(category);
+        if (sectionHeader) {
+          content += `\n${sectionHeader}`;
         }
       }
-      header += `\n  ${t.publicName}: ${t.value};`;
+      content += `\n  ${t.publicName}: ${t.value};`;
     });
-    header += '\n}\n';
-    return header;
+    content += '\n}\n';
+    return content;
 
     // const body = toks.map((t) => `  /* ${t.publicName}: ${t.value}; */`).join('\n')
     // return `${header}\n${body}\n}\n`
@@ -98,29 +104,27 @@ export const privateThemeTemplate = {
  * Internal default theme variables
  * Using CSS pseudo-private custom properties 
  * https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/
- */
-:root {`;
+ */`;
+    let content = `${header}\n:root {`;
 
     const usedTypes = new Set();
     toks.forEach((t) => {
-      const type = t?.type;
-      console.log('📟 - type → ', type);
-      if (type && !usedTypes.has(type)) {
-        const sectionType = `${
-          usedTypes.size > 0 ? '\n' : ''
-        }/* -------------------------------------------------- */
-/* ${capitalizeFirstLetter(type)} */
-/* -------------------------------------------------- */`;
+      const category = t?.category;
+      console.log('📟 - category → ', category);
+      if (category && !usedTypes.has(category)) {
+        const sectionHeader = generateSectionHeader(category);
 
-        usedTypes.add(type);
-        if (sectionType) {
-          header += `\n${sectionType}`;
+        usedTypes.add(category);
+        if (sectionHeader) {
+          content += `\n${sectionHeader}`;
         }
       }
-      header += `\n  ${t.privateName}: var(${t.publicName}, ${t.value});`;
+      content += `\n  ${t.privateName}: var(${t.publicName}, ${t.value});`;
     });
-    header += '\n}\n';
-    return header;
+    content += generateSectionHeader('Spacing');
+    content += generateFluidSpacing(toks);
+    content += '\n}\n';
+    return content;
     // const body = toks.map((t) => `  ${t.privateName}: var(${t.publicName}, ${t.value});`).join('\n')
     // return `${header}\n${body}\n}\n`
   },

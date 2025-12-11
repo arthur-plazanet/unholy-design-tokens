@@ -4,52 +4,64 @@
  * Simply uncomment the variables you want to use
  */
 :root {
+
 /* -------------------------------------------------- */
 /* Border */
 /* -------------------------------------------------- */
-  --border--width-default: 2px;
-  --border--width-scale-value: 1.25;
-  --border--width-xsmall: calc(2px / 1.25);
-  --border--width-small: calc(2px * 1.25);
-  --border--width-medium: 2px;
-  --border--width-large: calc(2px * 1.25 * 1.25 * 1.25);
-  --border--style: solid;
-  --border--radius-default: 0;
-  --border--radius-light: calc(0 + 2px);
-  --border--radius-medium: calc(0 + 4px);
-  --border--radius-heavy: calc(0 + 8px);
+  --border-width-default: 2px;
+  --border-width-scale-value: 1.25;
+  --border-width-xsmall: calc(2px / 1.25);
+  --border-width-small: calc(2px * 1.25);
+  --border-width-medium: 2px;
+  --border-width-large: calc(2px * 1.25 * 1.25 * 1.25);
+  --border-style: solid;
+  --border-radius-default: 0;
+  --border-radius-light: calc(0 + 2px);
+  --border-radius-medium: calc(0 + 4px);
+  --border-radius-heavy: calc(0 + 8px);
 
 /* -------------------------------------------------- */
 /* Breakpoint */
 /* -------------------------------------------------- */
-  --breakpoint--mobile: 640px;
-  --breakpoint--tablet: 768px;
-  --breakpoint--desktop: 1024px;
-  --breakpoint--desktop-xl: 1280px;
-  --breakpoint--desktop-xxl: 1820px;
+  --breakpoint-mobile: 640px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-desktop-xl: 1280px;
+  --breakpoint-desktop-xxl: 1820px;
 
 /* -------------------------------------------------- */
 /* Shadow */
 /* -------------------------------------------------- */
-  --shadow--default: 0.25;
-  --shadow--hover: 0.25;
-  --shadow--active: 0.25;
-  --shadow--focus: 0.25;
-  --shadow--disabled: 0;
+  --shadow-default: 0.25;
+  --shadow-hover: 0.25;
+  --shadow-active: 0.25;
+  --shadow-focus: 0.25;
+  --shadow-disabled: 0;
 
 /* -------------------------------------------------- */
 /* Spacing */
 /* -------------------------------------------------- */
-  --spacing--unit: 1rem;
-  --spacing--min: 1.125rem;
-  --spacing--max: 3rem;
-  --spacing--min-viewport: 360px;
-  --spacing--max-viewport: 1280px;
-  --spacing--xxs: calc(0.25 * var(--space-unit));
-  --spacing--xs: calc(0.5 * var(--space-unit));
-  --spacing--sm: calc(0.75 * var(--space-unit));
-  --spacing--md: calc(1 * var(--space-unit));
-  --spacing--lg: calc(1.5 * var(--space-unit));
-  --spacing--xl: calc(2 * var(--space-unit));
-  --spacing--xxl: calc(4 * var(--space-unit));
+  --spacing-multiplier-unit: 1rem;
+  --spacing-multiplier-xxs: 0.25;
+  --spacing-multiplier-xs: 0.5;
+  --spacing-multiplier-sm: 0.75;
+  --spacing-multiplier-md: 1;
+  --spacing-multiplier-lg: 1.5;
+  --spacing-multiplier-xl: 2;
+  --spacing-multiplier-xxl: 4;
+  --spacing-fluid-min: 1.125rem;
+  --spacing-fluid-max: 3rem;
+  --spacing-fluid-min-viewport: 360px;
+  --spacing-fluid-max-viewport: 1280px;
+
+/* -------------------------------------------------- */
+/* Space */
+/* -------------------------------------------------- */
+  --space-xxs: var(--spacing-xxs);
+  --space-xs: var(--spacing-xs);
+  --space-sm: var(--spacing-sm);
+  --space-md: var(--spacing-md);
+  --space-lg: var(--spacing-lg);
+  --space-xl: var(--spacing-xl);
+  --space-xxl: var(--spacing-xxl);
 }

@@ -27,7 +27,6 @@ export default [
     format: formats.cssVariables,
 
     filter: (token) => {
-      console.log('📟 - token in cube block → ', token);
       return (
         token.attributes?.category === 'cube' &&
         token.attributes?.type === 'block'

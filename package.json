@@ -8,7 +8,8 @@
     "build": "style-dictionary build --config src/config.js",
     "build:verbose": "style-dictionary build --config src/config.js  --verbose",
     "clean": "rm -rf build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tokens:typography": "node scripts/generate-typography-tokens.js",
+    "tokens:build": "pnpm tokens:typography && style-dictionary build --config src/config.js --verbose"
   },
   "author": "",
   "license": "Apache-2.0",

@@ -4,52 +4,67 @@
  * https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/
  */
 :root {
+
 /* -------------------------------------------------- */
 /* Border */
 /* -------------------------------------------------- */
-  --_border--width-default: var(--border--width-default, 2px);
-  --_border--width-scale-value: var(--border--width-scale-value, 1.25);
-  --_border--width-xsmall: var(--border--width-xsmall, calc(2px / 1.25));
-  --_border--width-small: var(--border--width-small, calc(2px * 1.25));
-  --_border--width-medium: var(--border--width-medium, 2px);
-  --_border--width-large: var(--border--width-large, calc(2px * 1.25 * 1.25 * 1.25));
-  --_border--style: var(--border--style, solid);
-  --_border--radius-default: var(--border--radius-default, 0);
-  --_border--radius-light: var(--border--radius-light, calc(0 + 2px));
-  --_border--radius-medium: var(--border--radius-medium, calc(0 + 4px));
-  --_border--radius-heavy: var(--border--radius-heavy, calc(0 + 8px));
+  --_border-width-default: var(--border-width-default, 2px);
+  --_border-width-scale-value: var(--border-width-scale-value, 1.25);
+  --_border-width-xsmall: var(--border-width-xsmall, calc(2px / 1.25));
+  --_border-width-small: var(--border-width-small, calc(2px * 1.25));
+  --_border-width-medium: var(--border-width-medium, 2px);
+  --_border-width-large: var(--border-width-large, calc(2px * 1.25 * 1.25 * 1.25));
+  --_border-style: var(--border-style, solid);
+  --_border-radius-default: var(--border-radius-default, 0);
+  --_border-radius-light: var(--border-radius-light, calc(0 + 2px));
+  --_border-radius-medium: var(--border-radius-medium, calc(0 + 4px));
+  --_border-radius-heavy: var(--border-radius-heavy, calc(0 + 8px));
 
 /* -------------------------------------------------- */
 /* Breakpoint */
 /* -------------------------------------------------- */
-  --_breakpoint--mobile: var(--breakpoint--mobile, 640px);
-  --_breakpoint--tablet: var(--breakpoint--tablet, 768px);
-  --_breakpoint--desktop: var(--breakpoint--desktop, 1024px);
-  --_breakpoint--desktop-xl: var(--breakpoint--desktop-xl, 1280px);
-  --_breakpoint--desktop-xxl: var(--breakpoint--desktop-xxl, 1820px);
+  --_breakpoint-mobile: var(--breakpoint-mobile, 640px);
+  --_breakpoint-tablet: var(--breakpoint-tablet, 768px);
+  --_breakpoint-desktop: var(--breakpoint-desktop, 1024px);
+  --_breakpoint-desktop-xl: var(--breakpoint-desktop-xl, 1280px);
+  --_breakpoint-desktop-xxl: var(--breakpoint-desktop-xxl, 1820px);
 
 /* -------------------------------------------------- */
 /* Shadow */
 /* -------------------------------------------------- */
-  --_shadow--default: var(--shadow--default, 0.25);
-  --_shadow--hover: var(--shadow--hover, 0.25);
-  --_shadow--active: var(--shadow--active, 0.25);
-  --_shadow--focus: var(--shadow--focus, 0.25);
-  --_shadow--disabled: var(--shadow--disabled, 0);
+  --_shadow-default: var(--shadow-default, 0.25);
+  --_shadow-hover: var(--shadow-hover, 0.25);
+  --_shadow-active: var(--shadow-active, 0.25);
+  --_shadow-focus: var(--shadow-focus, 0.25);
+  --_shadow-disabled: var(--shadow-disabled, 0);
 
 /* -------------------------------------------------- */
 /* Spacing */
 /* -------------------------------------------------- */
-  --_spacing--unit: var(--spacing--unit, 1rem);
-  --_spacing--min: var(--spacing--min, 1.125rem);
-  --_spacing--max: var(--spacing--max, 3rem);
-  --_spacing--min-viewport: var(--spacing--min-viewport, 360px);
-  --_spacing--max-viewport: var(--spacing--max-viewport, 1280px);
-  --_spacing--xxs: var(--spacing--xxs, calc(0.25 * var(--space-unit)));
-  --_spacing--xs: var(--spacing--xs, calc(0.5 * var(--space-unit)));
-  --_spacing--sm: var(--spacing--sm, calc(0.75 * var(--space-unit)));
-  --_spacing--md: var(--spacing--md, calc(1 * var(--space-unit)));
-  --_spacing--lg: var(--spacing--lg, calc(1.5 * var(--space-unit)));
-  --_spacing--xl: var(--spacing--xl, calc(2 * var(--space-unit)));
-  --_spacing--xxl: var(--spacing--xxl, calc(4 * var(--space-unit)));
+  --_spacing-multiplier-unit: var(--spacing-multiplier-unit, 1rem);
+  --_spacing-multiplier-xxs: var(--spacing-multiplier-xxs, 0.25);
+  --_spacing-multiplier-xs: var(--spacing-multiplier-xs, 0.5);
+  --_spacing-multiplier-sm: var(--spacing-multiplier-sm, 0.75);
+  --_spacing-multiplier-md: var(--spacing-multiplier-md, 1);
+  --_spacing-multiplier-lg: var(--spacing-multiplier-lg, 1.5);
+  --_spacing-multiplier-xl: var(--spacing-multiplier-xl, 2);
+  --_spacing-multiplier-xxl: var(--spacing-multiplier-xxl, 4);
+  --_spacing-fluid-min: var(--spacing-fluid-min, 1.125rem);
+  --_spacing-fluid-max: var(--spacing-fluid-max, 3rem);
+  --_spacing-fluid-min-viewport: var(--spacing-fluid-min-viewport, 360px);
+  --_spacing-fluid-max-viewport: var(--spacing-fluid-max-viewport, 1280px);
+
+/* -------------------------------------------------- */
+/* Space */
+/* -------------------------------------------------- */
+  --_space-xxs: var(--space-xxs, var(--spacing-xxs));
+  --_space-xs: var(--space-xs, var(--spacing-xs));
+  --_space-sm: var(--space-sm, var(--spacing-sm));
+  --_space-md: var(--space-md, var(--spacing-md));
+  --_space-lg: var(--space-lg, var(--spacing-lg));
+  --_space-xl: var(--space-xl, var(--spacing-xl));
+  --_space-xxl: var(--space-xxl, var(--spacing-xxl));
+/* -------------------------------------------------- */
+/* Spacing */
+/* -------------------------------------------------- */
 }

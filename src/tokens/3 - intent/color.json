@@ -9,7 +9,7 @@
         "type": "color",
         "value": "{color.secondary.100}"
       },
-      "elevated": { "type": "color", "isAlias": true, "value": "#FFFFFF" },
+      "elevated": { "type": "color", "value": "#FFFFFF" },
       "inset": {
         "type": "color",
         "value": "{color.secondary.200}"
@@ -70,56 +70,46 @@
     "text": {
       "primary": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.secondary.900}"
       },
       "secondary": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.secondary.700}"
       },
       "muted": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.secondary.500}"
       },
       "subtle": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.secondary.400}"
       },
-      "on-primary": { "type": "color", "isAlias": true, "value": "#FFFFFF" },
-      "on-accent": { "type": "color", "isAlias": true, "value": "#FFFFFF" },
+      "on-primary": { "type": "color", "value": "#FFFFFF" },
+      "on-accent": { "type": "color", "value": "#FFFFFF" },
       "on-neutral-strong": {
         "type": "color",
-        "isAlias": true,
         "value": "#FFFFFF"
       },
 
       "link": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.accent.700}"
       },
       "link-hover": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.accent.800}"
       },
 
       "info": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.accent.700}"
       },
       "warning": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.primary.700}"
       },
       "success": {
         "type": "color",
-        "isAlias": true,
         "value": "{color.neutral.700}"
       }
     },
@@ -170,11 +160,11 @@
     //     "bg-hover": {
     //       "type": "color",
     //    //       "value": "{intent.bg.primary-hover}"
-    //     },    //     "fg": { "type": "color", "isAlias": true, "value": "#FFFFFF" },    //     "border": { "type": "color", "isAlias": true, "value": "transparent" }
+    //     },    //     "fg": { "type": "color",  "value": "#FFFFFF" },    //     "border": { "type": "color",  "value": "transparent" }
     //   }
     // },
 
-    // "input": {    //   "bg": { "type": "color", "isAlias": true, "value": "var(--bg-inset)" },
+    // "input": {    //   "bg": { "type": "color",  "value": "var(--bg-inset)" },
 
     //   "fg": {
     //     "type": "color",

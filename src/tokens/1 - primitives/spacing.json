@@ -1,9 +1,20 @@
 {
   "spacing": {
-    "unit": { "value": "1rem" },
-    "min": { "value": "1.125rem" },
-    "max": { "value": "3rem" },
-    "min_viewport": { "value": "360px" },
-    "max_viewport": { "value": "1280px" }
+    "multiplier": {
+      "unit": { "value": "1rem" },
+      "xxs": { "value": "0.25" },
+      "xs": { "value": "0.5" },
+      "sm": { "value": "0.75" },
+      "md": { "value": "1" },
+      "lg": { "value": "1.5" },
+      "xl": { "value": "2" },
+      "xxl": { "value": "4" }
+    },
+    "fluid": {
+      "min": { "value": "1.125rem" },
+      "max": { "value": "3rem" },
+      "min_viewport": { "value": "360px" },
+      "max_viewport": { "value": "1280px" }
+    }
   }
 }

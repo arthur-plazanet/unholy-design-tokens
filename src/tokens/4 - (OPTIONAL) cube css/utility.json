@@ -3,8 +3,8 @@
     "utility": {
       "spacing": {
         "mt-0": { "value": "margin-block-start: 0" },
-        "mt-s": { "value": "margin-block-start: {spacing.sm}" },
-        "mb-m": { "value": "margin-block-end: {spacing.md}" }
+        "mt-s": { "value": "margin-block-start: {space.sm}" },
+        "mb-m": { "value": "margin-block-end: {space.md}" }
       },
       "display": {
         "flex": { "value": "display: flex" },

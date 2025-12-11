@@ -4,29 +4,60 @@
 
 Semantic tokens define **meaning** inside the design system.
 
-They represent how UI elements behave visually:
+> [!IMPORTANT] They don't define the semantic in the HTML or front-end, only in the design system tokens hierarchy.
+> See [_About HTML semantics and front-end architecture_](https://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 
-- surfaces
-- borders
-- text roles
-- interactive states (subtle, strong)
+## Why to use semantic tokens
 
-## Hard Rules
+- Use [aliasing](https://designtokens.fyi/#/terms/alias/) to create a presentation interface that is decoupled from raw values.
+- They usually are usued in multiple locations, linked to a common purpose.
+- They create a stable API for theming and branding.
+
+```css
+/* Mostly colors are aliased through different token Tier */
+/* colors */
+--color-primary-500: var(--color-arylide-yellow-500) /* will resolve to primitive #e3c567 */
+--color-secondary-500: var(--color-night-500); /* will resolve to primitive #0b0c0c */
+/* but depending on system, it can also be aliased for convenience elsewhere */
+--spacing-multiplier: 1.5; /* Semantic value that applies to a specific theming */
+--spacing-xs: calc(var(--spacing-unit) * var(--spacing-multiplier) * 0.5);
+--spacing-md: calc(var(--spacing-unit) * var(--spacing-multiplier) * 1);
+/* etc. */
+
+```
+
+If you wish to change your primary color, you only need to update `--color-primary-500` to point to another primitive color from the pool of colors.
+
+## Cheat Sheet
 
 - **MUST reference primitives**
 - **No raw values**
-- **Names describe purpose, not color**
 - **Stable across themes (light/dark/brand)**
 
-## Examples
+## Examples in Style Dictionary
 
 ```jsonc
 {
   "color": {
-    "surface": {
-      "default": { "value": "{primitives.color.neutral.0}" },
-      "subtle": { "value": "{primitives.color.neutral.50}" },
+    "primary": {
+      "500": { "value": "{primitives.color.arylide-yellow.500}" }
     },
+    "secondary": {
+      "500": { "value": "{primitives.color.night.500}" }
+    }
   },
+  "spacing": {
+    "multiplier": { "value": "1.5" },
+    "xs": {
+      "value": "calc({primitives.spacing.unit} * {semantic.spacing.multiplier} * 0.5)"
+    },
+    "md": {
+      "value": "calc({primitives.spacing.unit} * {semantic.spacing.multiplier} * 1)"
+    }
+  }
 }
 ```
+
+## Next Steps
+
+From here, you can create [**intent tokens**](../3%20-%20intent/README.md) that will map these semantic tokens to specific component needs.
