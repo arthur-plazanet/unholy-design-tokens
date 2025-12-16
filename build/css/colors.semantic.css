@@ -1,0 +1,34 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-accent-100: var(--color-battleship-gray-100);
+  --color-accent-200: var(--color-battleship-gray-200);
+  --color-accent-300: var(--color-battleship-gray-300);
+  --color-accent-400: var(--color-battleship-gray-400);
+  --color-accent-500: var(--color-battleship-gray-500);
+  --color-accent-600: var(--color-battleship-gray-600);
+  --color-accent-700: var(--color-battleship-gray-700);
+  --color-accent-800: var(--color-battleship-gray-800);
+  --color-accent-900: var(--color-battleship-gray-900);
+  --color-neutral-100: var(--color-white-smoke-100);
+  --color-neutral-200: var(--color-white-smoke-200);
+  --color-neutral-300: var(--color-white-smoke-300);
+  --color-neutral-400: var(--color-white-smoke-400);
+  --color-neutral-500: var(--color-white-smoke-500);
+  --color-neutral-600: var(--color-white-smoke-600);
+  --color-neutral-700: var(--color-white-smoke-700);
+  --color-neutral-800: var(--color-white-smoke-800);
+  --color-neutral-900: var(--color-white-smoke-900);
+  --color-theme-100: oklch(from sRGB var(--color-theme, var(--color-arylide-yellow-100)) calc(0.95) 0 90);
+  --color-theme-200: oklch(from sRGB var(--color-theme, var(--color-arylide-yellow-200)) calc(0.90) 0 90);
+  --color-theme-300: oklch(from sRGB var(--color-theme, var(--color-arylide-yellow-300)) calc(0.85) 0 90);
+  --color-theme-400: oklch(from sRGB var(--color-theme, var(--color-arylide-yellow-400)) calc(0.80) 0 90);
+  --color-theme-500: var(--color-theme, var(--color-arylide-yellow-500));
+  --color-theme-600: color-mix(in srgb, var(--color-theme, var(--color-arylide-yellow-500)), white 60%);
+  --color-theme-700: color-mix(in srgb, var(--color-theme, var(--color-arylide-yellow-500)), white 70%);
+  --color-theme-800: color-mix(in srgb, var(--color-theme, var(--color-arylide-yellow-500)), white 80%);
+  --color-theme-900: color-mix(in srgb, var(--color-theme, var(--color-arylide-yellow-500)), white 90%);
+  --color-theme-default: var(--color-theme, var(--color-arylide-yellow-500));
+}

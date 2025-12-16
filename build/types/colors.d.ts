@@ -93,6 +93,7 @@ declare const tokens: {
       dark: DesignToken;
       light: DesignToken;
     };
+    attributes: {};
     primary: {
       "100": DesignToken;
       "200": DesignToken;
@@ -251,7 +252,6 @@ declare const tokens: {
         opacity: DesignToken;
       };
     };
-    attributes: {};
   };
   font: {
     scale: {

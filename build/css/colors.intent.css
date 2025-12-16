@@ -1,0 +1,42 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-bg-elevated: #ffffff;
+  --color-text-on-primary: #ffffff;
+  --color-text-on-accent: #ffffff;
+  --color-text-on-neutral-strong: #ffffff;
+  --color-bg-page: var(--color-secondary-100);
+  --color-bg-subtle: var(--color-secondary-100);
+  --color-bg-inset: var(--color-secondary-200);
+  --color-bg-primary: var(--color-primary-500);
+  --color-bg-primary-hover: var(--color-primary-600);
+  --color-bg-primary-active: var(--color-primary-700);
+  --color-bg-primary-subtle: var(--color-primary-100);
+  --color-bg-accent: var(--color-accent-500);
+  --color-bg-accent-hover: var(--color-accent-600);
+  --color-bg-accent-subtle: var(--color-accent-100);
+  --color-bg-neutral: var(--color-neutral-500);
+  --color-bg-neutral-strong: var(--color-neutral-900);
+  --color-bg-info: var(--color-accent-100);
+  --color-bg-warning: var(--color-primary-100);
+  --color-bg-success: var(--color-neutral-100);
+  --color-text-primary: var(--color-secondary-900);
+  --color-text-secondary: var(--color-secondary-700);
+  --color-text-muted: var(--color-secondary-500);
+  --color-text-subtle: var(--color-secondary-400);
+  --color-text-link: var(--color-accent-700);
+  --color-text-link-hover: var(--color-accent-800);
+  --color-text-info: var(--color-accent-700);
+  --color-text-warning: var(--color-primary-700);
+  --color-text-success: var(--color-neutral-700);
+  --color-border-subtle: var(--color-secondary-200);
+  --color-border-default: var(--color-secondary-300);
+  --color-border-strong: var(--color-secondary-400);
+  --color-border-primary: var(--color-primary-500);
+  --color-border-focus: var(--color-accent-500);
+  --color-border-info: var(--color-accent-200);
+  --color-border-warning: var(--color-primary-200);
+  --color-border-success: var(--color-neutral-200);
+}

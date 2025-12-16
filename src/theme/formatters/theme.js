@@ -1,11 +1,8 @@
 import { generateFluidSpaceUnit } from '../../formatters/spacing.js';
 import { usesReferences, getReferences } from 'style-dictionary/utils';
+import { generateSectionHeader } from '../../utils/template.js';
 
 const toKebab = (s) => s.replace(/_/g, '-').replace(/\./g, '-');
-
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
 
 // Collect tokens into { publicName, value } entries
 function collectTokens(dictionary) {
@@ -20,9 +17,6 @@ function collectTokens(dictionary) {
       ? `${path.category}-${path.type}-${path.item}`
       : path.join('-');
     // if (path.type === 'border') {
-    console.group(`border theme`);
-    console.log(p);
-    console.groupEnd();
     // }
     return {
       publicName: `--${toKebab(name)}`,
@@ -33,21 +27,10 @@ function collectTokens(dictionary) {
   });
 }
 
-function generateSectionHeader(type) {
-  return `${
-    type
-      ? `\n/* -------------------------------------------------- */\n/* ${capitalizeFirstLetter(
-          type
-        )} */\n/* -------------------------------------------------- */`
-      : ''
-  }`;
-}
-
 export const publicThemeTemplate = {
   name: 'public-theme',
   format: ({ dictionary, options }) => {
     const { outputReferences } = options || {};
-    console.log('📟 - outputReferences → ', outputReferences);
 
     const toks = collectTokens(dictionary); //collectTokens(dictionary);
     let header = `/**
@@ -59,9 +42,6 @@ export const publicThemeTemplate = {
 
     const usedTypes = new Set();
     toks.forEach((t) => {
-      console.log('t:', t.original);
-      console.log('usesReferences:', usesReferences(t));
-
       const category = t?.category;
       if (category && !usedTypes.has(category)) {
         const sectionHeader = generateSectionHeader(category);

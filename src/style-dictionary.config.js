@@ -6,7 +6,6 @@ import {
   themeConfig,
 } from './theme/index.js';
 // import { cubeCssVariablesLayerFormatter } from './cube-css/formatters/cube-css.js';
-import { parseInitialTheme } from './parsers/initial-theme-parser.js';
 import { componentStatesTransform } from './transforms/component-states.js';
 import { typesDeclarationFormatter2 } from './formatters/type-declarations.js';
 import cube from './cube-css/cube.js';
@@ -15,9 +14,8 @@ import { spacingFluid } from './formatters/spacing.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import colorConfig from './colors/color.config.js';
 // import themeConfig from './theme/theme.config.js';
-
-StyleDictionary.registerParser(parseInitialTheme);
 
 StyleDictionary.registerFormat(typesDeclarationFormatter2);
 StyleDictionary.registerTransform(componentStatesTransform);
@@ -251,13 +249,7 @@ export default {
           destination: 'variants.css',
           format: formats.cssVariables,
           filter: (token) => {
-            const variants = [
-              'variant',
-              'state',
-              'color',
-              'typography',
-              'border',
-            ];
+            const variants = ['variant', 'state', 'typography', 'border'];
             return variants.includes(token.attributes?.category);
           },
           options: {
@@ -267,6 +259,7 @@ export default {
             outputReferences: true,
           },
         },
+        ...colorConfig,
         ...cube,
 
         ...generateThemeFiles(['component', 'font']),
