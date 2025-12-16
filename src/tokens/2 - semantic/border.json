@@ -1,0 +1,34 @@
+{
+  "border": {
+    "$type": "color",
+    "width": {
+      "xsmall": {
+        "value": "calc(var(--border-width-default) / var(--border-width-scale))"
+      },
+      "small": {
+        "value": "calc(var(--border-width-default) * var(--border-width-scale))"
+      },
+      "medium": {
+        "value": "var(--border-width-default)"
+      },
+      "large": {
+        "value": "calc(var(--border-width-default) * var(--border-width-scale) * var(--border-width-scale) * var(--border-width-scale))"
+      }
+    },
+
+    "style": {
+      "value": "var(--border-style-default)"
+    },
+    "radius": {
+      "light": {
+        "value": "calc(var(--border-radius-default) / var(--border-radius-scale))"
+      },
+      "medium": {
+        "value": "calc(var(--border-radius-default) * var(--border-radius-scale))"
+      },
+      "heavy": {
+        "value": "calc(var(--border-radius-default) * 2 * var(--border-radius-scale))"
+      }
+    }
+  }
+}

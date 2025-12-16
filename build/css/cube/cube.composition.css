@@ -1,0 +1,13 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --cube-composition-flow-space: var(--space-md);
+  --cube-composition-stack-gap: var(--space-md);
+  --cube-composition-stack-align: start;
+  --cube-composition-cluster-gap: var(--space-sm);
+  --cube-composition-cluster-align: center;
+  --cube-composition-center-max-width: 72ch;
+  --cube-composition-center-padding-inline: var(--space-md);
+}

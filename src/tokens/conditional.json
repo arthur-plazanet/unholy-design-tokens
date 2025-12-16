@@ -1,0 +1,38 @@
+{
+  "not-primary": {
+    "value": "calc(var(--secondary) + var(--danger))",
+    "attribute": {
+      "type": "conditional"
+    }
+  },
+  "not-secondary": {
+    "value": "calc(var(--primary) + var(--danger))",
+    "attribute": {
+      "type": "conditional"
+    }
+  },
+  "not-danger": {
+    "value": "calc(var(--primary) + var(--secondary))",
+    "attribute": {
+      "type": "conditional"
+    }
+  },
+  "light": {
+    "value": 80,
+    "attribute": {
+      "type": "conditional"
+    }
+  },
+  "threshold": {
+    "value": 10,
+    "attribute": {
+      "type": "conditional"
+    }
+  },
+  "switch": {
+    "value": "calc((var(--light) - var(--threshold)) * 100%)",
+    "attribute": {
+      "type": "conditional"
+    }
+  }
+}

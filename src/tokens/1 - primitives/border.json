@@ -1,0 +1,25 @@
+{
+  "border": {
+    "width": {
+      "default": {
+        "value": "2px"
+      },
+      "scale": {
+        "value": "1.25"
+      }
+    },
+    "style": {
+      "default": {
+        "value": "solid"
+      }
+    },
+    "radius": {
+      "default": {
+        "value": 0
+      },
+      "scale": {
+        "value": 1.5
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+/**
+ * Theme Overrides
+ * List of CSS variables that can be used to override the default theme
+ * Simply uncomment the variables you want to use
+ */
+:root {
+
+
+/* ---------------------------------------------------- */
+/*                        Border                          */
+/* ---------------------------------------------------- */
+ --border-width-default: 2px;
+ --border-width-scale: 1.25;
+ --border-width-xsmall: calc(var(--border-width-default) / var(--border-width-scale));
+ --border-width-small: calc(var(--border-width-default) * var(--border-width-scale));
+ --border-width-medium: var(--border-width-default);
+ --border-width-large: calc(var(--border-width-default) * var(--border-width-scale) * var(--border-width-scale) * var(--border-width-scale));
+ --border-style: var(--border-style-default);
+ --border-radius-default: 0;
+ --border-radius-scale: 1.5;
+ --border-radius-light: calc(var(--border-radius-default) / var(--border-radius-scale));
+ --border-radius-medium: calc(var(--border-radius-default) * var(--border-radius-scale));
+ --border-radius-heavy: calc(var(--border-radius-default) * 2 * var(--border-radius-scale));
+
+
+/* ---------------------------------------------------- */
+/*                        Breakpoint                          */
+/* ---------------------------------------------------- */
+ --breakpoint-mobile: 640px;
+ --breakpoint-tablet: 768px;
+ --breakpoint-desktop: 1024px;
+ --breakpoint-desktop-xl: 1280px;
+ --breakpoint-desktop-xxl: 1820px;
+
+
+/* ---------------------------------------------------- */
+/*                        Font                          */
+/* ---------------------------------------------------- */
+ --font-scale-0: clamp(1rem, 0.9021739130434783rem + 0.43478260869565216vw, 1.25rem);
+ --font-scale-1: clamp(1.2rem, 1.0581521739130435rem + 0.6304347826086958vw, 1.5625rem);
+ --font-scale-2: clamp(1.44rem, 1.239211956521739rem + 0.8923913043478261vw, 1.953125rem);
+ --font-scale-3: clamp(1.7279999999999998rem, 1.4488410326086953rem + 1.2407065217391309vw, 2.44140625rem);
+ --font-scale-4: clamp(2.0736rem, 1.6908425951086956rem + 1.7011440217391305vw, 3.0517578125rem);
+ --font-scale-5: clamp(2.4883199999999994rem, 1.96930280910326rem + 2.306743070652175vw, 3.814697265625rem);
+ --font-scale-6: clamp(2.9859839999999993rem, 2.2885279896399444rem + 3.0998044904891318vw, 4.76837158203125rem);
+ --font-minFont: 16;
+ --font-maxFont: 20;
+ --font-minViewport: 360;
+ --font-maxViewport: 1280;
+ --font-scaleMin: 1.2;
+ --font-scaleMax: 1.25;
+ --font-steps: 0,1,2,3,4,5,6;
+ --font-weight-light: 300;
+ --font-weight-regular: 400;
+ --font-weight-medium: 500;
+ --font-weight-bold: 700;
+
+
+/* ---------------------------------------------------- */
+/*                        Shadow                          */
+/* ---------------------------------------------------- */
+ --shadow-default: 0.25;
+ --shadow-hover: 0.25;
+ --shadow-active: 0.25;
+ --shadow-focus: 0.25;
+ --shadow-disabled: 0;
+
+
+/* ---------------------------------------------------- */
+/*                        Spacing                          */
+/* ---------------------------------------------------- */
+ --spacing-multiplier-unit: 1rem;
+ --spacing-multiplier-xxs: 0.25;
+ --spacing-multiplier-xs: 0.5;
+ --spacing-multiplier-sm: 0.75;
+ --spacing-multiplier-md: 1;
+ --spacing-multiplier-lg: 1.5;
+ --spacing-multiplier-xl: 2;
+ --spacing-multiplier-xxl: 4;
+ --spacing-fluid-min: 1.125rem;
+ --spacing-fluid-max: 3rem;
+ --spacing-fluid-min-viewport: 360px;
+ --spacing-fluid-max-viewport: 1280px;
+
+
+/* ---------------------------------------------------- */
+/*                        Text                          */
+/* ---------------------------------------------------- */
+ --text-body-size: var(--font-scale-0);
+ --text-body-lineHeight: 1.5;
+ --text-body-weight: var(--font-weight-regular);
+ --text-caption-size: var(--font-scale--2);
+ --text-caption-lineHeight: 1.4;
+ --text-caption-weight: var(--font-weight-regular);
+
+
+/* ---------------------------------------------------- */
+/*                        Space                          */
+/* ---------------------------------------------------- */
+ --space-xxs: calc(var(--space-unit) * var(--spacing-multiplier-xxs));
+ --space-xs: calc(var(--space-unit) * var(--spacing-multiplier-xs));
+ --space-sm: calc(var(--space-unit) * var(--spacing-multiplier-sm));
+ --space-md: calc(var(--space-unit) * var(--spacing-multiplier-md));
+ --space-lg: calc(var(--space-unit) * var(--spacing-multiplier-lg));
+ --space-xl: calc(var(--space-unit) * var(--spacing-multiplier-xl));
+ --space-xxl: calc(var(--space-unit) * var(--spacing-multiplier-xxl));
+
+
+/* ---------------------------------------------------- */
+/*                        Cube                          */
+/* ---------------------------------------------------- */
+
+  /* -------------------- */
+  /* Block */
+  /* -------------------- */
+ --card-bg: var(--color-bg-neutral);
+ --card-border-color: var(--color-border-subtle);
+ --card-radius: var(--border-radius-medium);
+ --card-padding: var(--space-md);
+ --button-padding-x: var(--space-sm);
+ --button-padding-y: var(--space-xs);
+ --button-radius: var(--border-radius-medium);
+ --button-color: var(--color-text-primary);
+ --button-bg: var(--color-bg-primary);
+ --button-hover-background: var(--color-bg-primary-hover);
+
+  /* -------------------- */
+  /* Composition */
+  /* -------------------- */
+ --flow-space: var(--space-md);
+ --stack-gap: var(--space-md);
+ --stack-align: start;
+ --cluster-gap: var(--space-sm);
+ --cluster-align: center;
+ --center-max-width: 72ch;
+ --center-padding-inline: var(--space-md);
+}

@@ -1,0 +1,20 @@
+{
+  "cube": {
+    "block": {
+      "card": {
+        "bg": { "value": "var(--color-bg-neutral)" },
+        "borderColor": { "value": "var(--color-border-subtle)" },
+        "radius": { "value": "var(--border-radius-medium)" },
+        "padding": { "value": "var(--space-md)" }
+      },
+      "button": {
+        "paddingX": { "value": "var(--space-sm)" },
+        "paddingY": { "value": "var(--space-xs)" },
+        "radius": { "value": "var(--border-radius-medium)" },
+        "color": { "value": "var(--color-text-primary)" },
+        "bg": { "value": "var(--color-bg-primary)" },
+        "hoverBackground": { "value": "var(--color-bg-primary-hover)" }
+      }
+    }
+  }
+}

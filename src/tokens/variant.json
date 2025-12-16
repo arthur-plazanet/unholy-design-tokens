@@ -1,0 +1,67 @@
+{
+  "variant": {
+    "contained": {
+      "bg": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "outlined": {
+      "bg": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 0 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "text": {
+      "bg": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 0 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 0 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "attributes": {
+      "type": "variants"
+    }
+  }
+}

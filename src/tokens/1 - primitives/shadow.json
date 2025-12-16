@@ -1,0 +1,19 @@
+{
+  "shadow": {
+    "default": {
+      "value": 0.25
+    },
+    "hover": {
+      "value": 0.25
+    },
+    "active": {
+      "value": 0.25
+    },
+    "focus": {
+      "value": 0.25
+    },
+    "disabled": {
+      "value": 0
+    }
+  }
+}
