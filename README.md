@@ -1,4 +1,4 @@
-# ✝️ Unholy Design Tokens - A Practical Guide to Design Tokens (Without the Fluff)
+# 🗿 Unholy Design Tokens - A Practical Guide to Design Tokens (Without the Fluff)
 
 _A brutally clear, developer-friendly design token system using Style Dictionary._
 
