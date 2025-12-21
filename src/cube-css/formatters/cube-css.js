@@ -59,6 +59,7 @@ export const cubeCssVariablesLayerFormatter = {
         const prop =
           attrs.subitem || attrs.state || attrs.role || path[3] || null;
 
+        console.log("📟 - area → ", area);
         if (area === "block") {
           // block/card/background → --block-card-background
           if (prop) {
@@ -74,15 +75,8 @@ export const cubeCssVariablesLayerFormatter = {
           } else {
             publicName = `--${toKebab(element)}`;
           }
-        } else {
-          // fallback for other cube types, e.g. utility/spacing/mt-0 → --utility-spacing-mt-0
-          if (prop) {
-            publicName = `--${toKebab(area)}-${toKebab(element)}-${toKebab(
-              prop,
-            )}`;
-          } else {
-            publicName = `--${toKebab(area)}-${toKebab(element)}`;
-          }
+        } else if (area === "utility") {
+          return formatCubeUtility(p);
         }
       } else {
         // Non-cube tokens: keep the original type-item-subitem pattern
@@ -155,6 +149,10 @@ export function generateThemeCubeCSSVariables(token) {
   const item = attrs.item || path[1] || "default";
   const subitem = attrs.subitem;
 
+  // const base = subitem
+  //   ? `${type}-${item}-${subitem}`
+  //   : `${type}-${item}-${subitem ? subitem : ""}`.replace(/-$/, "");
+
   const base = subitem
     ? `${item}-${subitem}`
     : `${item}-${subitem ? subitem : ""}`.replace(/-$/, "");
@@ -182,4 +180,39 @@ export function generateThemeCubeCSS(tokens) {
       console.log("📟 - p → ", p);
       return generateThemeCubeCSSVariables(p);
     });
+}
+
+export const cubeUtilityFormatter = {
+  name: "cube/utility",
+  format: ({ dictionary, options }) => {
+    return dictionary.allTokens
+      .filter(
+        (token) =>
+          token.attributes?.category === "cube" &&
+          token.attributes?.type === "utility",
+      )
+      .map((token) => generateCubeUtilityClass(token))
+      .join("\n");
+  },
+};
+
+export function generateCubeUtilityClass(token) {
+  console.log("📟 - token → ", token);
+  // fallback for other cube types, e.g. utility/spacing/mt-0 → --utility-spacing-mt-0
+  const attrs = token.attributes || {};
+  console.log("📟 - attrs → ", attrs);
+  const path = token.path || [];
+  const item = attrs.item || path[1] || "default";
+  const subitem = attrs.subitem ? `-${attrs.subitem}` : "";
+  const state = attrs.state ? `-${attrs.state}` : "";
+  let className = `${item}${subitem}${state}`;
+  console.log("📟 - subitem → ", subitem);
+  // let className = subitem;
+  className = `.${toKebab(className)}`;
+  console.log("📟 - className → ", className);
+
+  const classCssContent = `${token.value}`;
+  console.log("📟 - classCssContent → ", classCssContent);
+
+  return `${className} { ${classCssContent} }`;
 }

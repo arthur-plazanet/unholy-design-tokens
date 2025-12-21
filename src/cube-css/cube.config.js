@@ -1,5 +1,8 @@
 import { formats, transformGroups } from "style-dictionary/enums";
-import { cubeCssVariablesLayerFormatter } from "./formatters/cube-css.js";
+import {
+  cubeCssVariablesLayerFormatter,
+  cubeUtilityFormatter,
+} from "./formatters/cube-css.js";
 import StyleDictionary from "style-dictionary";
 
 const cubeBuildPath = "cube";
@@ -7,6 +10,7 @@ const cubeBuildPath = "cube";
 const cubeFormat = "cube/css-variables-layer";
 
 StyleDictionary.registerFormat(cubeCssVariablesLayerFormatter);
+StyleDictionary.registerFormat(cubeUtilityFormatter);
 
 export default [
   // 2. CUBE: Composition → @layer objects
@@ -50,15 +54,15 @@ export default [
   // 4. CUBE: Utility → @layer utilities
   {
     destination: `${cubeBuildPath}/cube.utility.css`,
-    // format: cubeFormat,
-    format: formats.cssVariables,
+    format: "cube/utility",
+    // format: formats.cssVariables,
 
     filter: (token) =>
       token.attributes?.category === "cube" &&
       token.attributes?.type === "utility",
     options: {
-      layerName: "utilities",
-      selector: ":root",
+      // layerName: "utilities",
+      // selector: ":root",
       outputReferences: true,
     },
   },

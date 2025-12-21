@@ -79,8 +79,14 @@ export function calculateClamp(tokens) {
   );
 
   // ---- CONFIG: tweak these to taste ----
-  const minViewport = spacingTokenParams.min_viewport.replace("px", ""); // px
-  const maxViewport = spacingTokenParams.max_viewport.replace("px", ""); // px
+  const minViewport = spacingTokenParams.min_viewport
+    .replace("px", "")
+    .replace("rem", "")
+    .replace("svw", ""); // px
+  const maxViewport = spacingTokenParams.max_viewport
+    .replace("px", "")
+    .replace("rem", "")
+    .replace("svw", ""); // px
   const minRem = spacingTokenParams.min.replace("rem", ""); // base space at min viewport
   const maxRem = spacingTokenParams.max.replace("rem", ""); // base space at max viewport
   // --------------------------------------

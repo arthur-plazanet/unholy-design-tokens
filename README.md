@@ -2,6 +2,8 @@
 
 <img width="2550" height="920" alt="MacBook Pro 16_ - 6" src="https://github.com/user-attachments/assets/03a1b857-0881-4ad9-b14e-4480b5e181ad" />
 
+See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignTokens?node-id=1-5537&t=perH3yNxowfIDyWu-1)
+
 _A brutally clear, developer-friendly design token system using Style Dictionary._
 
 See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignTokens?node-id=1-5537&t=perH3yNxowfIDyWu-1)

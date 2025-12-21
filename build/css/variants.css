@@ -4,12 +4,16 @@
  */
 
 :root {
+  --border-width-10: calc(0.1 * var(--border-width-default));
+  --border-width-25: calc(0.25 * var(--border-width-default));
+  --border-width-50: calc(0.5 * var(--border-width-default));
+  --border-width-75: calc(0.75 * var(--border-width-default));
   --border-width-default: 2px;
   --border-width-scale: 1.25;
-  --border-width-xsmall: calc(var(--border-width-default) / var(--border-width-scale));
-  --border-width-small: calc(var(--border-width-default) * var(--border-width-scale));
+  --border-width-xsmall: calc(var(--border-width-default) / 2 * var(--border-width-scale));
+  --border-width-small: calc(var(--border-width-default) / var(--border-width-scale));
   --border-width-medium: var(--border-width-default);
-  --border-width-large: calc(var(--border-width-default) * var(--border-width-scale) * var(--border-width-scale) * var(--border-width-scale));
+  --border-width-large: calc(var(--border-width-default) * var(--border-width-scale));
   --border-style: var(--border-style-default);
   --border-radius-default: 0;
   --border-radius-scale: 1.5;

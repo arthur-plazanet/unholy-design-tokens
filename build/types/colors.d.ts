@@ -17,6 +17,10 @@ declare interface DesignToken {
 declare const tokens: {
   border: {
     width: {
+      "10": DesignToken;
+      "25": DesignToken;
+      "50": DesignToken;
+      "75": DesignToken;
       default: DesignToken;
       scale: DesignToken;
       xsmall: DesignToken;
@@ -338,7 +342,7 @@ declare const tokens: {
     block: {
       card: {
         bg: DesignToken;
-        borderColor: DesignToken;
+        border: DesignToken;
         radius: DesignToken;
         padding: DesignToken;
       };
@@ -347,6 +351,7 @@ declare const tokens: {
         paddingY: DesignToken;
         radius: DesignToken;
         color: DesignToken;
+        text: DesignToken;
         bg: DesignToken;
         hoverBackground: DesignToken;
       };
@@ -367,12 +372,36 @@ declare const tokens: {
         maxWidth: DesignToken;
         paddingInline: DesignToken;
       };
+      switcher: {
+        modifier: DesignToken;
+        gap: DesignToken;
+      };
     };
     utility: {
-      spacing: {
-        "mt-0": DesignToken;
-        "mt-s": DesignToken;
-        "mb-m": DesignToken;
+      margin: {
+        "t-0": DesignToken;
+        "t-xs": DesignToken;
+        "t-sm": DesignToken;
+        "t-md": DesignToken;
+        "t-lg": DesignToken;
+        "t-xl": DesignToken;
+        "b-0": DesignToken;
+        "b-xs": DesignToken;
+        "b-sm": DesignToken;
+        "b-md": DesignToken;
+        "b-lg": DesignToken;
+        "b-xl": DesignToken;
+        auto: DesignToken;
+      };
+      padding: {
+        xs: DesignToken;
+        sm: DesignToken;
+        md: DesignToken;
+        lg: DesignToken;
+        xl: DesignToken;
+        "x-0": DesignToken;
+        "x-sm": DesignToken;
+        "y-md": DesignToken;
       };
       display: {
         flex: DesignToken;
@@ -381,6 +410,26 @@ declare const tokens: {
       text: {
         center: DesignToken;
         dim: DesignToken;
+      };
+      border: {
+        theme: {
+          "10": DesignToken;
+          "25": DesignToken;
+          "50": DesignToken;
+          "75": DesignToken;
+          "100": DesignToken;
+        };
+        width: {
+          "10": DesignToken;
+          "25": DesignToken;
+          "50": DesignToken;
+          "75": DesignToken;
+        };
+        radius: {
+          light: DesignToken;
+          medium: DesignToken;
+          heavy: DesignToken;
+        };
       };
     };
   };

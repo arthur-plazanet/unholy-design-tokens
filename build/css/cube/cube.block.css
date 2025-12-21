@@ -4,13 +4,14 @@
 
 :root {
   --cube-block-card-bg: var(--color-bg-neutral);
-  --cube-block-card-border-color: var(--color-border-subtle);
+  --cube-block-card-border: var(--color-border-subtle);
   --cube-block-card-radius: var(--border-radius-medium);
   --cube-block-card-padding: var(--space-md);
   --cube-block-button-padding-x: var(--space-sm);
   --cube-block-button-padding-y: var(--space-xs);
   --cube-block-button-radius: var(--border-radius-medium);
   --cube-block-button-color: var(--color-text-primary);
+  --cube-block-button-text: var(--color-text-primary);
   --cube-block-button-bg: var(--color-bg-primary);
   --cube-block-button-hover-background: var(--color-bg-primary-hover);
 }

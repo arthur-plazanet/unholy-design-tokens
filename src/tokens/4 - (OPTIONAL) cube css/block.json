@@ -3,7 +3,7 @@
     "block": {
       "card": {
         "bg": { "value": "var(--color-bg-neutral)" },
-        "borderColor": { "value": "var(--color-border-subtle)" },
+        "border": { "value": "var(--color-border-subtle)" },
         "radius": { "value": "var(--border-radius-medium)" },
         "padding": { "value": "var(--space-md)" }
       },
@@ -12,6 +12,7 @@
         "paddingY": { "value": "var(--space-xs)" },
         "radius": { "value": "var(--border-radius-medium)" },
         "color": { "value": "var(--color-text-primary)" },
+        "text": { "value": "var(--color-text-primary)" },
         "bg": { "value": "var(--color-bg-primary)" },
         "hoverBackground": { "value": "var(--color-bg-primary-hover)" }
       }

@@ -9,12 +9,16 @@
 /* ---------------------------------------------------- */
 /*                        Border                          */
 /* ---------------------------------------------------- */
+ --border-width-10: calc(0.1 * var(--border-width-default));
+ --border-width-25: calc(0.25 * var(--border-width-default));
+ --border-width-50: calc(0.5 * var(--border-width-default));
+ --border-width-75: calc(0.75 * var(--border-width-default));
  --border-width-default: 2px;
  --border-width-scale: 1.25;
- --border-width-xsmall: calc(var(--border-width-default) / var(--border-width-scale));
- --border-width-small: calc(var(--border-width-default) * var(--border-width-scale));
+ --border-width-xsmall: calc(var(--border-width-default) / 2 * var(--border-width-scale));
+ --border-width-small: calc(var(--border-width-default) / var(--border-width-scale));
  --border-width-medium: var(--border-width-default);
- --border-width-large: calc(var(--border-width-default) * var(--border-width-scale) * var(--border-width-scale) * var(--border-width-scale));
+ --border-width-large: calc(var(--border-width-default) * var(--border-width-scale));
  --border-style: var(--border-style-default);
  --border-radius-default: 0;
  --border-radius-scale: 1.5;
@@ -26,11 +30,11 @@
 /* ---------------------------------------------------- */
 /*                        Breakpoint                          */
 /* ---------------------------------------------------- */
- --breakpoint-mobile: 640px;
- --breakpoint-tablet: 768px;
- --breakpoint-desktop: 1024px;
- --breakpoint-desktop-xl: 1280px;
- --breakpoint-desktop-xxl: 1820px;
+ --breakpoint-mobile: 640;
+ --breakpoint-tablet: 768;
+ --breakpoint-desktop: 1024;
+ --breakpoint-desktop-xl: 1280;
+ --breakpoint-desktop-xxl: 1820;
 
 
 /* ---------------------------------------------------- */
@@ -74,11 +78,11 @@
  --spacing-multiplier-xs: 0.5;
  --spacing-multiplier-sm: 0.75;
  --spacing-multiplier-md: 1;
- --spacing-multiplier-lg: 1.5;
- --spacing-multiplier-xl: 2;
- --spacing-multiplier-xxl: 4;
- --spacing-fluid-min: 1.125rem;
- --spacing-fluid-max: 3rem;
+ --spacing-multiplier-lg: 2;
+ --spacing-multiplier-xl: 3.25;
+ --spacing-multiplier-xxl: 5.25;
+ --spacing-fluid-min: 1rem;
+ --spacing-fluid-max: 1.5rem;
  --spacing-fluid-min-viewport: 360px;
  --spacing-fluid-max-viewport: 1280px;
 
@@ -114,13 +118,14 @@
   /* Block */
   /* -------------------- */
  --card-bg: var(--color-bg-neutral);
- --card-border-color: var(--color-border-subtle);
+ --card-border: var(--color-border-subtle);
  --card-radius: var(--border-radius-medium);
  --card-padding: var(--space-md);
  --button-padding-x: var(--space-sm);
  --button-padding-y: var(--space-xs);
  --button-radius: var(--border-radius-medium);
  --button-color: var(--color-text-primary);
+ --button-text: var(--color-text-primary);
  --button-bg: var(--color-bg-primary);
  --button-hover-background: var(--color-bg-primary-hover);
 
@@ -134,4 +139,6 @@
  --cluster-align: center;
  --center-max-width: 72ch;
  --center-padding-inline: var(--space-md);
+ --switcher-modifier: var(--breakpoint-md);
+ --switcher-gap: var(--space-sm);
 }

@@ -15,6 +15,10 @@
       "center": {
         "maxWidth": { "value": "72ch" },
         "paddingInline": { "value": "var(--space-md)" }
+      },
+      "switcher": {
+        "modifier": { "value": "var(--breakpoint-md)" },
+        "gap": { "value": "var(--space-sm)" }
       }
     }
   }

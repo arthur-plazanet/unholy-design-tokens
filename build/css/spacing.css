@@ -1,6 +1,6 @@
 :root {
   /* Fluid base space unit (Utopia-style) */
-  --space-unit: clamp(1.125rem, calc(1.125rem + 1.8750 * ((100vw - 360px) / 920)), 3rem);
+  --space-unit: clamp(1rem, calc(1rem + 0.5000 * ((100vw - 360px) / 920)), 1.5rem);
 
   /* Spacing scale derived from primitives.spacing.* */
 }

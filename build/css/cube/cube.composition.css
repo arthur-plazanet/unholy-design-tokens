@@ -10,4 +10,6 @@
   --cube-composition-cluster-align: center;
   --cube-composition-center-max-width: 72ch;
   --cube-composition-center-padding-inline: var(--space-md);
+  --cube-composition-switcher-modifier: var(--breakpoint-md);
+  --cube-composition-switcher-gap: var(--space-sm);
 }
