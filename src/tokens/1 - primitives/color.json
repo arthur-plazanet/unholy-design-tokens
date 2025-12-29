@@ -1,220 +1,266 @@
 {
   "color": {
-    "arylide-yellow": {
+    "straw-gold": {
       "100": {
-        "value": "#f9f3e1",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#FBEFD2FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "200": {
-        "value": "#f4e8c3",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#E3C567FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "300": {
-        "value": "#eedca5",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#B79F52FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "400": {
-        "value": "#e9d086",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#8D7A3DFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "500": {
-        "value": "#e3c567",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
-      },
-      "DEFAULT": {
-        "value": "#e3c567",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#65572AFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "600": {
-        "value": "#d9af30",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#403718FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "700": {
-        "value": "#a8861f",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#1E1908FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "800": {
-        "value": "#705915",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#0A0600FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "900": {
-        "value": "#382d0a",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#030200FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "base": {
+        "value": "#E3C567FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       }
     },
-    "night": {
+    "graphite": {
       "100": {
-        "value": "#cdd0d0",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#DCE0DCFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "200": {
-        "value": "#9aa2a2",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#B5B8B5FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "300": {
-        "value": "#697272",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#8F928FFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "400": {
-        "value": "#3b4040",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#6B6D6BFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "500": {
-        "value": "#0b0c0c",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
-      },
-      "DEFAULT": {
-        "value": "#0b0c0c",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#494B49FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "600": {
-        "value": "#0a0b0b",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#2A2B2AFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "700": {
-        "value": "#070808",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#101110FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "800": {
-        "value": "#050505",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#050505FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "900": {
-        "value": "#020303",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#010101FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "base": {
+        "value": "#2A2B2AFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       }
     },
-    "battleship_gray": {
+    "intense-cherry": {
       "100": {
-        "value": "#ebebeb",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#FBEEEEFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "200": {
-        "value": "#d6d6d6",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#F3CBCCFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "300": {
-        "value": "#c2c2c2",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#EA9799FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "400": {
-        "value": "#adadad",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#E4595DFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "500": {
-        "value": "#999999",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
-      },
-      "DEFAULT": {
-        "value": "#999999",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#B4363BFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "600": {
-        "value": "#7a7a7a",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#7A2225FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "700": {
-        "value": "#5c5c5c",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#450F11FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "800": {
-        "value": "#3d3d3d",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#1C0304FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "900": {
-        "value": "#1f1f1f",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#060001FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "base": {
+        "value": "#B4363BFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       }
     },
-    "white_smoke": {
+    "vanilla-custard": {
       "100": {
-        "value": "#fdfdfd",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#EDDA9FFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "200": {
-        "value": "#fbfbfb",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#C2B382FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "300": {
-        "value": "#f9f9f9",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#998D65FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "400": {
-        "value": "#f7f7f7",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#72694BFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "500": {
-        "value": "#f5f5f5",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
-      },
-      "DEFAULT": {
-        "value": "#f5f5f5",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#4E4731FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "600": {
-        "value": "#c4c4c4",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#2C271AFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "700": {
-        "value": "#939393",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#131109FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
+
       "800": {
-        "value": "#626262",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#040302FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       },
       "900": {
-        "value": "#313131",
-        "attributes": { "tokenLevel": "primitive" },
-        "type": "color"
+        "value": "#010101FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "base": {
+        "value": "#EDDA9FFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
       }
     },
-    "shadow": {
-      "dark": { "value": "#616970" },
-      "light": { "value": "rgba(255, 255, 255, 0.25)" }
-    },
-    "attributes": {
-      "tokenLevel": "primitives"
-    },
-    "$tokenLevel": "primitives"
+    "vanilla-cream": {
+      "100": {
+        "value": "#F7EED3FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "200": {
+        "value": "#D6C68CFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "300": {
+        "value": "#AC9F70FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "400": {
+        "value": "#857A55FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "500": {
+        "value": "#5F573BFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "600": {
+        "value": "#3B3624FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "700": {
+        "value": "#1B180EFF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+
+      "800": {
+        "value": "#060503FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "900": {
+        "value": "#010101FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      },
+      "base": {
+        "value": "#F7EED3FF",
+        "type": "color",
+        "attributes": { "tokenTier": "primitive" }
+      }
+    }
   }
 }

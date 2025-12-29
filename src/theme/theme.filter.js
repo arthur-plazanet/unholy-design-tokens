@@ -1,18 +1,24 @@
 const themeCategories = [
-  'space',
-  'spacing',
-  'border',
-  'border',
-  'shadow',
-  'breakpoint',
-  'font',
-  'text',
-  'component',
-  'cube',
+  "space",
+  "spacing",
+  "border",
+  "border",
+  "shadow",
+  "breakpoint",
+  "font",
+  "text",
+  "component",
+  "cube",
+  "body",
+  "heading",
+
+  // Components
+  "components",
+  "highlighted-text",
 ];
 
 const excludeTypes = [
-  'utility',
+  "utility",
   // add more types to exclude from theme if needed
 ];
 /**

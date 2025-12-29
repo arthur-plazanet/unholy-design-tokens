@@ -1,25 +1,5 @@
-import { usesReferences, getReferences } from "style-dictionary/utils";
-
-export const themeTypesFormatter = {
-  name: "typescript/theme-declarations",
-  format: function ({ dictionary }) {
-    const props = dictionary.allTokens;
-    const types = props.map((token) => `${token.name}: string;`).join("\n");
-
-    return `export interface YThemeToken {\n${types}\n}\n`;
-  },
-};
-
-const toKebab = (s) =>
-  s
-    .replace(/_/g, "-")
-    .replace(/\./g, "-")
-    .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
-    .toLowerCase();
-
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
+import { generateHeader } from "../../utils/template.js";
+import { toKebab } from "../../utils/helpers.js";
 
 /**
  * Build public/private CSS var names from tokens.
@@ -39,113 +19,22 @@ function capitalizeFirstLetter(string) {
  *   - composition/stack/gap  → --stack-gap
  *   - utility/spacing/mt-0   → --utility-spacing-mt-0
  *
- *   Private vars are the same but prefixed with "--_".
  */
-export const cubeCssVariablesLayerFormatter = {
-  name: "cube/css-variables-layer",
-  format: ({ dictionary, options }) => {
-    const toks = [];
-    dictionary.allTokens.forEach((p) => {
-      console.log("📟 - p → ", p);
-      const attrs = p.attributes || {};
-      console.log("📟 - attrs → ", attrs);
-      const path = p.path || [];
-
-      let publicName;
-
-      if (attrs.category === "cube") {
-        const area = attrs.type; // "block", "composition", "utility", ...
-        const element = attrs.item; // "card", "stack", "cluster", ...
-        const prop =
-          attrs.subitem || attrs.state || attrs.role || path[3] || null;
-
-        console.log("📟 - area → ", area);
-        if (area === "block") {
-          // block/card/background → --block-card-background
-          if (prop) {
-            publicName = `--block-${toKebab(element)}-${toKebab(prop)}`;
-          } else {
-            publicName = `--block-${toKebab(element)}`;
-          }
-        } else if (area === "composition") {
-          // composition/stack/gap → --stack-gap
-          // composition/cluster/gap → --cluster-gap
-          if (prop) {
-            publicName = `--${toKebab(element)}-${toKebab(prop)}`;
-          } else {
-            publicName = `--${toKebab(element)}`;
-          }
-        } else if (area === "utility") {
-          return formatCubeUtility(p);
-        }
-      } else {
-        // Non-cube tokens: keep the original type-item-subitem pattern
-        const type = attrs.type || path[0];
-        const item = attrs.item || path[1] || "default";
-        const subitem = attrs.subitem;
-
-        const base = subitem
-          ? `${item}-${subitem}`
-          : `${item}-${subitem ? subitem : ""}`.replace(/-$/, "");
-
-        publicName = `--${toKebab(base)}`;
-      }
-
-      const privateName = publicName.replace(/^--/, "--_");
-
-      toks.push({
-        publicName,
-        privateName,
-        value: p.value,
-        type: attrs.type,
-      });
+export function generateThemeCubeCSS(tokens) {
+  return tokens
+    .filter((p) => p.attributes?.category === "cube")
+    .map((p) => {
+      return generateThemeCubeCSSVariables(p);
     });
-    return toks;
-  },
-};
+}
 
 export function generateThemeCubeCSSVariables(token) {
   const p = token;
-  console.log("📟 - p → ", p);
   const attrs = p.attributes || {};
-  console.log("📟 - attrs → ", attrs);
   const path = p.path || [];
 
   let publicName;
 
-  // if (attrs.category === 'cube') {
-  const area = attrs.type; // "block", "composition", "utility", ...
-  const element = attrs.item; // "card", "stack", "cluster", ...
-  const prop = attrs.subitem || attrs.state || attrs.role || path[3] || null;
-
-  // if (area === 'block') {
-  //   // block/card/background → --block-card-background
-  //   if (prop) {
-  //     publicName = `--block-${toKebab(element)}-${toKebab(prop)}`;
-  //   } else {
-  //     publicName = `--block-${toKebab(element)}`;
-  //   }
-  // } else if (area === 'composition') {
-  //   // composition/stack/gap → --stack-gap
-  //   // composition/cluster/gap → --cluster-gap
-  //   if (prop) {
-  //     publicName = `--${toKebab(element)}-${toKebab(prop)}`;
-  //   } else {
-  //     publicName = `--${toKebab(element)}`;
-  //   }
-  // } else {
-  //   // fallback for other cube types, e.g. utility/spacing/mt-0 → --utility-spacing-mt-0
-  //   if (prop) {
-  //     publicName = `--${toKebab(area)}-${toKebab(element)}-${toKebab(
-  //       prop
-  //     )}`;
-  //   } else {
-  //     publicName = `--${toKebab(area)}-${toKebab(element)}`;
-  //   }
-  // }
-  // } else {
-  // Non-cube tokens: keep the original type-item-subitem pattern
-  const type = attrs.type || path[0];
   const item = attrs.item || path[1] || "default";
   const subitem = attrs.subitem;
 
@@ -158,7 +47,6 @@ export function generateThemeCubeCSSVariables(token) {
     : `${item}-${subitem ? subitem : ""}`.replace(/-$/, "");
 
   publicName = `--${toKebab(base)}`;
-  // }
 
   const privateName = publicName.replace(/^--/, "--_");
 
@@ -171,48 +59,48 @@ export function generateThemeCubeCSSVariables(token) {
   };
 }
 
-export function generateThemeCubeCSS(tokens) {
-  console.log("📟 - tokens → ", tokens);
-  const toks = [];
-  return tokens
-    .filter((p) => p.attributes?.category === "cube")
-    .map((p) => {
-      console.log("📟 - p → ", p);
-      return generateThemeCubeCSSVariables(p);
-    });
-}
-
+/**
+ * CUBE: Utility → @layer utilities
+ * Generate utility classes from tokens.
+ */
 export const cubeUtilityFormatter = {
   name: "cube/utility",
-  format: ({ dictionary, options }) => {
-    return dictionary.allTokens
-      .filter(
-        (token) =>
-          token.attributes?.category === "cube" &&
-          token.attributes?.type === "utility",
-      )
-      .map((token) => generateCubeUtilityClass(token))
-      .join("\n");
+  format: ({ dictionary }) => {
+    let content = "";
+    const usedItems = new Set();
+    dictionary.allTokens.forEach((token) => {
+      const item = token.attributes?.item;
+      if (item && !usedItems.has(item)) {
+        usedItems.add(item);
+        content += generateHeader(item);
+      }
+      content += generateCubeUtilityClass(token);
+    });
+    return content;
   },
 };
 
 export function generateCubeUtilityClass(token) {
-  console.log("📟 - token → ", token);
   // fallback for other cube types, e.g. utility/spacing/mt-0 → --utility-spacing-mt-0
   const attrs = token.attributes || {};
-  console.log("📟 - attrs → ", attrs);
   const path = token.path || [];
-  const item = attrs.item || path[1] || "default";
-  const subitem = attrs.subitem ? `-${attrs.subitem}` : "";
+  const item = attrs.item || path[1] || "";
+  let className = "";
+
+  const hideItems = ["display"];
+
+  if (!hideItems.includes(item)) {
+    className = `${item}-`;
+  } else {
+    className = ``;
+  }
+
+  const subitem = attrs.subitem ? `${attrs.subitem}` : "";
   const state = attrs.state ? `-${attrs.state}` : "";
-  let className = `${item}${subitem}${state}`;
-  console.log("📟 - subitem → ", subitem);
-  // let className = subitem;
+  className = `${className}${subitem}${state}`;
   className = `.${toKebab(className)}`;
-  console.log("📟 - className → ", className);
 
   const classCssContent = `${token.value}`;
-  console.log("📟 - classCssContent → ", classCssContent);
 
-  return `${className} { ${classCssContent} }`;
+  return `${className} { ${classCssContent} } \n`;
 }

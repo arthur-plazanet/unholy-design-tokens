@@ -1,37 +1,104 @@
-.margin-t-0 { margin-block-start: 0 }
-.margin-t-xs { margin-block-start: var(--space-xs) }
-.margin-t-sm { margin-block-start: var(--space-sm) }
-.margin-t-md { margin-block-end: var(--space-md) }
-.margin-t-lg { margin-block-end: var(--space-lg) }
-.margin-t-xl { margin-block-start: var(--space-xl) }
-.margin-b-0 { margin-block-end: 0 }
-.margin-b-xs { margin-block-end: var(--space-xs) }
-.margin-b-sm { margin-block-end: var(--space-sm) }
-.margin-b-md { margin-block-end: var(--space-md) }
-.margin-b-lg { margin-block-end: var(--space-lg) }
-.margin-b-xl { margin-block-end: var(--space-xl) }
-.margin-auto { margin: auto }
-.padding-xs { padding: var(--space-xs) }
-.padding-sm { padding: var(--space-sm) }
-.padding-md { padding: var(--space-md) }
-.padding-lg { padding: var(--space-lg) }
-.padding-xl { padding: var(--space-xl) }
-.padding-x-0 { padding-inline: 0 }
-.padding-x-sm { padding-inline: var(--space-sm) }
-.padding-y-md { padding-block: var(--space-md) }
-.display-flex { display: flex }
-.display-grid { display: grid }
-.text-center { text-align: center }
-.text-dim { opacity: 0.7 }
-.border-theme-10 { border: var(--border-width-10) solid var(--color-border-theme) }
-.border-theme-25 { border: var(--border-width-25) solid var(--color-border-theme) }
-.border-theme-50 { border: var(--border-width-50) solid var(--color-border-theme) }
-.border-theme-75 { border: var(--border-width-75) solid var(--color-border-theme) }
-.border-theme-100 { border: var(--border-width-100) solid var(--color-border-theme) }
-.border-width-10 { border-width: var(--border-width-10) }
-.border-width-25 { border-width: var(--border-width-25) }
-.border-width-50 { border-width: var(--border-width-50) }
-.border-width-75 { border-width: var(--border-width-75) }
-.border-radius-light { border-radius: var(--border-radius-light) }
-.border-radius-medium { border-radius: var(--border-radius-medium) }
-.border-radius-heavy { border-radius: var(--border-radius-heavy) }
+
+/* ------------------------------------------------------------ */
+/*                            Margin                            */
+/* ------------------------------------------------------------ */
+.margin-t-0 { margin-block-start: 0 } 
+.margin-t-xs { margin-block-start: var(--space-xs) } 
+.margin-t-sm { margin-block-start: var(--space-sm) } 
+.margin-t-md { margin-block-end: var(--space-md) } 
+.margin-t-lg { margin-block-end: var(--space-lg) } 
+.margin-t-xl { margin-block-start: var(--space-xl) } 
+.margin-b-0 { margin-block-end: 0 } 
+.margin-b-xs { margin-block-end: var(--space-xs) } 
+.margin-b-sm { margin-block-end: var(--space-sm) } 
+.margin-b-md { margin-block-end: var(--space-md) } 
+.margin-b-lg { margin-block-end: var(--space-lg) } 
+.margin-b-xl { margin-block-end: var(--space-xl) } 
+.margin-auto { margin: auto } 
+
+/* ------------------------------------------------------------ */
+/*                           Position                           */
+/* ------------------------------------------------------------ */
+.position-relative { position: relative } 
+.position-absolute { position: absolute } 
+.position-fixed { position: fixed } 
+.position-top-0 { top: 0 } 
+.position-right-0 { right: 0 } 
+.position-bottom-0 { bottom: 0 } 
+.position-left-0 { left: 0 } 
+
+/* ------------------------------------------------------------ */
+/*                           Display                           */
+/* ------------------------------------------------------------ */
+.none { display: none } 
+.block { display: block } 
+.inline-block { display: inline-block } 
+.grid { display: grid } 
+.flex { display: flex } 
+.sticky { position: sticky } 
+
+/* ------------------------------------------------------------ */
+/*                            Align                            */
+/* ------------------------------------------------------------ */
+.align-start { align-items: flex-start } 
+.align-end { align-items: flex-end } 
+.align-center { align-items: center } 
+.align-justify-center { justify-content: center } 
+
+/* ------------------------------------------------------------ */
+/*                           Justify                           */
+/* ------------------------------------------------------------ */
+.justify-start { justify-content: flex-start } 
+.justify-end { justify-content: flex-end } 
+.justify-center { justify-content: center } 
+.justify-between { justify-content: space-between } 
+
+/* ------------------------------------------------------------ */
+/*                             Flex                             */
+/* ------------------------------------------------------------ */
+.flex-column { flex-direction: column } 
+.flex-row { flex-direction: row } 
+.flex-wrap { flex-wrap: wrap } 
+
+/* ------------------------------------------------------------ */
+/*                             Gap                             */
+/* ------------------------------------------------------------ */
+.gap-xs { gap: var(--space-xs) } 
+.gap-sm { gap: var(--space-sm) } 
+.gap-md { gap: var(--space-md) } 
+.gap-lg { gap: var(--space-lg) } 
+.gap-xl { gap: var(--space-xl) } 
+
+/* ------------------------------------------------------------ */
+/*                           Padding                           */
+/* ------------------------------------------------------------ */
+.padding-xs { padding: var(--space-xs) } 
+.padding-sm { padding: var(--space-sm) } 
+.padding-md { padding: var(--space-md) } 
+.padding-lg { padding: var(--space-lg) } 
+.padding-xl { padding: var(--space-xl) } 
+.padding-x-0 { padding-inline: 0 } 
+.padding-x-sm { padding-inline: var(--space-sm) } 
+.padding-y-md { padding-block: var(--space-md) } 
+
+/* ------------------------------------------------------------ */
+/*                             Text                             */
+/* ------------------------------------------------------------ */
+.text-center { text-align: center } 
+.text-dim { opacity: 0.7 } 
+
+/* ------------------------------------------------------------ */
+/*                            Border                            */
+/* ------------------------------------------------------------ */
+.border-theme { border: var(--border-width) solid var(--color-border-theme) } 
+.border-width-10 { border-width: var(--border-width-10) } 
+.border-width-25 { border-width: var(--border-width-25) } 
+.border-width-50 { border-width: var(--border-width-50) } 
+.border-width-75 { border-width: var(--border-width-75) } 
+
+/* ------------------------------------------------------------ */
+/*                            Radius                            */
+/* ------------------------------------------------------------ */
+.radius-light { border-radius: var(--border-radius-light) } 
+.radius-medium { border-radius: var(--border-radius-medium) } 
+.radius-heavy { border-radius: var(--border-radius-heavy) } 

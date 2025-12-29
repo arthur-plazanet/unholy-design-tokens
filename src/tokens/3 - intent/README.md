@@ -6,7 +6,7 @@ This is the **developer-facing API** for stateful components.
 
 ```css
 --color-bg-primary: var(--color-primary-500) /* will resolve to semantic var */
---color-bg-secondary: var(--color-secondary-500); /* will resolve to semantic var */
+  --color-bg-secondary: var(--color-secondary-500); /* will resolve to semantic var */
 --spacing-unit: var(--spacing-unit);
 /* ... */
 ```
@@ -45,20 +45,6 @@ Everything else (shadows, spacing, radii…) is usually standardized in the prev
 - **MUST NOT reference primitives**
 - **MUST NOT contain raw values**
 - **Names reflect UX meaning, not visual result**
-
-## Example
-
-```jsonc
-{
-  "color": {
-    "success": {
-      "surface": { "value": "{semantic.color.surface.positive}" },
-      "border": { "value": "{semantic.color.border.positive}" },
-      "text": { "value": "{semantic.color.text.positive}" }
-    }
-  }
-}
-```
 
 ## Next Steps
 

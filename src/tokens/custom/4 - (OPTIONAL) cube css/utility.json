@@ -16,6 +16,47 @@
         "b-xl": { "value": "margin-block-end: var(--space-xl)" },
         "auto": { "value": "margin: auto" }
       },
+      "position": {
+        "relative": { "value": "position: relative" },
+        "absolute": { "value": "position: absolute" },
+        "fixed": { "value": "position: fixed" },
+        "top-0": { "value": "top: 0" },
+        "right-0": { "value": "right: 0" },
+        "bottom-0": { "value": "bottom: 0" },
+        "left-0": { "value": "left: 0" }
+      },
+      "display": {
+        "none": { "value": "display: none" },
+        "block": { "value": "display: block" },
+        "inline-block": { "value": "display: inline-block" },
+        "grid": { "value": "display: grid" },
+        "flex": { "value": "display: flex" },
+        "sticky": { "value": "position: sticky" }
+      },
+      "align": {
+        "start": { "value": "align-items: flex-start" },
+        "end": { "value": "align-items: flex-end" },
+        "center": { "value": "align-items: center" },
+        "justify-center": { "value": "justify-content: center" }
+      },
+      "justify": {
+        "start": { "value": "justify-content: flex-start" },
+        "end": { "value": "justify-content: flex-end" },
+        "center": { "value": "justify-content: center" },
+        "between": { "value": "justify-content: space-between" }
+      },
+      "flex": {
+        "column": { "value": "flex-direction: column" },
+        "row": { "value": "flex-direction: row" },
+        "wrap": { "value": "flex-wrap: wrap" }
+      },
+      "gap": {
+        "xs": { "value": "gap: var(--space-xs)" },
+        "sm": { "value": "gap: var(--space-sm)" },
+        "md": { "value": "gap: var(--space-md)" },
+        "lg": { "value": "gap: var(--space-lg)" },
+        "xl": { "value": "gap: var(--space-xl)" }
+      },
       "padding": {
         "xs": { "value": "padding: var(--space-xs)" },
         "sm": { "value": "padding: var(--space-sm)" },
@@ -26,16 +67,14 @@
         "x-sm": { "value": "padding-inline: var(--space-sm)" },
         "y-md": { "value": "padding-block: var(--space-md)" }
       },
-      "display": {
-        "flex": { "value": "display: flex" },
-        "grid": { "value": "display: grid" }
-      },
+
       "text": {
         "center": { "value": "text-align: center" },
         "dim": { "value": "opacity: 0.7" }
       },
       "border": {
         "theme": {
+          "value": "border: var(--border-width) solid var(--color-border-theme)",
           "10": {
             "value": "border: var(--border-width-10) solid var(--color-border-theme)"
           },
@@ -65,12 +104,12 @@
           "75": {
             "value": "border-width: var(--border-width-75)"
           }
-        },
-        "radius": {
-          "light": { "value": "border-radius: var(--border-radius-light)" },
-          "medium": { "value": "border-radius: var(--border-radius-medium)" },
-          "heavy": { "value": "border-radius: var(--border-radius-heavy)" }
         }
+      },
+      "radius": {
+        "light": { "value": "border-radius: var(--border-radius-light)" },
+        "medium": { "value": "border-radius: var(--border-radius-medium)" },
+        "heavy": { "value": "border-radius: var(--border-radius-heavy)" }
       }
     }
   }

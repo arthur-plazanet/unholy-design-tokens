@@ -1,3 +1,10 @@
+const toKebab = (s) =>
+  s
+    .replace(/_/g, "-")
+    .replace(/\./g, "-")
+    .replace(/([a-z0-9])([A-Z])/g, "$1-$2")
+    .toLowerCase();
+
 export const spacingFluid = {
   name: "css/spacing-fluid",
   format: ({ dictionary }) => {
@@ -17,9 +24,7 @@ export const spacingFluid = {
 };
 
 export function generateFluidSpacing(tokens) {
-  console.log("📟 - tokens → ", tokens);
   let content = `${generateFluidSpaceUnit(tokens)}\n`;
-  console.log("📟 - content → ", content);
 
   content += tokens
     .filter(

@@ -1,22 +1,22 @@
 export function isPrimitiveColor(token) {
-  if (token.attributes?.tokenLevel)
+  if (token.attributes?.tokenTier)
     return (
-      token.attributes?.tokenLevel === 'primitive' &&
-      token.attributes?.category === 'color'
+      token.attributes?.tokenTier === "primitive" &&
+      token.attributes?.category === "color"
     );
 }
 
 export function isSemanticColor(token) {
   return (
-    token.attributes?.tokenLevel === 'semantic' &&
-    token.attributes?.category === 'color'
+    token.attributes?.tokenTier === "semantic" &&
+    token.attributes?.category === "color"
   );
 }
 
 export function isIntentColor(token) {
   return (
-    token.attributes?.tokenLevel === 'intent' &&
-    token.attributes?.category === 'color'
+    token.attributes?.tokenTier === "intent" &&
+    token.attributes?.category === "color"
   );
 }
 

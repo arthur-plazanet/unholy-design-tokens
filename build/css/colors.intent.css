@@ -1,13 +1,11 @@
-/**
- * Do not edit directly, this file was auto-generated.
- */
-
+ /* Collection name: Color Intents */
+ /* Mode: Light */
 :root {
   --color-bg-elevated: #ffffff;
   --color-text-on-primary: #ffffff;
   --color-text-on-accent: #ffffff;
   --color-text-on-neutral-strong: #ffffff;
-  --color-bg-page: var(--color-secondary-100);
+  --color-bg-page: var(--color-secondary-base);
   --color-bg-subtle: var(--color-secondary-100);
   --color-bg-inset: var(--color-secondary-200);
   --color-bg-primary: var(--color-primary-500);
@@ -39,4 +37,5 @@
   --color-border-info: var(--color-accent-200);
   --color-border-warning: var(--color-primary-200);
   --color-border-success: var(--color-neutral-200);
+  --color-feedback-error: var(--color-accent-base);
 }

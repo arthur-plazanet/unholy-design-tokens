@@ -38,14 +38,15 @@ declare const tokens: {
     };
   };
   breakpoint: {
-    mobile: DesignToken;
-    tablet: DesignToken;
-    desktop: DesignToken;
-    desktop_xl: DesignToken;
-    desktop_xxl: DesignToken;
+    xs: DesignToken;
+    sm: DesignToken;
+    md: DesignToken;
+    lg: DesignToken;
+    xl: DesignToken;
+    xxl: DesignToken;
   };
   color: {
-    "arylide-yellow": {
+    "straw-gold": {
       "100": DesignToken;
       "200": DesignToken;
       "300": DesignToken;
@@ -55,9 +56,9 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
-      DEFAULT: DesignToken;
+      base: DesignToken;
     };
-    night: {
+    graphite: {
       "100": DesignToken;
       "200": DesignToken;
       "300": DesignToken;
@@ -67,9 +68,9 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
-      DEFAULT: DesignToken;
+      base: DesignToken;
     };
-    battleship_gray: {
+    "intense-cherry": {
       "100": DesignToken;
       "200": DesignToken;
       "300": DesignToken;
@@ -79,9 +80,9 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
-      DEFAULT: DesignToken;
+      base: DesignToken;
     };
-    white_smoke: {
+    "vanilla-custard": {
       "100": DesignToken;
       "200": DesignToken;
       "300": DesignToken;
@@ -91,13 +92,20 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
-      DEFAULT: DesignToken;
+      base: DesignToken;
     };
-    shadow: {
-      dark: DesignToken;
-      light: DesignToken;
+    "vanilla-cream": {
+      "100": DesignToken;
+      "200": DesignToken;
+      "300": DesignToken;
+      "400": DesignToken;
+      "500": DesignToken;
+      "600": DesignToken;
+      "700": DesignToken;
+      "800": DesignToken;
+      "900": DesignToken;
+      base: DesignToken;
     };
-    attributes: {};
     primary: {
       "100": DesignToken;
       "200": DesignToken;
@@ -108,6 +116,7 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
+      base: DesignToken;
       bg: {
         hue: DesignToken;
         lightness: DesignToken;
@@ -134,6 +143,7 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
+      base: DesignToken;
       bg: {
         hue: DesignToken;
         lightness: DesignToken;
@@ -160,6 +170,7 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
+      base: DesignToken;
     };
     neutral: {
       "100": DesignToken;
@@ -171,6 +182,7 @@ declare const tokens: {
       "700": DesignToken;
       "800": DesignToken;
       "900": DesignToken;
+      base: DesignToken;
     };
     theme: {
       "100": DesignToken;
@@ -183,6 +195,7 @@ declare const tokens: {
       "800": DesignToken;
       "900": DesignToken;
       DEFAULT: DesignToken;
+      base: DesignToken;
     };
     bg: {
       page: DesignToken;
@@ -238,6 +251,9 @@ declare const tokens: {
       lightness: DesignToken;
       opacity: DesignToken;
     };
+    feedback: {
+      error: DesignToken;
+    };
     danger: {
       bg: {
         hue: DesignToken;
@@ -255,6 +271,7 @@ declare const tokens: {
         opacity: DesignToken;
       };
     };
+    attributes: {};
   };
   font: {
     scale: {
@@ -305,6 +322,15 @@ declare const tokens: {
       max_viewport: DesignToken;
     };
   };
+  space: {
+    xxs: DesignToken;
+    xs: DesignToken;
+    sm: DesignToken;
+    md: DesignToken;
+    lg: DesignToken;
+    xl: DesignToken;
+    xxl: DesignToken;
+  };
   text: {
     body: {
       size: DesignToken;
@@ -312,6 +338,11 @@ declare const tokens: {
       weight: DesignToken;
     };
     caption: {
+      size: DesignToken;
+      lineHeight: DesignToken;
+      weight: DesignToken;
+    };
+    small: {
       size: DesignToken;
       lineHeight: DesignToken;
       weight: DesignToken;
@@ -329,14 +360,13 @@ declare const tokens: {
       weight: DesignToken;
     };
   };
-  space: {
-    xxs: DesignToken;
-    xs: DesignToken;
-    sm: DesignToken;
-    md: DesignToken;
-    lg: DesignToken;
-    xl: DesignToken;
-    xxl: DesignToken;
+  conditional: {
+    "not-primary": DesignToken;
+    "not-secondary": DesignToken;
+    "not-danger": DesignToken;
+    light: DesignToken;
+    threshold: DesignToken;
+    switch: DesignToken;
   };
   cube: {
     block: {
@@ -393,6 +423,47 @@ declare const tokens: {
         "b-xl": DesignToken;
         auto: DesignToken;
       };
+      position: {
+        relative: DesignToken;
+        absolute: DesignToken;
+        fixed: DesignToken;
+        "top-0": DesignToken;
+        "right-0": DesignToken;
+        "bottom-0": DesignToken;
+        "left-0": DesignToken;
+      };
+      display: {
+        none: DesignToken;
+        block: DesignToken;
+        "inline-block": DesignToken;
+        grid: DesignToken;
+        flex: DesignToken;
+        sticky: DesignToken;
+      };
+      align: {
+        start: DesignToken;
+        end: DesignToken;
+        center: DesignToken;
+        "justify-center": DesignToken;
+      };
+      justify: {
+        start: DesignToken;
+        end: DesignToken;
+        center: DesignToken;
+        between: DesignToken;
+      };
+      flex: {
+        column: DesignToken;
+        row: DesignToken;
+        wrap: DesignToken;
+      };
+      gap: {
+        xs: DesignToken;
+        sm: DesignToken;
+        md: DesignToken;
+        lg: DesignToken;
+        xl: DesignToken;
+      };
       padding: {
         xs: DesignToken;
         sm: DesignToken;
@@ -403,42 +474,35 @@ declare const tokens: {
         "x-sm": DesignToken;
         "y-md": DesignToken;
       };
-      display: {
-        flex: DesignToken;
-        grid: DesignToken;
-      };
       text: {
         center: DesignToken;
         dim: DesignToken;
       };
       border: {
-        theme: {
-          "10": DesignToken;
-          "25": DesignToken;
-          "50": DesignToken;
-          "75": DesignToken;
-          "100": DesignToken;
-        };
+        theme: DesignToken;
         width: {
           "10": DesignToken;
           "25": DesignToken;
           "50": DesignToken;
           "75": DesignToken;
         };
-        radius: {
-          light: DesignToken;
-          medium: DesignToken;
-          heavy: DesignToken;
-        };
+      };
+      radius: {
+        light: DesignToken;
+        medium: DesignToken;
+        heavy: DesignToken;
       };
     };
   };
-  "not-primary": DesignToken;
-  "not-secondary": DesignToken;
-  "not-danger": DesignToken;
-  light: DesignToken;
-  threshold: DesignToken;
-  switch: DesignToken;
+  "highlighted-text": {
+    gap: {
+      min: DesignToken;
+      max: DesignToken;
+      scaler: DesignToken;
+      _: DesignToken;
+    };
+  };
+  attributes: {};
   state: {
     bg: {
       lightness: DesignToken;
@@ -539,7 +603,6 @@ declare const tokens: {
       opacity: DesignToken;
     };
   };
-  attributes: {};
   variant: {
     contained: {
       bg: {

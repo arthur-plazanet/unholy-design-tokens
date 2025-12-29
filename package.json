@@ -5,13 +5,12 @@
   "main": "build.js",
   "type": "module",
   "scripts": {
-    "build": "style-dictionary build --config src/style-dictionary.config.js",
-    "build:verbose": "style-dictionary build --config src/style-dictionary.config.js --verbose",
     "clean": "rm -rf build",
     "tokens:typography": "node scripts/generate-typography-tokens.js",
-    "tokens:build": "pnpm tokens:typography && node --loader ts-node/esm ./node_modules/.bin/style-dictionary",
-    "tokens:build1": "node --loader ts-node/esm src/style-dictionary.config.ts build",
-    "build": "node src/build-tokens.js",
+    "build-tokens": "node scripts/generate-typography-tokens.js && node src/build-tokens.js ",
+    "build-tokens:verbose": "node scripts/generate-typography-tokens.js && node src/build-tokens.js --verbose",
+    "build": "build-tokens -- --buildPath=./build/ --source=./src/tokens/ --destination=./build/ --test",
+    "build:verbose": "pnpm exec bin/build-tokens.js --verbose",
     "lint": "eslint .",
     "format": "prettier --write src/**/*.ts src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +18,6 @@
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@types/node": "24.5.1",
     "@eslint/css": "^0.14.1",
     "@eslint/js": "^9.39.2",
     "@eslint/json": "^0.14.0",
@@ -31,10 +29,12 @@
     "prettier": "3.7.4",
     "style-dictionary": "^4.0.0-prerelease.30",
     "tinycolor2": "1.6.0",
-    "typescript": "5.9.3",
     "typescript-eslint": "^8.50.0"
   },
   "bin": {
     "build-tokens": "./bin/build-tokens.js"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
   }
 }

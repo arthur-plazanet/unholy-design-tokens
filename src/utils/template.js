@@ -1,43 +1,110 @@
-export { generateSectionHeader, generateSubheader };
+/**
+ * Utility functions for template generation.
+ * https://styledictionary.com/reference/hooks/formats/#using-a-template--templating-engine-to-create-a-format
+ */
+import { capitalizeFirstLetter } from "./helpers.js";
 
-function generateBlock(title, separator, indent = "") {
+export {
+  generateHeader,
+  generateSubheader,
+  formatInLayer,
+  generateFigmaHeaderReference,
+};
+
+const startComment = "/* ";
+const endComment = " */";
+const headerLength = 60;
+const subheaderLength = 20;
+const separatorChar = "-";
+const headerSeparator = " ";
+
+function generateSeparator(length) {
+  return `${startComment}${separatorChar.repeat(length)}${endComment}`;
+}
+
+/**
+ * Will generate a comment block like this:
+/* ------------------------------------------------------------ *\/
+/*                            Title                             *\/
+/* ------------------------------------------------------------ *\/
+ *
+ */
+function generateCommentBlock(title, totalLength, separatorChar, indent = "") {
+  let titleTotalLength = totalLength - title.length;
+  let halfLength = Math.floor(titleTotalLength / 2);
+  let titleSeparator = headerSeparator.repeat(halfLength);
+
+  if (totalLength % 2 !== 0) {
+    titleSeparator += separatorChar;
+  }
+
   return (
-    `\n${indent}${separator}\n` +
-    `${indent}/* ${title} */\n` +
-    `${indent}${separator}`
+    `\n${indent}${generateSeparator(totalLength)}` +
+    `\n${indent}${startComment}${titleSeparator}${title}${titleSeparator}${endComment}` +
+    `\n${indent}${generateSeparator(totalLength)}\n`
   );
 }
 
-const headerSeparator =
-  "/* ---------------------------------------------------- */";
+/**
+ * Generates a header comment block for a given header string.
+ * /* ------------------------------------------------------------ *\/
+ * /*                            Header                            *\/
+ * /* ------------------------------------------------------------ *\/
+ */
+function generateHeader(header) {
+  if (!header) return "";
 
-const subheaderSeparator = "  /* -------------------- */";
-
-function generateSectionHeader(type) {
-  if (!type) return "";
-
-  let title = `                       ${capitalizeFirstLetter(type)}                         `;
-
-  return (
-    "\n" +
-    generateBlock(
-      title,
-      "/* ---------------------------------------------------- */",
-      "",
-    )
+  return generateCommentBlock(
+    capitalizeFirstLetter(header),
+    headerLength,
+    separatorChar,
+    "",
   );
 }
 
-function generateSubheader(subtype) {
-  if (!subtype) return "";
+/**
+ * Generates a subheader comment block for a given subheader string.
+ * /* ---------------------- \/*
+ * /*       Subheader        *\/
+ * /* ---------------------- *\/
+ */
+function generateSubheader(subheader) {
+  if (!subheader) return "";
 
-  return generateBlock(
-    capitalizeFirstLetter(subtype),
-    "/* -------------------- */",
+  return generateCommentBlock(
+    capitalizeFirstLetter(subheader),
+    subheaderLength,
+    separatorChar,
     "  ",
   );
 }
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+/**
+ * Formats content within a CSS layer block.
+ * @layer name {
+ *   :root {
+ *     --variable: value;
+ *   }
+ * }
+ */
+function formatInLayer(name, content) {
+  let result = `@layer ${name} {`;
+  result += `\n`;
+  result += `  :root {`;
+  result += `\n`;
+  result += `${content}`;
+  result += `  }\n`;
+  result += `}\n`;
+  return result;
+}
+
+/**
+ * Generates a Figma header reference comment block
+ * /* Collection name: <collectionName> *\/
+ * /* Mode: <mode> *\/
+ *
+ * See https://www.figma.com/community/plugin/1470777269812001046/css-variables-import-export
+ */
+function generateFigmaHeaderReference(collectionName, mode = "Light") {
+  return `/* Collection name: ${collectionName} */\n/* Mode: ${mode} */`;
 }

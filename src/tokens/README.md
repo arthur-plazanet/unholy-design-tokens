@@ -90,7 +90,7 @@ See [src/tokens/2 - semantic](./2%20-%20semantic/README.md).
 
 ## 2️⃣ **Intent tokens**
 
-Tokens that describe **what a component needs**.
+Tokens that describe **what a component needs in the UI**. They refer closer to what a designer thinks when building a component.
 
 Example for a button:
 

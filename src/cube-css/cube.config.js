@@ -1,26 +1,18 @@
 import { formats, transformGroups } from "style-dictionary/enums";
-import {
-  cubeCssVariablesLayerFormatter,
-  cubeUtilityFormatter,
-} from "./formatters/cube-css.js";
+import { cubeUtilityFormatter } from "./formatters/cube-css.js";
 import StyleDictionary from "style-dictionary";
 
 const cubeBuildPath = "cube";
 
-const cubeFormat = "cube/css-variables-layer";
-
-StyleDictionary.registerFormat(cubeCssVariablesLayerFormatter);
 StyleDictionary.registerFormat(cubeUtilityFormatter);
 
 export default [
   // 2. CUBE: Composition → @layer objects
   {
     destination: `${cubeBuildPath}/cube.composition.css`,
-    // format: cubeFormat,
     format: formats.cssVariables,
 
     filter: (token) => {
-      console.log("📟 - token → ", token);
       return (
         token.attributes?.category === "cube" &&
         token.attributes?.type === "composition"
@@ -39,7 +31,6 @@ export default [
     format: formats.cssVariables,
 
     filter: (token) => {
-      console.log("📟 - token → ", token);
       return (
         token.attributes?.category === "cube" &&
         token.attributes?.type === "block"

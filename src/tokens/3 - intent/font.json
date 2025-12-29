@@ -21,6 +21,17 @@
       "weight": {
         "value": "var(--font-weight-regular)"
       }
+    },
+    "small": {
+      "size": {
+        "value": "var(--font-scale--1)"
+      },
+      "lineHeight": {
+        "value": "1.4"
+      },
+      "weight": {
+        "value": "var(--font-weight-regular)"
+      }
     }
   },
   "heading": {
