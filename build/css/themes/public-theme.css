@@ -192,8 +192,8 @@
   /*        Global        */
   /* -------------------- */
   --gutter: var(--layout-gutter-sm);
-  --is-on: initial;
-  --is-off: ;;
+  --on: initial;
+  --off: ;
 
   /* -------------------- */
   /*     Composition     */

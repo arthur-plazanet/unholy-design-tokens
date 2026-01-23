@@ -145,6 +145,7 @@
 .height-auto { height: auto } 
 .height-full { height: 100% } 
 .height-half { height: 50% } 
+.height-quarter { height: 25% } 
 .height-screen { height: 100svh } 
 
 /* ------------------------------------------------------------ */
@@ -153,4 +154,15 @@
 .width-auto { width: auto } 
 .width-full { width: 100% } 
 .width-half { width: 50% } 
+.width-quarter { width: 25% } 
 .width-screen { width: 100svw } 
+
+/* ------------------------------------------------------------ */
+/*                           Overflow                           */
+/* ------------------------------------------------------------ */
+.overflow-auto { overflow: auto } 
+.overflow-hidden { overflow: hidden } 
+.overflow-scroll { overflow: scroll } 
+.overflow-visible { overflow: visible } 
+.overflow-x-hidden { overflow-x: hidden } 
+.overflow-y-hidden { overflow-y: hidden } 

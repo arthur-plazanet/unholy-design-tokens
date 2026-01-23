@@ -192,8 +192,8 @@
   /*        Global        */
   /* -------------------- */
   --_gutter: var(--gutter, var(--layout-gutter-sm));
-  --_is-on: var(--is-on, initial);
-  --_is-off: var(--is-off, ;);
+  --_on: var(--on, initial);
+  --_off: var(--off, );
 
   /* -------------------- */
   /*     Composition     */
