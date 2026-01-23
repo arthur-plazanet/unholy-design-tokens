@@ -3,13 +3,14 @@
  */
 
 :root {
-  --cube-composition-flow-space: var(--space-md);
-  --cube-composition-stack-gap: var(--space-md);
+  --cube-composition-flow-space: var(--gutter);
+  --cube-composition-stack-gap: var(--gutter);
   --cube-composition-stack-align: start;
-  --cube-composition-cluster-gap: var(--space-sm);
+  --cube-composition-stack-direction: var(--layout-direction);
+  --cube-composition-cluster-gap: var(--gutter);
   --cube-composition-cluster-align: center;
   --cube-composition-center-max-width: 72ch;
-  --cube-composition-center-padding-inline: var(--space-md);
-  --cube-composition-switcher-modifier: var(--breakpoint-md);
-  --cube-composition-switcher-gap: var(--space-sm);
+  --cube-composition-center-padding-inline: var(--gutter);
+  --cube-composition-switcher-modifier: var(--layout-break-at);
+  --cube-composition-switcher-gap: var(--gutter);
 }

@@ -1,11 +1,9 @@
 # 🎚️ **Theme Tokens: Public vs Private Variables**
 
-*Why two layers of theme tokens exist, how they work, and which one you should modify.*
-
 This repo generates **two versions** of theme variables:
 
-- **Public Theme Tokens** → meant for *outside consumers*
-- **Private Theme Tokens** → meant for *internal component use*
+- **Public Theme Tokens** → meant for _outside consumers_
+- **Private Theme Tokens** → meant for _internal component use_
 
 Understanding the difference keeps your design system:
 
@@ -21,9 +19,9 @@ Let’s break it down.
 
 ---
 
-# 🟣 **1. Public Theme Tokens (`-token`)**
+## 🟣 **1. Public Theme Tokens (`-token`)**
 
-These are the **official, documented** variables that consumers *are allowed* to override.
+These are the **official, documented** variables that consumers _are allowed_ to override.
 
 Example:
 
@@ -33,7 +31,6 @@ Example:
   --color-bg-default: #ffffff;
   --text-body-size: 1rem;
 }
-
 ```
 
 ### ✔ Purpose
@@ -48,10 +45,9 @@ Example:
 :root {
   --color-bg-default: #fef7ff; /* custom brand color */
 }
-
 ```
 
-### 🛑 Consumers *should not* override:
+### 🛑 Consumers _should not_ override:
 
 - component-specific tokens
 - conditional tokens
@@ -62,7 +58,7 @@ Public tokens are your **surface area**.
 
 ---
 
-# 🔵 **2. Private Theme Tokens (`-_token`)**
+## 🔵 **2. Private Theme Tokens (`-_token`)**
 
 These exist **only inside the design system**.
 
@@ -72,14 +68,13 @@ Generated like this:
 --_space-md: var(--space-md, 1rem);
 --_color-bg-default: var(--color-bg-default, #ffffff);
 --_text-body-size: var(--text-body-size, clamp(...));
-
 ```
 
 This structure follows Lea Verou’s pattern:
 
 https://lea.verou.me/blog/2021/10/custom-properties-with-defaults/
 
-### ✔ Private variables are *always safe*
+### ✔ Private variables are _always safe_
 
 Even if a consumer overrides a public variable incorrectly, components still resolve safely.
 
@@ -87,7 +82,6 @@ Example:
 
 ```css
 background: var(--_color-bg-default);
-
 ```
 
 ### ✔ Developers should **ONLY** use private tokens inside components
@@ -95,15 +89,13 @@ background: var(--_color-bg-default);
 Never use:
 
 ```css
-background: var(--color-bg-default);  /* ❌ no */
-
+background: var(--color-bg-default); /* ❌ no */
 ```
 
 Always use:
 
 ```css
 background: var(--_color-bg-default); /* ✔ correct */
-
 ```
 
 ### ✔ Why?
@@ -117,20 +109,18 @@ Because private variables:
 
 ---
 
-# 🌀 **How Public → Private Works**
+## 🌀 **How Public → Private Works**
 
 Each public token:
 
 ```css
 --text-body-size: 1rem;
-
 ```
 
 Produces a private counterpart:
 
 ```css
 --_text-body-size: var(--text-body-size, 1rem);
-
 ```
 
 This means:
@@ -142,7 +132,7 @@ Exactly what you want.
 
 ---
 
-# 🧠 **Why Not Use Public Tokens Inside Components?**
+## 🧠 **Why Not Use Public Tokens Inside Components?**
 
 Because public tokens are:
 
@@ -164,14 +154,13 @@ Private tokens are:
 
 ---
 
-# 🧩 **Example: Button Token Flow**
+## 🧩 **Example: Button Token Flow**
 
 **Public:**
 
 ```css
 --button-primary-bg: var(--color-brand-primary);
 --button-primary-radius: 6px;
-
 ```
 
 **Private:**
@@ -179,7 +168,6 @@ Private tokens are:
 ```css
 --_button-primary-bg: var(--button-primary-bg, var(--_color-brand-primary));
 --_button-primary-radius: var(--button-primary-radius, 6px);
-
 ```
 
 **Component:**
@@ -189,7 +177,6 @@ button.primary {
   background: var(--_button-primary-bg);
   border-radius: var(--_button-primary-radius);
 }
-
 ```
 
 ### If a consumer overrides:
@@ -198,7 +185,6 @@ button.primary {
 :root {
   --button-primary-bg: hotpink;
 }
-
 ```
 
 → component updates correctly
@@ -209,15 +195,15 @@ button.primary {
 
 ---
 
-# 🧩 **Why Two Levels Are Necessary**
+## 🧩 **Why Two Levels Are Necessary**
 
-| Layer | Who uses it | Purpose |
-| --- | --- | --- |
-| **Public (`--token`)** | consumers | override, theme, brand |
-| **Private (`--_token`)** | components | stable internal contract |
-| **Component tokens** | DS devs | button/card/input internals |
-| **Semantic tokens** | DS designers | meaning-based mapping |
-| **Primitives** | DS designers | raw values |
+| Layer                    | Who uses it  | Purpose                     |
+| ------------------------ | ------------ | --------------------------- |
+| **Public (`--token`)**   | consumers    | override, theme, brand      |
+| **Private (`--_token`)** | components   | stable internal contract    |
+| **Component tokens**     | DS devs      | button/card/input internals |
+| **Semantic tokens**      | DS designers | meaning-based mapping       |
+| **Primitives**           | DS designers | raw values                  |
 
 This hierarchy ensures:
 
@@ -228,7 +214,7 @@ Exactly what a scalable design system needs.
 
 ---
 
-# 🛠 Your Custom Formatters
+## 🛠 Your Custom Formatters
 
 Your Style Dictionary setup generates:
 
@@ -240,7 +226,6 @@ Your Style Dictionary setup generates:
   --text-body-size: 1rem;
   --color-bg-default: #fff;
 }
-
 ```
 
 ### **private-theme.css**
@@ -251,7 +236,6 @@ Your Style Dictionary setup generates:
   --_text-body-size: var(--text-body-size, 1rem);
   --_color-bg-default: var(--color-bg-default, #fff);
 }
-
 ```
 
 Nothing else in your build system needs to know how public & private vars relate.
@@ -262,11 +246,11 @@ Component libraries only expose **public** vars.
 
 ---
 
-# 🧪 TL;DR Cheat Sheet
+## 🧪 TL;DR Cheat Sheet
 
-| Thing | Use Public? | Use Private? | Notes |
-| --- | --- | --- | --- |
-| Apps / Consumers | ✔ yes | ❌ no | override `--token` |
-| DS Components | ❌ no | ✔ yes | use `--_token` |
-| Themes | ✔ yes | ❌ no | theme overrides go to public vars |
-| Fallbacks | automatic | automatic | thanks to var(--token, fallback) |
+| Thing            | Use Public? | Use Private? | Notes                             |
+| ---------------- | ----------- | ------------ | --------------------------------- |
+| Apps / Consumers | ✔ yes       | ❌ no        | override `--token`                |
+| DS Components    | ❌ no       | ✔ yes        | use `--_token`                    |
+| Themes           | ✔ yes       | ❌ no        | theme overrides go to public vars |
+| Fallbacks        | automatic   | automatic    | thanks to var(--token, fallback)  |

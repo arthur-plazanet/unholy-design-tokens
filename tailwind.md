@@ -297,7 +297,7 @@ We could argue for days about which approach is better for your system with thou
 
 But which one is more readable / easy to get into as a new developer getting into the codebase?
 
-> [!NOTE] > **➡️ I want to make the code clearer enough that anyone can understand and start contributing from day 1 🏄**
+**Note:** ➡️ I want to make the code clearer enough that anyone can understand and start contributing from day 1 🏄
 
 For this, I do think using a more semantic approach help for scalability
 
@@ -439,7 +439,7 @@ Along from many deprecated function / utilities etc. Tailwind now is leaning tow
 
 In short: [https://tailwindcss.com/docs/upgrade-guide#using-the-theme-function](https://tailwindcss.com/docs/upgrade-guide#using-the-theme-function)
 
-```
+```css
 .my-class {
 /* OLD */
 /* background-color: theme(colors.red.500); */

@@ -1,0 +1,15 @@
+{
+  "cube": {
+    "global": {
+      "gutter": {
+        "value": "var(--layout-gutter-sm)"
+      },
+      "on": {
+        "value": "initial"
+      },
+      "off": {
+        "value": ""
+      }
+    }
+  }
+}

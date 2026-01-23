@@ -2,19 +2,22 @@
   "cube": {
     "block": {
       "card": {
-        "bg": { "value": "var(--color-bg-neutral)" },
-        "border": { "value": "var(--color-border-subtle)" },
-        "radius": { "value": "var(--border-radius-medium)" },
-        "padding": { "value": "var(--space-md)" }
+        "bg": { "value": "var(--_color-bg-neutral)" },
+        "border": { "value": "var(--_color-border-subtle)" },
+        "radius": { "value": "var(--_border-radius-medium)" },
+        "padding": { "value": "var(--_spacing-md)" }
       },
       "button": {
-        "paddingX": { "value": "var(--space-sm)" },
-        "paddingY": { "value": "var(--space-xs)" },
-        "radius": { "value": "var(--border-radius-medium)" },
-        "color": { "value": "var(--color-text-primary)" },
-        "text": { "value": "var(--color-text-primary)" },
-        "bg": { "value": "var(--color-bg-primary)" },
-        "hoverBackground": { "value": "var(--color-bg-primary-hover)" }
+        "paddingX": { "value": "var(--_spacing-sm)" },
+        "paddingY": { "value": "var(--_spacing-xs)" },
+        "radius": { "value": "var(--_border-radius-medium)" },
+        "text": { "value": "var(--_color-text-primary)" },
+        "bg": { "value": "var(--_color-bg-primary)" },
+        "bg-hover": { "value": "var(--_color-bg-primary-hover)" }
+      },
+      "checkbox": {
+        "bg": { "value": "var(--_color-bg-primary)" },
+        "padding": { "value": "var(--_spacing-xs)" }
       }
     }
   }

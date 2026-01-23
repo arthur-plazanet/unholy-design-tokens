@@ -2,52 +2,52 @@
   "color": {
     "primary": {
       "100": {
-        "value": "{color.straw-gold.100}",
+        "value": "{color.yellow.100}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "200": {
-        "value": "{color.straw-gold.200}",
+        "value": "{color.yellow.200}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "300": {
-        "value": "{color.straw-gold.300}",
+        "value": "{color.yellow.300}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "400": {
-        "value": "{color.straw-gold.400}",
+        "value": "{color.yellow.400}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "500": {
-        "value": "{color.straw-gold.500}",
+        "value": "{color.yellow.500}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "600": {
-        "value": "{color.straw-gold.600}",
+        "value": "{color.yellow.600}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "700": {
-        "value": "{color.straw-gold.700}",
+        "value": "{color.yellow.700}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "800": {
-        "value": "{color.straw-gold.800}",
+        "value": "{color.yellow.800}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "900": {
-        "value": "{color.straw-gold.900}",
+        "value": "{color.yellow.900}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "base": {
-        "value": "{color.straw-gold.base}",
+        "value": "{color.yellow.base}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       }

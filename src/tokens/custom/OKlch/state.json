@@ -1,0 +1,107 @@
+{
+  "state": {
+    "base": {
+      "bg": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "hover": {
+      "bg": {
+        "lightness": { "value": 0.05 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "active": {
+      "bg": {
+        "lightness": { "value": 0.1 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "focus": {
+      "bg": {
+        "lightness": { "value": 0.05 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "disabled": {
+      "bg": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "border": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      },
+      "text": {
+        "lightness": { "value": 0 },
+        "chroma": { "value": 0 },
+        "hue": { "value": 0 },
+        "opacity": { "value": 1 }
+      }
+    },
+    "attributes": {
+      "type": "variants"
+    }
+  }
+}

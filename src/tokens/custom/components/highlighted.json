@@ -1,11 +1,11 @@
 {
   "highlighted-text": {
     "gap": {
-      "min": { "value": "var(--space-xxs)" },
-      "max": { "value": "var(--space-lg)" },
+      "min": { "value": "var(--_spacing-xxs)" },
+      "max": { "value": "var(--_spacing-lg)" },
       "scaler": { "value": "1.4svw" },
       "left": {
-        "value": "clamp(var(--highlighted-text-gap-min), var(--highlighted-text-gap-scaler), var(--highlighted-text-gap-max))"
+        "value": "clamp(var(--_highlighted-text-gap-min), var(--_highlighted-text-gap-scaler), var(--_highlighted-text-gap-max))"
       }
     }
   },

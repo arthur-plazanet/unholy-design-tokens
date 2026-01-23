@@ -1,6 +1,10 @@
-# 📂Intent Tokens
+# 📂 Intent Tokens
 
 Intent tokens translate UI states like "success" or "danger" (designer language) into consistent visual.
+
+They answer the question:
+
+> “Why am I using it?”
 
 This is the **developer-facing API** for stateful components.
 
@@ -27,24 +31,13 @@ For 99% of components, you only care about:
 
 ### 3. **Border color (`border`)**
 
-Everything else (shadows, spacing, radii…) is usually standardized in the previous layers.
+Everything else (shadows, spacing, radii…) is usually standardized in the previous tiers.
 
-## When to use intent tokens
+## Cheat sheet
 
-- Alerts
-- Badges
-- Banners
-- Form validation
-- Toasts
-- Buttons (when conveying meaning)
-- Tags
-
-## Definitions Rules
-
-- **MUST reference semantic**
-- **MUST NOT reference primitives**
-- **MUST NOT contain raw values**
+- **Usually reference semantic**
 - **Names reflect UX meaning, not visual result**
+- **Schema: `purpose.priority.property` or `purpose.priority.property.state`**
 
 ## Next Steps
 

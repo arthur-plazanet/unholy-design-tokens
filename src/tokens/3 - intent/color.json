@@ -42,7 +42,7 @@
         "attributes": {
           "tokenTier": "intent"
         },
-        "value": "{color.primary.600}"
+        "value": "oklch(from {color.primary.500} lightness(+7%))"
       },
       "primary-active": {
         "type": "color",
@@ -147,28 +147,6 @@
         },
         "value": "{color.secondary.400}"
       },
-      "on-primary": {
-        "type": "color",
-        "attributes": {
-          "tokenTier": "intent"
-        },
-        "value": "#FFFFFF"
-      },
-      "on-accent": {
-        "type": "color",
-        "attributes": {
-          "tokenTier": "intent"
-        },
-        "value": "#FFFFFF"
-      },
-      "on-neutral-strong": {
-        "type": "color",
-        "attributes": {
-          "tokenTier": "intent"
-        },
-        "value": "#FFFFFF"
-      },
-
       "link": {
         "type": "color",
         "attributes": {
