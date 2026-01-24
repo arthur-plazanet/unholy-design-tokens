@@ -20,7 +20,7 @@ color: var(--color-text-primary);
 border-radius: var(--radius-lg);
 ```
 
-### Why?
+## Why?
 
 Because if we change a color later, or add themes, or update branding —
 
@@ -30,7 +30,41 @@ Because if we change a color later, or add themes, or update branding —
 
 ---
 
-# 💡 The 3 things that actually matter
+## Naming Schema
+
+The [schema](https://designtokens.fyi/#/terms/schema/) chosen is very close to the CTI (Category, Type, Item) methodology.
+
+- **Category**: color, spacing, border, shadow, etc.
+- **Type**: to describe the kind of category
+  - bg (background), text, radius, etc.
+- **Item**: specific purpose / name, but can also be a variant / [priority](https://designtokens.fyi/#/terms/priority/) (primary, secondary, etc.)
+
+_All level don't have to be used all the time._
+
+<!-- TODO: -->
+
+- We can have a token with only Category + Type: `--spacing-multiplier`
+- Or Category + Type + Item: `--color-text-secondary`
+- Or Category + Item: `--border-radius-lg`
+
+This Schema can sometimes be expanded with a 4th level:
+
+- **Interaction** ([designtoken.fyi](https://designtokens.fyi/#/terms/interaction/)) (or sometimes called state) when needed. (hover, active, disabled, etc.)
+- **Subitem**: rarely used, but can be useful for more complex systems.
+
+> See [Style-Dictionary documentation](https://styledictionary.com/info/tokens/#category--type--item) and [Cloudspace Design System](https://cloudscape.design/foundation/visual-foundation/design-tokens/#naming-structure) example on this structure.
+
+| Category | Type    | Item      | Subitem | Interaction (or State) | Example Token Name          |
+| -------- | ------- | --------- | ------- | ---------------------- | --------------------------- |
+| color    | bg      | primary   |         | hover                  | `--color-bg-primary-hover`  |
+| color    | text    | secondary |         |                        | `--color-text-secondary`    |
+| border   | radius  | lg        |         |                        | `--border-radius-lg`        |
+| spacing  |         | unit      |         |                        | `--spacing-unit`            |
+| button   | primary | bg        | hover   |                        | `--button-primary-bg-hover` |
+
+---
+
+## 💡 The 3 things that actually matter
 
 For 99% of components, you only care about:
 
@@ -44,11 +78,11 @@ Everything else (shadows, spacing, radii…) is standardized.
 
 ---
 
-# 🎨 Token System: Simple Mental Model
+## 🎨 Token System: Simple Mental Model
 
 ---
 
-## **Primitives**
+### **Primitives**
 
 Primitives are raw values:
 
@@ -58,17 +92,20 @@ Primitives are raw values:
 --radius-lg: 8px;
 ```
 
-These are the building blocks of your design system.
+- Can be colors, font-sizes, spacings, radius, shadows, etc.
+- Building blocks of your design system
+- Can be not exclusively linked to your design system, it's a pool of raw values.
+
 See [src/tokens/1 - primitives](./1%20-%20primitives/README.md).
 
 ---
 
-## 1️⃣ **Theming tokens** (semantic)
+### 1️⃣ **Theming tokens** (semantic)
 
 Tokens that describe a specific interface / theme.
 
-> [!NOTE] This is what designers use in tools (Figma, Sketch, etc).
-> As a developer, you mostly use these indirectly via intents / component tokens.
+**Note:** This is what designers use in tools (Figma, Sketch, etc).
+As a developer, you mostly use these indirectly via intents / component tokens.
 
 Examples:
 
@@ -88,9 +125,9 @@ See [src/tokens/2 - semantic](./2%20-%20semantic/README.md).
 
 ---
 
-## 2️⃣ **Intent tokens**
+### 2️⃣ **Intent tokens**
 
-Tokens that describe **what a component needs**.
+Tokens that describe **what a component needs in the UI**. They refer closer to what a designer thinks when building a component.
 
 Example for a button:
 
@@ -116,7 +153,7 @@ Always use:
 
 ---
 
-# 🧭 Quick Cheatsheet
+## 🧭 Quick Cheatsheet
 
 ### When building a component:
 
@@ -134,3 +171,5 @@ background: var(--button-primary-bg);
 
 Component tokents are usually mapped to intent tokens. They are used to match specific component needs.
 See [designtoken.fyi](https://designtokens.fyi/#/terms/component/)
+
+Sources: [Cloudscape Design System](https://cloudscape.design/)

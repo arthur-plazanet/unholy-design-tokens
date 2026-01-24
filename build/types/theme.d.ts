@@ -1,362 +1,905 @@
-export interface YThemeToken {
-  BorderWidthDefault: string;
-  BorderWidthScale: string;
-  BorderWidthXsmall: string;
-  BorderWidthSmall: string;
-  BorderWidthMedium: string;
-  BorderWidthLarge: string;
-  BorderStyle: string;
-  BorderRadiusDefault: string;
-  BorderRadiusScale: string;
-  BorderRadiusLight: string;
-  BorderRadiusMedium: string;
-  BorderRadiusHeavy: string;
-  BreakpointMobile: string;
-  BreakpointTablet: string;
-  BreakpointDesktop: string;
-  BreakpointDesktopXl: string;
-  BreakpointDesktopXxl: string;
-  ColorArylideYellow100: string;
-  ColorArylideYellow200: string;
-  ColorArylideYellow300: string;
-  ColorArylideYellow400: string;
-  ColorArylideYellow500: string;
-  ColorArylideYellow600: string;
-  ColorArylideYellow700: string;
-  ColorArylideYellow800: string;
-  ColorArylideYellow900: string;
-  ColorArylideYellowDefault: string;
-  ColorNight100: string;
-  ColorNight200: string;
-  ColorNight300: string;
-  ColorNight400: string;
-  ColorNight500: string;
-  ColorNight600: string;
-  ColorNight700: string;
-  ColorNight800: string;
-  ColorNight900: string;
-  ColorNightDefault: string;
-  ColorBattleshipGray100: string;
-  ColorBattleshipGray200: string;
-  ColorBattleshipGray300: string;
-  ColorBattleshipGray400: string;
-  ColorBattleshipGray500: string;
-  ColorBattleshipGray600: string;
-  ColorBattleshipGray700: string;
-  ColorBattleshipGray800: string;
-  ColorBattleshipGray900: string;
-  ColorBattleshipGrayDefault: string;
-  ColorWhiteSmoke100: string;
-  ColorWhiteSmoke200: string;
-  ColorWhiteSmoke300: string;
-  ColorWhiteSmoke400: string;
-  ColorWhiteSmoke500: string;
-  ColorWhiteSmoke600: string;
-  ColorWhiteSmoke700: string;
-  ColorWhiteSmoke800: string;
-  ColorWhiteSmoke900: string;
-  ColorWhiteSmokeDefault: string;
-  ColorShadowDark: string;
-  ColorShadowLight: string;
-  ColorPrimary100: string;
-  ColorPrimary200: string;
-  ColorPrimary300: string;
-  ColorPrimary400: string;
-  ColorPrimary500: string;
-  ColorPrimary600: string;
-  ColorPrimary700: string;
-  ColorPrimary800: string;
-  ColorPrimary900: string;
-  ColorPrimaryBgHue: string;
-  ColorPrimaryBgLightness: string;
-  ColorPrimaryBgOpacity: string;
-  ColorPrimaryBorderHue: string;
-  ColorPrimaryBorderLightness: string;
-  ColorPrimaryBorderOpacity: string;
-  ColorPrimaryTextHue: string;
-  ColorPrimaryTextLightness: string;
-  ColorPrimaryTextOpacity: string;
-  ColorSecondary100: string;
-  ColorSecondary200: string;
-  ColorSecondary300: string;
-  ColorSecondary400: string;
-  ColorSecondary500: string;
-  ColorSecondary600: string;
-  ColorSecondary700: string;
-  ColorSecondary800: string;
-  ColorSecondary900: string;
-  ColorSecondaryBgHue: string;
-  ColorSecondaryBgLightness: string;
-  ColorSecondaryBgOpacity: string;
-  ColorSecondaryBorderHue: string;
-  ColorSecondaryBorderLightness: string;
-  ColorSecondaryBorderOpacity: string;
-  ColorSecondaryTextHue: string;
-  ColorSecondaryTextLightness: string;
-  ColorSecondaryTextOpacity: string;
-  ColorAccent100: string;
-  ColorAccent200: string;
-  ColorAccent300: string;
-  ColorAccent400: string;
-  ColorAccent500: string;
-  ColorAccent600: string;
-  ColorAccent700: string;
-  ColorAccent800: string;
-  ColorAccent900: string;
-  ColorNeutral100: string;
-  ColorNeutral200: string;
-  ColorNeutral300: string;
-  ColorNeutral400: string;
-  ColorNeutral500: string;
-  ColorNeutral600: string;
-  ColorNeutral700: string;
-  ColorNeutral800: string;
-  ColorNeutral900: string;
-  ColorTheme100: string;
-  ColorTheme200: string;
-  ColorTheme300: string;
-  ColorTheme400: string;
-  ColorTheme500: string;
-  ColorTheme600: string;
-  ColorTheme700: string;
-  ColorTheme800: string;
-  ColorTheme900: string;
-  ColorThemeDefault: string;
-  ColorBgPage: string;
-  ColorBgSubtle: string;
-  ColorBgElevated: string;
-  ColorBgInset: string;
-  ColorBgPrimary: string;
-  ColorBgPrimaryHover: string;
-  ColorBgPrimaryActive: string;
-  ColorBgPrimarySubtle: string;
-  ColorBgAccent: string;
-  ColorBgAccentHover: string;
-  ColorBgAccentSubtle: string;
-  ColorBgNeutral: string;
-  ColorBgNeutralStrong: string;
-  ColorBgInfo: string;
-  ColorBgWarning: string;
-  ColorBgSuccess: string;
-  ColorBgHue: string;
-  ColorBgH: string;
-  ColorBgLightness: string;
-  ColorBgL: string;
-  ColorBgOpacity: string;
-  ColorBgO: string;
-  ColorTextPrimary: string;
-  ColorTextSecondary: string;
-  ColorTextMuted: string;
-  ColorTextSubtle: string;
-  ColorTextOnPrimary: string;
-  ColorTextOnAccent: string;
-  ColorTextOnNeutralStrong: string;
-  ColorTextLink: string;
-  ColorTextLinkHover: string;
-  ColorTextInfo: string;
-  ColorTextWarning: string;
-  ColorTextSuccess: string;
-  ColorTextHue: string;
-  ColorTextLightness: string;
-  ColorTextOpacity: string;
-  ColorBorderSubtle: string;
-  ColorBorderDefault: string;
-  ColorBorderStrong: string;
-  ColorBorderPrimary: string;
-  ColorBorderFocus: string;
-  ColorBorderInfo: string;
-  ColorBorderWarning: string;
-  ColorBorderSuccess: string;
-  ColorBorderHue: string;
-  ColorBorderLightness: string;
-  ColorBorderOpacity: string;
-  ColorDangerBgHue: string;
-  ColorDangerBgLightness: string;
-  ColorDangerBgOpacity: string;
-  ColorDangerBorderHue: string;
-  ColorDangerBorderLightness: string;
-  ColorDangerBorderOpacity: string;
-  ColorDangerTextHue: string;
-  ColorDangerTextLightness: string;
-  ColorDangerTextOpacity: string;
-  FontScale0: string;
-  FontScale1: string;
-  FontScale2: string;
-  FontScale3: string;
-  FontScale4: string;
-  FontScale5: string;
-  FontScale6: string;
-  FontMinFont: string;
-  FontMaxFont: string;
-  FontMinViewport: string;
-  FontMaxViewport: string;
-  FontScaleMin: string;
-  FontScaleMax: string;
-  FontSteps: string;
-  FontWeightLight: string;
-  FontWeightRegular: string;
-  FontWeightMedium: string;
-  FontWeightBold: string;
-  ShadowDefault: string;
-  ShadowHover: string;
-  ShadowActive: string;
-  ShadowFocus: string;
-  ShadowDisabled: string;
-  SpacingMultiplierUnit: string;
-  SpacingMultiplierXxs: string;
-  SpacingMultiplierXs: string;
-  SpacingMultiplierSm: string;
-  SpacingMultiplierMd: string;
-  SpacingMultiplierLg: string;
-  SpacingMultiplierXl: string;
-  SpacingMultiplierXxl: string;
-  SpacingFluidMin: string;
-  SpacingFluidMax: string;
-  SpacingFluidMinViewport: string;
-  SpacingFluidMaxViewport: string;
-  TextBodySize: string;
-  TextBodyLineHeight: string;
-  TextBodyWeight: string;
-  TextCaptionSize: string;
-  TextCaptionLineHeight: string;
-  TextCaptionWeight: string;
-  HeadingH1Size: string;
-  HeadingH1LineHeight: string;
-  HeadingH1Weight: string;
-  HeadingH2Size: string;
-  HeadingH2LineHeight: string;
-  HeadingH2Weight: string;
-  SpaceXxs: string;
-  SpaceXs: string;
-  SpaceSm: string;
-  SpaceMd: string;
-  SpaceLg: string;
-  SpaceXl: string;
-  SpaceXxl: string;
-  CubeBlockCardBg: string;
-  CubeBlockCardBorderColor: string;
-  CubeBlockCardRadius: string;
-  CubeBlockCardPadding: string;
-  CubeBlockButtonPaddingX: string;
-  CubeBlockButtonPaddingY: string;
-  CubeBlockButtonRadius: string;
-  CubeBlockButtonColor: string;
-  CubeBlockButtonBg: string;
-  CubeBlockButtonHoverBackground: string;
-  CubeCompositionFlowSpace: string;
-  CubeCompositionStackGap: string;
-  CubeCompositionStackAlign: string;
-  CubeCompositionClusterGap: string;
-  CubeCompositionClusterAlign: string;
-  CubeCompositionCenterMaxWidth: string;
-  CubeCompositionCenterPaddingInline: string;
-  CubeUtilitySpacingMt0: string;
-  CubeUtilitySpacingMtS: string;
-  CubeUtilitySpacingMbM: string;
-  CubeUtilityDisplayFlex: string;
-  CubeUtilityDisplayGrid: string;
-  CubeUtilityTextCenter: string;
-  CubeUtilityTextDim: string;
-  NotPrimary: string;
-  NotSecondary: string;
-  NotDanger: string;
-  Light: string;
-  Threshold: string;
-  Switch: string;
-  StateBgLightness: string;
-  StateBgChroma: string;
-  StateBgHue: string;
-  StateBgOpacity: string;
-  StateBorderLightness: string;
-  StateBorderChroma: string;
-  StateBorderHue: string;
-  StateBorderOpacity: string;
-  StateTextLightness: string;
-  StateTextChroma: string;
-  StateTextHue: string;
-  StateTextOpacity: string;
-  HoverBgLightness: string;
-  HoverBgChroma: string;
-  HoverBgHue: string;
-  HoverBgOpacity: string;
-  HoverBorderLightness: string;
-  HoverBorderChroma: string;
-  HoverBorderHue: string;
-  HoverBorderOpacity: string;
-  HoverTextLightness: string;
-  HoverTextChroma: string;
-  HoverTextHue: string;
-  HoverTextOpacity: string;
-  ActiveBgLightness: string;
-  ActiveBgChroma: string;
-  ActiveBgHue: string;
-  ActiveBgOpacity: string;
-  ActiveBorderLightness: string;
-  ActiveBorderChroma: string;
-  ActiveBorderHue: string;
-  ActiveBorderOpacity: string;
-  ActiveTextLightness: string;
-  ActiveTextChroma: string;
-  ActiveTextHue: string;
-  ActiveTextOpacity: string;
-  FocusBgLightness: string;
-  FocusBgChroma: string;
-  FocusBgHue: string;
-  FocusBgOpacity: string;
-  FocusBorderLightness: string;
-  FocusBorderChroma: string;
-  FocusBorderHue: string;
-  FocusBorderOpacity: string;
-  FocusTextLightness: string;
-  FocusTextChroma: string;
-  FocusTextHue: string;
-  FocusTextOpacity: string;
-  DisabledBgLightness: string;
-  DisabledBgChroma: string;
-  DisabledBgHue: string;
-  DisabledBgOpacity: string;
-  DisabledBorderLightness: string;
-  DisabledBorderChroma: string;
-  DisabledBorderHue: string;
-  DisabledBorderOpacity: string;
-  DisabledTextLightness: string;
-  DisabledTextChroma: string;
-  DisabledTextHue: string;
-  DisabledTextOpacity: string;
-  VariantContainedBgLightness: string;
-  VariantContainedBgChroma: string;
-  VariantContainedBgHue: string;
-  VariantContainedBgOpacity: string;
-  VariantContainedBorderLightness: string;
-  VariantContainedBorderChroma: string;
-  VariantContainedBorderHue: string;
-  VariantContainedBorderOpacity: string;
-  VariantContainedTextLightness: string;
-  VariantContainedTextChroma: string;
-  VariantContainedTextHue: string;
-  VariantContainedTextOpacity: string;
-  VariantOutlinedBgLightness: string;
-  VariantOutlinedBgChroma: string;
-  VariantOutlinedBgHue: string;
-  VariantOutlinedBgOpacity: string;
-  VariantOutlinedBorderLightness: string;
-  VariantOutlinedBorderChroma: string;
-  VariantOutlinedBorderHue: string;
-  VariantOutlinedBorderOpacity: string;
-  VariantOutlinedTextLightness: string;
-  VariantOutlinedTextChroma: string;
-  VariantOutlinedTextHue: string;
-  VariantOutlinedTextOpacity: string;
-  VariantTextBgLightness: string;
-  VariantTextBgChroma: string;
-  VariantTextBgHue: string;
-  VariantTextBgOpacity: string;
-  VariantTextBorderLightness: string;
-  VariantTextBorderChroma: string;
-  VariantTextBorderHue: string;
-  VariantTextBorderOpacity: string;
-  VariantTextTextLightness: string;
-  VariantTextTextChroma: string;
-  VariantTextTextHue: string;
-  VariantTextTextOpacity: string;
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+export interface DesignTokens {
+  border: {
+    width: {
+      base: string;
+      scale: string;
+      default: string;
+      xsmall: string;
+      small: string;
+      medium: string;
+      large: string;
+    };
+    style: {
+      solid: string;
+      dashed: string;
+      dotted: string;
+      double: string;
+      none: string;
+      default: string;
+    };
+    radius: {
+      '1': string;
+      '2': string;
+      '4': string;
+      base: string;
+      '0.5': string;
+      scale: string;
+    };
+  };
+  breakpoint: {
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    xxl: string;
+  };
+  'color-pool': {
+    'straw-gold': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    graphite: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    'intense-cherry': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    'vanilla-custard': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    'vanilla-cream': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+  };
+  color: {
+    yellow: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    graphite: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    'intense-cherry': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    'vanilla-custard': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    'vanilla-cream': {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    primary: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+      bg: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+      border: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+      text: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+    };
+    secondary: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+      bg: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+      border: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+      text: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+    };
+    accent: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    neutral: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+      base: string;
+    };
+    bg: {
+      page: string;
+      subtle: string;
+      elevated: string;
+      inset: string;
+      primary: string;
+      'primary-hover': string;
+      'primary-active': string;
+      'primary-subtle': string;
+      accent: string;
+      'accent-hover': string;
+      'accent-subtle': string;
+      neutral: string;
+      'neutral-strong': string;
+      info: string;
+      warning: string;
+      success: string;
+      secondary: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+        _: string;
+      };
+      danger: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+        _: string;
+      };
+      hue: string;
+      h: string;
+      lightness: string;
+      l: string;
+      opacity: string;
+      o: string;
+    };
+    text: {
+      primary: string;
+      secondary: string;
+      muted: string;
+      subtle: string;
+      link: string;
+      'link-hover': string;
+      info: string;
+      warning: string;
+      success: string;
+      danger: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+        _: string;
+      };
+      hue: string;
+      lightness: string;
+      opacity: string;
+    };
+    border: {
+      subtle: string;
+      default: string;
+      strong: string;
+      primary: string;
+      focus: string;
+      info: string;
+      warning: string;
+      success: string;
+      secondary: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+        _: string;
+      };
+      danger: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+        _: string;
+      };
+      hue: string;
+      lightness: string;
+      opacity: string;
+    };
+    feedback: {
+      error: string;
+    };
+    danger: {
+      bg: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+      border: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+      text: {
+        hue: string;
+        lightness: string;
+        opacity: string;
+      };
+    };
+  };
+  font: {
+    scale: {
+      '0': string;
+      '1': string;
+      '2': string;
+      '3': string;
+      '4': string;
+      '5': string;
+      '6': string;
+    };
+    minFont: string;
+    maxFont: string;
+    minViewport: string;
+    maxViewport: string;
+    scaleMin: string;
+    scaleMax: string;
+    steps: string;
+    weight: {
+      light: string;
+      normal: string;
+      medium: string;
+      bold: string;
+    };
+  };
+  shadow: {
+    base: string;
+    scale: string;
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+  };
+  space: {
+    fluid: {
+      min: string;
+      max: string;
+      min_viewport: string;
+      max_viewport: string;
+    };
+    unit: {
+      default: string;
+      fluid: string;
+    };
+    multiplier: {
+      unit: string;
+      xxs: string;
+      xs: string;
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
+      xxl: string;
+    };
+  };
+  layout: {
+    breakAt: string;
+    gutter: {
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
+    };
+    direction: string;
+    align: {
+      start: string;
+      center: string;
+      end: string;
+    };
+    justify: {
+      start: string;
+      center: string;
+      end: string;
+      between: string;
+    };
+    gap: {
+      xs: string;
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
+    };
+    overlay: {
+      zIndex: string;
+      opacity: string;
+      blur: string;
+    };
+    spaceUnit: string;
+    'depth-base': string;
+    mobile: {
+      padding: string;
+    };
+  };
+  radius: {
+    light: string;
+    medium: string;
+    heavy: string;
+  };
+  spacing: {
+    xxs: string;
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    xxl: string;
+  };
+  bg: {
+    primary: string;
+    'primary-hover': string;
+    'primary-active': string;
+    'primary-focus': string;
+    'primary-disable': string;
+    accent: string;
+    'accent-hover': string;
+    'accent-active': string;
+    'accent-focus': string;
+    'accent-disable': string;
+    neutral: string;
+    'neutral-hover': string;
+    'neutral-active': string;
+    'neutral-focus': string;
+    'neutral-disable': string;
+    info: string;
+    warning: string;
+    success: string;
+  };
+  text: {
+    body: {
+      size: string;
+      lineHeight: string;
+      weight: string;
+    };
+    caption: {
+      size: string;
+      lineHeight: string;
+      weight: string;
+    };
+    small: {
+      size: string;
+      lineHeight: string;
+      weight: string;
+    };
+  };
+  heading: {
+    h1: {
+      size: string;
+      lineHeight: string;
+      weight: string;
+    };
+    h2: {
+      size: string;
+      lineHeight: string;
+      weight: string;
+    };
+  };
+  component: {
+    bg: {
+      lightness: string;
+      chroma: string;
+      hue: string;
+      opacity: string;
+    };
+    border: {
+      lightness: string;
+      chroma: string;
+      hue: string;
+      opacity: string;
+    };
+    text: {
+      lightness: string;
+      chroma: string;
+      hue: string;
+      opacity: string;
+    };
+    opacity: {
+      bg: string;
+      border: string;
+      text: string;
+    };
+  };
+  conditional: {
+    'not-primary': string;
+    'not-secondary': string;
+    'not-danger': string;
+    light: string;
+    threshold: string;
+    switch: string;
+  };
+  cube: {
+    block: {
+      card: {
+        bg: string;
+        border: string;
+        radius: string;
+        padding: string;
+      };
+      button: {
+        paddingX: string;
+        paddingY: string;
+        radius: string;
+        text: string;
+        bg: string;
+        'bg-hover': string;
+      };
+      checkbox: {
+        bg: string;
+        padding: string;
+      };
+    };
+    composition: {
+      flow: {
+        space: string;
+      };
+      stack: {
+        gap: string;
+        align: string;
+        direction: string;
+      };
+      cluster: {
+        gap: string;
+        align: string;
+      };
+      center: {
+        maxWidth: string;
+        paddingInline: string;
+      };
+      switcher: {
+        modifier: string;
+        gap: string;
+      };
+    };
+    global: {
+      gutter: string;
+      on: string;
+      off: string;
+    };
+    utility: {
+      margin: {
+        't-0': string;
+        't-xs': string;
+        't-sm': string;
+        't-md': string;
+        't-lg': string;
+        't-xl': string;
+        'b-0': string;
+        'b-xs': string;
+        'b-sm': string;
+        'b-md': string;
+        'b-lg': string;
+        'b-xl': string;
+        auto: string;
+      };
+      position: {
+        relative: string;
+        absolute: string;
+        fixed: string;
+        'top-0': string;
+        'right-0': string;
+        'bottom-0': string;
+        'left-0': string;
+      };
+      display: {
+        none: string;
+        block: string;
+        'inline-block': string;
+        grid: string;
+        flex: string;
+        sticky: string;
+      };
+      align: {
+        start: string;
+        end: string;
+        center: string;
+      };
+      justify: {
+        start: string;
+        end: string;
+        center: string;
+        between: string;
+      };
+      flex: {
+        column: string;
+        row: string;
+        wrap: string;
+      };
+      gap: {
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+      };
+      padding: {
+        xs: string;
+        sm: string;
+        md: string;
+        lg: string;
+        xl: string;
+        'x-0': string;
+        'x-xs': string;
+        'x-sm': string;
+        'x-md': string;
+        'x-lg': string;
+        'x-xl': string;
+        'y-0': string;
+        'y-xs': string;
+        'y-sm': string;
+        'y-md': string;
+        'y-lg': string;
+        'y-xl': string;
+        auto: string;
+        'top-0': string;
+        'top-xs': string;
+        'top-sm': string;
+        'top-md': string;
+        'top-lg': string;
+        'top-xl': string;
+        'bottom-0': string;
+      };
+      text: {
+        center: string;
+        dim: string;
+      };
+      border: {
+        solid: string;
+        dashed: string;
+        dotted: string;
+        none: string;
+        primary: string;
+        secondary: string;
+        accent: string;
+        neutral: string;
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+        all: string;
+        theme: {
+          '10': string;
+          '25': string;
+          '50': string;
+          '75': string;
+          '100': string;
+          light: string;
+          medium: string;
+          large: string;
+        };
+        width: {
+          xsmall: string;
+          small: string;
+          medium: string;
+          large: string;
+        };
+      };
+      radius: {
+        light: string;
+        medium: string;
+        heavy: string;
+      };
+      height: {
+        auto: string;
+        full: string;
+        half: string;
+        quarter: string;
+        screen: string;
+      };
+      width: {
+        auto: string;
+        full: string;
+        half: string;
+        quarter: string;
+        screen: string;
+      };
+      overflow: {
+        auto: string;
+        hidden: string;
+        scroll: string;
+        visible: string;
+        'x-hidden': string;
+        'y-hidden': string;
+      };
+    };
+  };
+  state: {
+    base: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+    hover: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+    active: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+    focus: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+    disabled: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+  };
+  variant: {
+    contained: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+    outlined: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+    text: {
+      bg: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      border: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+      text: {
+        lightness: string;
+        chroma: string;
+        hue: string;
+        opacity: string;
+      };
+    };
+  };
+  'highlighted-text': {
+    gap: {
+      min: string;
+      max: string;
+      scaler: string;
+      left: string;
+    };
+  };
 }

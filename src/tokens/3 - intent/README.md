@@ -1,12 +1,16 @@
-# 📂Intent Tokens
+# 📂 Intent Tokens
 
 Intent tokens translate UI states like "success" or "danger" (designer language) into consistent visual.
+
+They answer the question:
+
+> “Why am I using it?”
 
 This is the **developer-facing API** for stateful components.
 
 ```css
 --color-bg-primary: var(--color-primary-500) /* will resolve to semantic var */
---color-bg-secondary: var(--color-secondary-500); /* will resolve to semantic var */
+  --color-bg-secondary: var(--color-secondary-500); /* will resolve to semantic var */
 --spacing-unit: var(--spacing-unit);
 /* ... */
 ```
@@ -27,38 +31,13 @@ For 99% of components, you only care about:
 
 ### 3. **Border color (`border`)**
 
-Everything else (shadows, spacing, radii…) is usually standardized in the previous layers.
+Everything else (shadows, spacing, radii…) is usually standardized in the previous tiers.
 
-## When to use intent tokens
+## Cheat sheet
 
-- Alerts
-- Badges
-- Banners
-- Form validation
-- Toasts
-- Buttons (when conveying meaning)
-- Tags
-
-## Definitions Rules
-
-- **MUST reference semantic**
-- **MUST NOT reference primitives**
-- **MUST NOT contain raw values**
+- **Usually reference semantic**
 - **Names reflect UX meaning, not visual result**
-
-## Example
-
-```jsonc
-{
-  "color": {
-    "success": {
-      "surface": { "value": "{semantic.color.surface.positive}" },
-      "border": { "value": "{semantic.color.border.positive}" },
-      "text": { "value": "{semantic.color.text.positive}" }
-    }
-  }
-}
-```
+- **Schema: `purpose.priority.property` or `purpose.priority.property.state`**
 
 ## Next Steps
 

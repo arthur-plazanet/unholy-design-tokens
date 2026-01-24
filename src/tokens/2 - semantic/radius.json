@@ -1,0 +1,13 @@
+{
+  "radius": {
+    "light": {
+      "value": "calc(var(--border-radius-base) / var(--border-radius-scale))"
+    },
+    "medium": {
+      "value": "calc(var(--border-radius-base) * var(--border-radius-scale))"
+    },
+    "heavy": {
+      "value": "calc(var(--border-radius-base) * 2 * var(--border-radius-scale))"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "space": {
+    "fluid": {
+      "min": { "value": "1rem" },
+      "max": { "value": "1.5rem" },
+      "min_viewport": { "value": "360px" },
+      "max_viewport": { "value": "1280px" }
+    },
+    "unit": {
+      "default": { "value": "1rem" },
+      "fluid": {
+        "value": "clamp(var(--space-fluid-min), calc(var(--space-fluid-min) + (var(--space-fluid-max) - var(--space-fluid-min)) * ((100vw - var(--space-fluid-min-viewport)) / (var(--space-fluid-max-viewport) - var(--space-fluid-min-viewport)))), var(--space-fluid-max))"
+      }
+    },
+
+    "multiplier": {
+      "unit": { "value": "1rem" },
+      "xxs": { "value": 0.25 },
+      "xs": { "value": 0.5 },
+      "sm": { "value": 0.75 },
+      "md": { "value": 1 },
+      "lg": { "value": 2 },
+      "xl": { "value": 3.25 },
+      "xxl": { "value": 5.25 }
+    }
+  }
+}

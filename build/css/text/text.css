@@ -1,0 +1,48 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-text-primary: #010101;
+  --color-text-secondary: #101110;
+  --color-text-muted: #494b49;
+  --color-text-subtle: #6b6d6b;
+  --color-text-link: #450f11;
+  --color-text-link-hover: #1c0304;
+  --color-text-info: #450f11;
+  --color-text-warning: #1e1908;
+  --color-text-success: #131109;
+  --color-text-danger-lightness: var(--color-danger-lightness, 0);
+  --color-text-danger-chroma: var(--color-danger-chroma, 0);
+  --color-text-danger-hue: var(--color-danger-hue, 0);
+  --color-text-danger-opacity: var(--color-danger-opacity, 1);
+  --color-text-danger: oklch(var(--color-text-danger-lightness) var(--color-text-danger-chroma) var(--color-text-danger-hue) / var(--color-text-danger-opacity));
+  --color-text-hue: var(--color-primary-hue) * var(--primary, 1) + var(--color-secondary-hue) * var(--secondary, 0) + var(--color-danger-hue) * var(--danger, 0);
+  --color-text-lightness: var(--color-primary-lightness) * var(--primary, 1) + var(--color-secondary-lightness) * var(--secondary, 0) + var(--color-danger-lightness) * var(--danger, 0);
+  --color-text-opacity: var(--color-primary-opacity);
+  --text-body-size: var(--font-scale-0);
+  --text-body-line-height: 1.5;
+  --text-body-weight: var(--font-weight-regular);
+  --text-caption-size: var(--font-scale--2);
+  --text-caption-line-height: 1.4;
+  --text-caption-weight: var(--font-weight-regular);
+  --text-small-size: var(--font-scale--1);
+  --text-small-line-height: 1.4;
+  --text-small-weight: var(--font-weight-regular);
+  --component-text-lightness: calc(var(--color-text-lightness) + var(--variant-text-lightness) + var(--state-text-lightness));
+  --component-text-chroma: calc(var(--color-text-chroma) + var(--variant-text-chroma) + var(--state-text-chroma));
+  --component-text-hue: calc(var(--color-text-hue));
+  --component-text-opacity: calc(var(--color-text-opacity) + var(--variant-text-opacity) + var(--state-text-opacity));
+  --variant-text-bg-lightness: 0;
+  --variant-text-bg-chroma: 0;
+  --variant-text-bg-hue: 0;
+  --variant-text-bg-opacity: 0;
+  --variant-text-border-lightness: 0;
+  --variant-text-border-chroma: 0;
+  --variant-text-border-hue: 0;
+  --variant-text-border-opacity: 0;
+  --variant-text-text-lightness: 0;
+  --variant-text-text-chroma: 0;
+  --variant-text-text-hue: 0;
+  --variant-text-text-opacity: 1;
+}

@@ -1,0 +1,8 @@
+:root {
+  --not-primary: calc(var(--secondary) + var(--danger));
+  --not-secondary: calc(var(--primary) + var(--danger));
+  --not-danger: calc(var(--primary) + var(--secondary));
+  --light: 80;
+  --threshold: 10;
+  --switch: calc((var(--light) - var(--threshold)) * 100%);
+}

@@ -1,10 +1,15 @@
-## 📂 `tokens/semantic/README.md`
+# Semantic Tokens Tier
 
-# Semantic Tokens
+Semantic tokens answer the question:
+
+> “What is this thing?”
 
 Semantic tokens define **meaning** inside the design system.
 
-> [!IMPORTANT] They don't define the semantic in the HTML or front-end, only in the design system tokens hierarchy.
+## Why this term "semantic" is confusing designers and developers
+
+These tokens don't define the semantic in the HTML or front-end, they define meaning in the design system tokens hierarchy.
+
 > See [_About HTML semantics and front-end architecture_](https://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
 
 ## Why to use semantic tokens
@@ -17,46 +22,21 @@ Semantic tokens define **meaning** inside the design system.
 /* Mostly colors are aliased through different token Tier */
 /* colors */
 --color-primary-500: var(--color-arylide-yellow-500) /* will resolve to primitive #e3c567 */
---color-secondary-500: var(--color-night-500); /* will resolve to primitive #0b0c0c */
+  --color-secondary-500: var(--color-night-500); /* will resolve to primitive #0b0c0c */
 /* but depending on system, it can also be aliased for convenience elsewhere */
 --spacing-multiplier: 1.5; /* Semantic value that applies to a specific theming */
 --spacing-xs: calc(var(--spacing-unit) * var(--spacing-multiplier) * 0.5);
 --spacing-md: calc(var(--spacing-unit) * var(--spacing-multiplier) * 1);
 /* etc. */
-
 ```
 
 If you wish to change your primary color, you only need to update `--color-primary-500` to point to another primitive color from the pool of colors.
 
-## Cheat Sheet
+## Cheat sheet
 
-- **MUST reference primitives**
-- **No raw values**
-- **Stable across themes (light/dark/brand)**
-
-## Examples in Style Dictionary
-
-```jsonc
-{
-  "color": {
-    "primary": {
-      "500": { "value": "{primitives.color.arylide-yellow.500}" }
-    },
-    "secondary": {
-      "500": { "value": "{primitives.color.night.500}" }
-    }
-  },
-  "spacing": {
-    "multiplier": { "value": "1.5" },
-    "xs": {
-      "value": "calc({primitives.spacing.unit} * {semantic.spacing.multiplier} * 0.5)"
-    },
-    "md": {
-      "value": "calc({primitives.spacing.unit} * {semantic.spacing.multiplier} * 1)"
-    }
-  }
-}
-```
+- **Reference primitives, no raw values**
+- **Answer "what is this thing?"**
+- **Ideal Token Tier for changing themes**
 
 ## Next Steps
 

@@ -1,0 +1,24 @@
+{
+  "cube": {
+    "block": {
+      "card": {
+        "bg": { "value": "var(--_color-bg-neutral)" },
+        "border": { "value": "var(--_color-border-subtle)" },
+        "radius": { "value": "var(--_border-radius-medium)" },
+        "padding": { "value": "var(--_spacing-md)" }
+      },
+      "button": {
+        "paddingX": { "value": "var(--_spacing-sm)" },
+        "paddingY": { "value": "var(--_spacing-xs)" },
+        "radius": { "value": "var(--_border-radius-medium)" },
+        "text": { "value": "var(--_color-text-primary)" },
+        "bg": { "value": "var(--_color-bg-primary)" },
+        "bg-hover": { "value": "var(--_color-bg-primary-hover)" }
+      },
+      "checkbox": {
+        "bg": { "value": "var(--_color-bg-primary)" },
+        "padding": { "value": "var(--_spacing-xs)" }
+      }
+    }
+  }
+}

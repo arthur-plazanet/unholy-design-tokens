@@ -1,0 +1,52 @@
+{
+  "layout": {
+    // Define when layout should switch between different modes (row/column)
+    "breakAt": {
+      "value": "{breakpoint.md}"
+    },
+    "gutter": {
+      "sm": { "value": "{spacing.sm}" },
+      "md": { "value": "{spacing.md}" },
+      "lg": { "value": "{spacing.lg}" },
+      "xl": { "value": "{spacing.xl}" }
+    },
+    "direction": {
+      "value": "column"
+    },
+    "align": {
+      "start": { "value": "flex-start" },
+      "center": { "value": "center" },
+      "end": { "value": "flex-end" }
+    },
+    "justify": {
+      "start": { "value": "flex-start" },
+      "center": { "value": "center" },
+      "end": { "value": "flex-end" },
+      "between": { "value": "space-between" }
+    },
+    "gap": {
+      "xs": { "value": "{spacing.xs}" },
+      "sm": { "value": "{spacing.sm}" },
+      "md": { "value": "{spacing.md}" },
+      "lg": { "value": "{spacing.lg}" },
+      "xl": { "value": "{spacing.xl}" }
+    },
+    "overlay": {
+      "zIndex": { "value": 1000 },
+      "opacity": { "value": 0 },
+      "blur": { "value": "8px" }
+    },
+    "spaceUnit": {
+      // To decide between using {spacing.unit.default} or {spacing.unit.fluid}
+      "value": "{space.unit.fluid}"
+    },
+    "depth-base": {
+      "value": "6px"
+    },
+    "mobile": {
+      "padding": {
+        "value": "{spacing.md}"
+      }
+    }
+  }
+}

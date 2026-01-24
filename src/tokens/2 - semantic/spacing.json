@@ -1,0 +1,25 @@
+{
+  "spacing": {
+    "xxs": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-xxs))"
+    },
+    "xs": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-xs))"
+    },
+    "sm": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-sm))"
+    },
+    "md": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-md))"
+    },
+    "lg": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-lg))"
+    },
+    "xl": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-xl))"
+    },
+    "xxl": {
+      "value": "calc(var(--_layout-space-unit) * var(--_space-multiplier-xxl))"
+    }
+  }
+}

@@ -1,13 +1,13 @@
 {
   "font": {
-    "minFont": { "value": 16 },
-    "maxFont": { "value": 20 },
+    "minFont": { "value": 14 },
+    "maxFont": { "value": 24 },
 
     "minViewport": { "value": 360 },
     "maxViewport": { "value": 1280 },
 
-    "scaleMin": { "value": 1.2 },
-    "scaleMax": { "value": 1.25 },
+    "scaleMin": { "value": 1.125 },
+    "scaleMax": { "value": 1.2 },
 
     "steps": {
       "value": [0, 1, 2, 3, 4, 5, 6]
@@ -15,7 +15,7 @@
 
     "weight": {
       "light": { "value": 300 },
-      "regular": { "value": 400 },
+      "normal": { "value": 400 },
       "medium": { "value": 500 },
       "bold": { "value": 700 }
     }

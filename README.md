@@ -2,6 +2,8 @@
 
 <img width="2550" height="920" alt="MacBook Pro 16_ - 6" src="https://github.com/user-attachments/assets/03a1b857-0881-4ad9-b14e-4480b5e181ad" />
 
+See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignTokens?node-id=1-5537&t=perH3yNxowfIDyWu-1)
+
 _A brutally clear, developer-friendly design token system using Style Dictionary._
 
 See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignTokens?node-id=1-5537&t=perH3yNxowfIDyWu-1)
@@ -61,18 +63,48 @@ Tokens live here:
 
 ---
 
+## Use the package
+
+### A) Local dev (TS, no install)
+
+```bash
+pnpm exec tsx bin/build-tokens.ts ../../lib
+
+```
+
+### B) Local project (compiled CLI)
+
+```bash
+pnpm exec build-tokens ../../lib
+
+```
+
+### C) As a dependency in another repo
+
+```bash
+pnpm add style-dictionary-example-complete
+pnpm exec build-tokens ./tokens
+```
+
+### D) One-off usage
+
+```bash
+npx style-dictionary-example-complete ./tokens
+```
+
+---
+
 ```md
                          ✝️  UNHOLY DESIGN TOKENS
                  "A house, but programmable"
 
-MATERIALS       PARTS             ROOMS
-(Primitives)    (Semantic)        (Intent)
-────────────    ─────────────     ─────────────
-Raw values:     Meaningful:       Purpose-driven:
-- numbers       - surface.card    - success
-- spacers       - text.muted      - danger
-- raw colors    - spacing.stack   - density modes
-- font files    - layout.gutter
+MATERIALS PARTS ROOMS
+(Primitives) (Semantic) (Intent)
+──────────── ───────────── ─────────────
+Raw values: Meaningful: Purpose-driven:
 
+- numbers - surface.card - success
+- spacers - text.muted - danger
+- raw colors - spacing.stack - density modes
+- font files - layout.gutter
 ```
-

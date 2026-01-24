@@ -1,0 +1,16 @@
+{
+  "highlighted-text": {
+    "gap": {
+      "min": { "value": "var(--_spacing-xxs)" },
+      "max": { "value": "var(--_spacing-lg)" },
+      "scaler": { "value": "1.4svw" },
+      "left": {
+        "value": "clamp(var(--_highlighted-text-gap-min), var(--_highlighted-text-gap-scaler), var(--_highlighted-text-gap-max))"
+      }
+    }
+  },
+  "attributes": {
+    "category": "component",
+    "tokenTier": "component"
+  }
+}

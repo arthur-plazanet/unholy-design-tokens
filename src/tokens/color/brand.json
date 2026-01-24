@@ -1,0 +1,316 @@
+{
+  "color": {
+    "bg": {
+      "primary": {
+        "lightness": {
+          "value": "var(--color-primary-lightness, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-primary-chroma, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-primary-hue, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-primary-opacity, 1)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-bg-primary-lightness) var(--color-bg-primary-chroma) var(--color-bg-primary-hue) / var(--color-bg-primary-opacity))",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "lightness": {
+          "value": "var(--color-secondary-lightness, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-secondary-chroma, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-secondary-hue, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-secondary-opacity, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-bg-secondary-lightness) var(--color-bg-secondary-chroma) var(--color-bg-secondary-hue) / var(--color-bg-secondary-opacity))",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "lightness": {
+          "value": "var(--color-danger-lightness, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-danger-chroma, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-danger-hue, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-danger-opacity, 1)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-bg-danger-lightness) var(--color-bg-danger-chroma) var(--color-bg-danger-hue) / var(--color-bg-danger-opacity))",
+          "type": "color"
+        }
+      }
+    },
+    "border": {
+      "primary": {
+        "lightness": {
+          "value": "var(--color-primary-lightness, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-primary-chroma, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-primary-hue, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-primary-opacity, 1)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-border-primary-lightness) var(--color-border-primary-chroma) var(--color-border-primary-hue) / var(--color-border-primary-opacity))",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "lightness": {
+          "value": "var(--color-secondary-lightness, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-secondary-chroma, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-secondary-hue, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-secondary-opacity, 1)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-border-secondary-lightness) var(--color-border-secondary-chroma) var(--color-border-secondary-hue) / var(--color-border-secondary-opacity))",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "lightness": {
+          "value": "var(--color-danger-lightness, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-danger-chroma, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-danger-hue, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-danger-opacity, 1)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-border-danger-lightness) var(--color-border-danger-chroma) var(--color-border-danger-hue) / var(--color-border-danger-opacity))",
+          "type": "color"
+        }
+      }
+    },
+    "text": {
+      "primary": {
+        "lightness": {
+          "value": "var(--color-primary-lightness, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-primary-chroma, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-primary-hue, 0)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-primary-opacity, 1)",
+          "attribute": {
+            "type": "primary-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-text-primary-lightness) var(--color-text-primary-chroma) var(--color-text-primary-hue) / var(--color-text-primary-opacity))",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "lightness": {
+          "value": "var(--color-secondary-lightness, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-secondary-chroma, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-secondary-hue, 0)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-secondary-opacity, 1)",
+          "attribute": {
+            "type": "secondary-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-text-secondary-lightness) var(--color-text-secondary-chroma) var(--color-text-secondary-hue) / var(--color-text-secondary-opacity))",
+          "type": "color"
+        }
+      },
+      "danger": {
+        "lightness": {
+          "value": "var(--color-danger-lightness, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "lightness"
+          }
+        },
+        "chroma": {
+          "value": "var(--color-danger-chroma, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "chroma"
+          }
+        },
+        "hue": {
+          "value": "var(--color-danger-hue, 0)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "hue"
+          }
+        },
+        "opacity": {
+          "value": "var(--color-danger-opacity, 1)",
+          "attribute": {
+            "type": "danger-oklch",
+            "item": "opacity"
+          }
+        },
+        "_": {
+          "value": "oklch(var(--color-text-danger-lightness) var(--color-text-danger-chroma) var(--color-text-danger-hue) / var(--color-text-danger-opacity))",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

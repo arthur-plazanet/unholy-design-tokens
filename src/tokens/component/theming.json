@@ -1,0 +1,69 @@
+{
+  "component": {
+    "bg": {
+      "lightness": {
+        "value": "calc(var(--color-bg-lightness) + var(--variant-bg-lightness) + var(--state-bg-lightness))"
+      },
+      "chroma": {
+        "value": "calc(var(--color-bg-chroma) + var(--variant-bg-chroma) + var(--state-bg-chroma))"
+      },
+      "hue": {
+        "value": "calc(var(--color-bg-hue))"
+      },
+      "opacity": {
+        "value": "calc(var(--color-bg-opacity) + var(--variant-bg-opacity) + var(--state-bg-opacity))"
+      }
+    },
+    "border": {
+      "lightness": {
+        "value": "calc(var(--color-border-lightness) + var(--variant-border-lightness) + var(--state-border-lightness))"
+      },
+      "chroma": {
+        "value": "calc(var(--color-border-chroma) + var(--variant-border-chroma) + var(--state-border-chroma))"
+      },
+      "hue": {
+        "value": "calc(var(--color-border-hue))"
+      },
+      "opacity": {
+        "value": "calc(var(--color-border-opacity) + var(--variant-border-opacity) + var(--state-border-opacity))"
+      }
+    },
+    "text": {
+      "lightness": {
+        "value": "calc(var(--color-text-lightness) + var(--variant-text-lightness) + var(--state-text-lightness))"
+      },
+      "chroma": {
+        "value": "calc(var(--color-text-chroma) + var(--variant-text-chroma) + var(--state-text-chroma))"
+      },
+      "hue": {
+        "value": "calc(var(--color-text-hue))"
+      },
+      "opacity": {
+        "value": "calc(var(--color-text-opacity) + var(--variant-text-opacity) + var(--state-text-opacity))"
+      }
+    },
+    "opacity": {
+      "bg": {
+        "value": "var(--component-bg-opacity)",
+        "type": "opacity",
+        "attribute": {
+          "type": "base-component"
+        }
+      },
+      "border": {
+        "value": "var(--component-border-opacity)",
+        "type": "opacity",
+        "attribute": {
+          "type": "base-component"
+        }
+      },
+      "text": {
+        "value": "var(--component-text-opacity)",
+        "type": "opacity",
+        "attribute": {
+          "type": "base-component"
+        }
+      }
+    }
+  }
+}

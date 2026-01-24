@@ -1,0 +1,60 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-bg-page: #2a2b2a;
+  --color-bg-subtle: #dce0dc;
+  --color-bg-elevated: #ffffff;
+  --color-bg-inset: #b5b8b5;
+  --color-bg-primary: #65572a;
+  --color-bg-primary-hover: oklch(from #65572a lightness(+7%));
+  --color-bg-primary-active: #1e1908;
+  --color-bg-primary-subtle: #fbefd2;
+  --color-bg-accent: #b4363b;
+  --color-bg-accent-hover: #7a2225;
+  --color-bg-accent-subtle: #fbeeee;
+  --color-bg-neutral: #4e4731;
+  --color-bg-neutral-strong: #010101;
+  --color-bg-info: #fbeeee;
+  --color-bg-warning: #fbefd2;
+  --color-bg-success: #edda9f;
+  --color-bg-secondary-lightness: var(--color-secondary-lightness, 0);
+  --color-bg-secondary-chroma: var(--color-secondary-chroma, 0);
+  --color-bg-secondary-hue: var(--color-secondary-hue, 0);
+  --color-bg-secondary-opacity: var(--color-secondary-opacity, 0);
+  --color-bg-secondary: oklch(var(--color-bg-secondary-lightness) var(--color-bg-secondary-chroma) var(--color-bg-secondary-hue) / var(--color-bg-secondary-opacity));
+  --color-bg-danger-lightness: var(--color-danger-lightness, 0);
+  --color-bg-danger-chroma: var(--color-danger-chroma, 0);
+  --color-bg-danger-hue: var(--color-danger-hue, 0);
+  --color-bg-danger-opacity: var(--color-danger-opacity, 1);
+  --color-bg-danger: oklch(var(--color-bg-danger-lightness) var(--color-bg-danger-chroma) var(--color-bg-danger-hue) / var(--color-bg-danger-opacity));
+  --color-bg-hue: var(--color-primary-hue) * var(--primary, 1) + var(--color-secondary-hue) * var(--secondary, 0) + var(--color-danger-hue) * var(--danger, 0);
+  --color-bg-h: var(--theme-color-bg-hue);
+  --color-bg-lightness: var(--color-primary-lightness) * var(--primary, 1) + var(--color-secondary-lightness) * var(--secondary, 0) + var(--color-danger-lightness) * var(--danger, 0);
+  --color-bg-l: var(--theme-color-bg-lightness);
+  --color-bg-opacity: var(--color-primary-opacity);
+  --color-bg-o: var(--theme-color-bg-opacity);
+  --bg-primary: #65572a;
+  --bg-primary-hover: #403718;
+  --bg-primary-active: #1e1908;
+  --bg-primary-focus: #fbefd2;
+  --bg-primary-disable: #fbefd2;
+  --bg-accent: #b4363b;
+  --bg-accent-hover: #7a2225;
+  --bg-accent-active: #450f11;
+  --bg-accent-focus: #fbeeee;
+  --bg-accent-disable: #fbeeee;
+  --bg-neutral: #4e4731;
+  --bg-neutral-hover: #2c271a;
+  --bg-neutral-active: #131109;
+  --bg-neutral-focus: #edda9f;
+  --bg-neutral-disable: #edda9f;
+  --bg-info: #fbeeee;
+  --bg-warning: #fbefd2;
+  --bg-success: #edda9f;
+  --component-bg-lightness: calc(var(--color-bg-lightness) + var(--variant-bg-lightness) + var(--state-bg-lightness));
+  --component-bg-chroma: calc(var(--color-bg-chroma) + var(--variant-bg-chroma) + var(--state-bg-chroma));
+  --component-bg-hue: calc(var(--color-bg-hue));
+  --component-bg-opacity: calc(var(--color-bg-opacity) + var(--variant-bg-opacity) + var(--state-bg-opacity));
+}

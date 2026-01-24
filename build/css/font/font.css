@@ -3,22 +3,22 @@
  */
 
 :root {
-  --font-scale-0: clamp(1rem, 0.9021739130434783rem + 0.43478260869565216vw, 1.25rem);
-  --font-scale-1: clamp(1.2rem, 1.0581521739130435rem + 0.6304347826086958vw, 1.5625rem);
-  --font-scale-2: clamp(1.44rem, 1.239211956521739rem + 0.8923913043478261vw, 1.953125rem);
-  --font-scale-3: clamp(1.7279999999999998rem, 1.4488410326086953rem + 1.2407065217391309vw, 2.44140625rem);
-  --font-scale-4: clamp(2.0736rem, 1.6908425951086956rem + 1.7011440217391305vw, 3.0517578125rem);
-  --font-scale-5: clamp(2.4883199999999994rem, 1.96930280910326rem + 2.306743070652175vw, 3.814697265625rem);
-  --font-scale-6: clamp(2.9859839999999993rem, 2.2885279896399444rem + 3.0998044904891318vw, 4.76837158203125rem);
-  --font-min-font: 16;
-  --font-max-font: 20;
+  --font-scale-0: clamp(0.875rem, 0.6304347826086957rem + 1.0869565217391304vw, 1.5rem);
+  --font-scale-1: clamp(0.984375rem, 0.6652173913043479rem + 1.418478260869565vw, 1.7999999999999998rem);
+  --font-scale-2: clamp(1.107421875rem, 0.6955434782608696rem + 1.8305706521739133vw, 2.16rem);
+  --font-scale-3: clamp(1.245849609375rem, 0.7190951086956524rem + 2.341131114130434vw, 2.5919999999999996rem);
+  --font-scale-4: clamp(1.401580810546875rem, 0.7329124320652175rem + 2.9718594599184778vw, 3.1104rem);
+  --font-scale-5: clamp(1.5767784118652344rem, 0.7332430078125004rem + 3.749046240234373vw, 3.732479999999999rem);
+  --font-scale-6: clamp(1.7738757133483887rem, 0.7153582098760192rem + 4.704522237654976vw, 4.478975999999999rem);
+  --font-min-font: 14;
+  --font-max-font: 24;
   --font-min-viewport: 360;
   --font-max-viewport: 1280;
-  --font-scale-min: 1.2;
-  --font-scale-max: 1.25;
+  --font-scale-min: 1.125;
+  --font-scale-max: 1.2;
   --font-steps: 0,1,2,3,4,5,6;
   --font-weight-light: 300;
-  --font-weight-regular: 400;
+  --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 }
