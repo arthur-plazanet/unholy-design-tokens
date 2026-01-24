@@ -14,5 +14,6 @@ jobs:
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     permissions:
-      contents: write # create releases/tags
-      id-token: write # npm provenance (OIDC)
+      contents: write
+      pull-requests: write
+      id-token: write
