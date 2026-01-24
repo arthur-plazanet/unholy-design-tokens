@@ -3,10 +3,10 @@
  */
 
 :root {
-  --color-bg-page: #2a2b2a;
-  --color-bg-subtle: #dce0dc;
+  --color-bg-page: #edda9f;
+  --color-bg-subtle: #edda9f;
   --color-bg-elevated: #ffffff;
-  --color-bg-inset: #b5b8b5;
+  --color-bg-inset: #c2b382;
   --color-bg-primary: #65572a;
   --color-bg-primary-hover: oklch(from #65572a lightness(+7%));
   --color-bg-primary-active: #1e1908;
@@ -14,11 +14,11 @@
   --color-bg-accent: #b4363b;
   --color-bg-accent-hover: #7a2225;
   --color-bg-accent-subtle: #fbeeee;
-  --color-bg-neutral: #4e4731;
+  --color-bg-neutral: #494b49;
   --color-bg-neutral-strong: #010101;
-  --color-bg-info: #fbeeee;
+  --color-bg-info: #ac9f70;
   --color-bg-warning: #fbefd2;
-  --color-bg-success: #edda9f;
+  --color-bg-success: #dce0dc;
   --color-bg-secondary-lightness: var(--color-secondary-lightness, 0);
   --color-bg-secondary-chroma: var(--color-secondary-chroma, 0);
   --color-bg-secondary-hue: var(--color-secondary-hue, 0);
@@ -45,14 +45,14 @@
   --bg-accent-active: #450f11;
   --bg-accent-focus: #fbeeee;
   --bg-accent-disable: #fbeeee;
-  --bg-neutral: #4e4731;
-  --bg-neutral-hover: #2c271a;
-  --bg-neutral-active: #131109;
-  --bg-neutral-focus: #edda9f;
-  --bg-neutral-disable: #edda9f;
+  --bg-neutral: #494b49;
+  --bg-neutral-hover: #2a2b2a;
+  --bg-neutral-active: #101110;
+  --bg-neutral-focus: #dce0dc;
+  --bg-neutral-disable: #dce0dc;
   --bg-info: #fbeeee;
   --bg-warning: #fbefd2;
-  --bg-success: #edda9f;
+  --bg-success: #dce0dc;
   --component-bg-lightness: calc(var(--color-bg-lightness) + var(--variant-bg-lightness) + var(--state-bg-lightness));
   --component-bg-chroma: calc(var(--color-bg-chroma) + var(--variant-bg-chroma) + var(--state-bg-chroma));
   --component-bg-hue: calc(var(--color-bg-hue));

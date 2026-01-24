@@ -101,7 +101,7 @@
         "attributes": {
           "tokenTier": "intent"
         },
-        "value": "{color.accent.100}"
+        "value": "{color.info.100}"
       },
       "warning": {
         "type": "color",
@@ -243,6 +243,13 @@
           "tokenTier": "intent"
         },
         "value": "{color.neutral.200}"
+      },
+      "neutral": {
+        "type": "color",
+        "attributes": {
+          "tokenTier": "intent"
+        },
+        "value": "{color.neutral.300}"
       }
     },
     "feedback": {

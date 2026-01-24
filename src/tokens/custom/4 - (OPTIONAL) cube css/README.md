@@ -23,7 +23,7 @@ Design Tokens → Cube CSS → Components
 
 ## Naming Schema
 
-If we refer to the [design token naming schema](../README.md#token-naming-schema), Cube CSS tokens generally follow this pattern:
+Cube CSS tokens follow this pattern:
 
 - **Blocks**
 

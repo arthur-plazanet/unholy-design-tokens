@@ -20,19 +20,25 @@ These tokens don't define the semantic in the HTML or front-end, they define mea
 
 ```css
 /* Mostly colors are aliased through different token Tier */
+
 /* colors */
---color-primary-500: var(--color-arylide-yellow-500) /* will resolve to primitive #e3c567 */
-  --color-secondary-500: var(--color-night-500); /* will resolve to primitive #0b0c0c */
+--color-primary-500: var(--color-arylide-yellow-500); /* will resolve to primitive #e3c567 */
+--color-secondary-500: var(--color-night-500); /* will resolve to primitive #0b0c0c */
+
 /* but depending on system, it can also be aliased for convenience elsewhere */
 --spacing-multiplier: 1.5; /* Semantic value that applies to a specific theming */
 --spacing-xs: calc(var(--spacing-unit) * var(--spacing-multiplier) * 0.5);
 --spacing-md: calc(var(--spacing-unit) * var(--spacing-multiplier) * 1);
+
+/* border */
+--radius-medium: calc(var(--border-radius-base) * var(--border-radius-scale));
+
 /* etc. */
 ```
 
 If you wish to change your primary color, you only need to update `--color-primary-500` to point to another primitive color from the pool of colors.
 
-## Cheat sheet
+## How semantic tokens are defined
 
 - **Reference primitives, no raw values**
 - **Answer "what is this thing?"**

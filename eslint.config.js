@@ -7,10 +7,23 @@ import globals from 'globals'
 
 export default defineConfig([
   {
-    files: ['**/*.{js,mjs,cjs}'],
+    ignores: [
+      'dist/**',
+      'build/**',
+      'node_modules/**',
+      '**/package-lock.json',
+      '**/yarn.lock',
+      '**/pnpm-lock.yaml',
+    ],
+  },
+  {
+    files: ['**/*.{js,mjs,cjs, ts, mts}'],
     plugins: { js },
     extends: ['js/recommended'],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
+    rules: {
+      'no-console': 'error',
+    },
   },
   {
     files: ['**/*.json'],

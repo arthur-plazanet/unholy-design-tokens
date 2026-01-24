@@ -1,8 +1,17 @@
 {
-  "name": "style-dictionary-example-complete",
+  "name": "unholy-design-tokens",
   "version": "1.0.0",
   "description": "",
-  "main": "build.js",
+  "main": "dist/build-tokens.js",
+  "module": "dist/build-tokens.js",
+  "types": "dist/build-tokens.d.ts",
+  "exports": {
+    "package.json": "./dist/package.json",
+    ".": {
+      "import": "./dist/build-tokens.js",
+      "require": "./dist/build-tokens.js"
+    }
+  },
   "type": "module",
   "scripts": {
     "clean": "rm -rf build",
@@ -41,7 +50,7 @@
     "typescript-eslint": "^8.50.0"
   },
   "bin": {
-    "build-tokens": "./dist/build-tokens.js"
+    "build-tokens": "./dist/bin/build-tokens.js"
   },
   "dependencies": {
     "commander": "^14.0.2",

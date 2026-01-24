@@ -19,6 +19,9 @@ They are the foundation of the design system.
 /* shadows */
 --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
 
+/* or it could be some bases for scaled values */
+/* See https://every-layout.dev/rudiments/modular-scale/ */
+
 /* etc. */
 ```
 

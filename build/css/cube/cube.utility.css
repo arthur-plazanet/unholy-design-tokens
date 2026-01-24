@@ -114,6 +114,8 @@
 .border-secondary { border-color: var(--color-border-secondary) } 
 .border-accent { border-color: var(--color-border-accent) } 
 .border-neutral { border-color: var(--color-border-neutral) } 
+.border-info { border-color: var(--color-border-info) } 
+.border-success { border-color: var(--color-border-success) } 
 .border-top { border-top-width: var(--border-width-default) } 
 .border-bottom { border-bottom-width: var(--border-width-default) } 
 .border-left { border-left-width: var(--border-width-default) } 
@@ -166,3 +168,18 @@
 .overflow-visible { overflow: visible } 
 .overflow-x-hidden { overflow-x: hidden } 
 .overflow-y-hidden { overflow-y: hidden } 
+
+/* ------------------------------------------------------------ */
+/*                              Bg                              */
+/* ------------------------------------------------------------ */
+.bg-primary { background-color: var(--color-bg-primary) } 
+.bg-secondary { background-color: var(--color-bg-secondary) } 
+.bg-accent { background-color: var(--color-bg-accent) } 
+.bg-accent-subtle { background-color: var(--color-bg-accent-subtle) } 
+.bg-neutral { background-color: var(--color-bg-neutral) } 
+.bg-page { background-color: var(--color-bg-page) } 
+.bg-subtle { background-color: var(--color-bg-subtle) } 
+.bg-elevated { background-color: var(--color-bg-elevated) } 
+.bg-inset { background-color: var(--color-bg-inset) } 
+.bg-info { background-color: var(--color-bg-info) } 
+.bg-success { background-color: var(--color-bg-success) } 

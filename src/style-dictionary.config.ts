@@ -2,26 +2,17 @@ import StyleDictionary, { Token } from 'style-dictionary'
 import { formats, transformGroups } from 'style-dictionary/enums'
 // @ts-expect-error - JS module without type declarations
 import { themeConfig } from './theme/index.js'
+import typeDeclarationsConfig from './type-declarations/type-declarations.config.js'
 // import { cubeCssVariablesLayerFormatter } from './cube-css/formatters/cube-css.js';
 import cubeConfig from './cube-css/cube.config.js'
 // @ts-expect-error - JS module without type declarations
 import { spacingFluid } from './formatters/spacing.js'
-import { tokensDeclarationFormatter, typesDeclarationFormatter } from './formatters/type-declarations.js'
 // import "./theme/formatters/theme.format.js"; // your file shown above (theme formats)
 
 import colorConfig from './colors/color.config.js'
 // import themeConfig from './theme/theme.config.js';
 
-StyleDictionary.registerFormat(tokensDeclarationFormatter)
-
-
-StyleDictionary.registerFormat(typesDeclarationFormatter)
-
-
-// StyleDictionary.registerFormat(publicThemeTemplate);
-// StyleDictionary.registerFormat(privateThemeTemplate);
 StyleDictionary.registerFormat(spacingFluid)
-// StyleDictionary.registerFormat(cubeCssVariablesLayerFormatter);
 
 function generateThemeFiles(directories: string[]) {
   const genericAttributes = {
@@ -155,29 +146,6 @@ export default {
       ],
     },
     // Type declarations
-    ts: {
-      // transformGroup: "js",
-      // transformGroup: "js",
-      buildPath: 'types/',
-      files: [
-        {
-          destination: 'theme.d.ts',
-          format: 'typescript/types-declaration',
-          transformGroup: 'js',
-        },
-      ],
-    },
-    // Tokens declarations
-    tokens: {
-      // transformGroup: "js",
-      transformGroup: 'css',
-      buildPath: 'types/',
-      files: [
-        {
-          destination: 'tokens.ts',
-          format: 'typescript/tokens-declaration',
-        },
-      ],
-    },
+    ...typeDeclarationsConfig,
   },
 }

@@ -55,52 +55,52 @@
 
     "secondary": {
       "100": {
-        "value": "{color.graphite.100}",
+        "value": "{color.vanilla-custard.100}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "200": {
-        "value": "{color.graphite.200}",
+        "value": "{color.vanilla-custard.200}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "300": {
-        "value": "{color.graphite.300}",
+        "value": "{color.vanilla-custard.300}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "400": {
-        "value": "{color.graphite.400}",
+        "value": "{color.vanilla-custard.400}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "500": {
-        "value": "{color.graphite.500}",
+        "value": "{color.vanilla-custard.500}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "600": {
-        "value": "{color.graphite.600}",
+        "value": "{color.vanilla-custard.600}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "700": {
-        "value": "{color.graphite.700}",
+        "value": "{color.vanilla-custard.700}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "800": {
-        "value": "{color.graphite.800}",
+        "value": "{color.vanilla-custard.800}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "900": {
-        "value": "{color.graphite.900}",
+        "value": "{color.vanilla-custard.900}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "base": {
-        "value": "{color.graphite.base}",
+        "value": "{color.vanilla-custard.base}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       }
@@ -161,52 +161,100 @@
 
     "neutral": {
       "100": {
-        "value": "{color.vanilla-custard.100}",
+        "value": "{color.graphite.100}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "200": {
-        "value": "{color.vanilla-custard.200}",
+        "value": "{color.graphite.200}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "300": {
-        "value": "{color.vanilla-custard.300}",
+        "value": "{color.graphite.300}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "400": {
-        "value": "{color.vanilla-custard.400}",
+        "value": "{color.graphite.400}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "500": {
-        "value": "{color.vanilla-custard.500}",
+        "value": "{color.graphite.500}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "600": {
-        "value": "{color.vanilla-custard.600}",
+        "value": "{color.graphite.600}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "700": {
-        "value": "{color.vanilla-custard.700}",
+        "value": "{color.graphite.700}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "800": {
-        "value": "{color.vanilla-custard.800}",
+        "value": "{color.graphite.800}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "900": {
-        "value": "{color.vanilla-custard.900}",
+        "value": "{color.graphite.900}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       },
       "base": {
-        "value": "{color.vanilla-custard.base}",
+        "value": "{color.graphite.base}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      }
+    },
+
+    "info": {
+      "100": {
+        "value": "{color.vanilla-cream.300}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "200": {
+        "value": "{color.vanilla-cream.500}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "300": {
+        "value": "{color.vanilla-cream.700}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "400": {
+        "value": "{color.vanilla-cream.900}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "500": {
+        "value": "{color.vanilla-cream.base}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "600": {
+        "value": "{color.vanilla-cream.100}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "700": {
+        "value": "{color.vanilla-cream.200}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "800": {
+        "value": "{color.vanilla-cream.400}",
+        "type": "color",
+        "attributes": { "tokenTier": "semantic" }
+      },
+      "900": {
+        "value": "{color.vanilla-cream.600}",
         "type": "color",
         "attributes": { "tokenTier": "semantic" }
       }

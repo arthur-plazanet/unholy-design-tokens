@@ -9,9 +9,8 @@ They answer the question:
 This is the **developer-facing API** for stateful components.
 
 ```css
---color-bg-primary: var(--color-primary-500) /* will resolve to semantic var */
-  --color-bg-secondary: var(--color-secondary-500); /* will resolve to semantic var */
---spacing-unit: var(--spacing-unit);
+--color-bg-primary: var(--color-primary-500); /* will resolve to semantic var */
+--color-bg-secondary: var(--color-secondary-500); /* will resolve to semantic var */
 /* ... */
 ```
 
@@ -33,7 +32,7 @@ For 99% of components, you only care about:
 
 Everything else (shadows, spacing, radii…) is usually standardized in the previous tiers.
 
-## Cheat sheet
+## How intent tokens are (or can be) defined
 
 - **Usually reference semantic**
 - **Names reflect UX meaning, not visual result**
@@ -41,4 +40,4 @@ Everything else (shadows, spacing, radii…) is usually standardized in the prev
 
 ## Next Steps
 
-(Optional) you can create specific token as related to [CUBE CSS](https://cube.fyi/) based on these intent tokens. See [src/tokens/4 - (OPTIONAL) cube](<../4%20-%20(OPTIONAL)%20cube/README.md>).
+(Optional) you can create specific token as related to [CUBE CSS](https://cube.fyi/) based on these intent tokens. See [src/tokens/4 - (OPTIONAL) cube](<../custom/4%20-%20(OPTIONAL)%20cube%20css/README.md>)

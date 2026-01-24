@@ -109,6 +109,12 @@
         "neutral": {
           "value": "border-color: var(--color-border-neutral)"
         },
+        "info": {
+          "value": "border-color: var(--color-border-info)"
+        },
+        "success": {
+          "value": "border-color: var(--color-border-success)"
+        },
         "top": {
           "value": "border-top-width: var(--border-width-default)"
         },
@@ -191,6 +197,19 @@
         "visible": { "value": "overflow: visible" },
         "x-hidden": { "value": "overflow-x: hidden" },
         "y-hidden": { "value": "overflow-y: hidden" }
+      },
+      "bg": {
+        "primary": { "value": "background-color: var(--color-bg-primary)" },
+        "secondary": { "value": "background-color: var(--color-bg-secondary)" },
+        "accent": { "value": "background-color: var(--color-bg-accent)" },
+        "accent-subtle": { "value": "background-color: var(--color-bg-accent-subtle)" },
+        "neutral": { "value": "background-color: var(--color-bg-neutral)" },
+        "page": { "value": "background-color: var(--color-bg-page)" },
+        "subtle": { "value": "background-color: var(--color-bg-subtle)" },
+        "elevated": { "value": "background-color: var(--color-bg-elevated)" },
+        "inset": { "value": "background-color: var(--color-bg-inset)" },
+        "info": { "value": "background-color: var(--color-bg-info)" },
+        "success": { "value": "background-color: var(--color-bg-success)" }
       }
       // "keyframes": {
       //   "checked-in": {

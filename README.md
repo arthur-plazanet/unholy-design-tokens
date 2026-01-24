@@ -6,8 +6,6 @@ See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignT
 
 _A brutally clear, developer-friendly design token system using Style Dictionary._
 
-See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignTokens?node-id=1-5537&t=perH3yNxowfIDyWu-1)
-
 This project is a playground to try to simplify the concept of design tokens and provide a practical framework for implementing and customize them using Style Dictionary.
 
 ## 🏠 Understanding Design Tokens through a House
@@ -22,8 +20,7 @@ To represent the concept of design tokens, you can use the following analogies:
 
 - Avoid abstraction and provide a short and practical definition of design tokens.
 - Propose a clear structure for organizing design tokens.
-- Clarify _who owns what_
-- Offer a developer-friendly standard for defining and using design tokens, and customizable by project needs.
+- Clarify **_who owns what_** between **Designers** and **Developers** regarding token levels
 
 ---
 
@@ -90,21 +87,4 @@ pnpm exec build-tokens ./tokens
 
 ```bash
 npx style-dictionary-example-complete ./tokens
-```
-
----
-
-```md
-                         ✝️  UNHOLY DESIGN TOKENS
-                 "A house, but programmable"
-
-MATERIALS PARTS ROOMS
-(Primitives) (Semantic) (Intent)
-──────────── ───────────── ─────────────
-Raw values: Meaningful: Purpose-driven:
-
-- numbers - surface.card - success
-- spacers - text.muted - danger
-- raw colors - spacing.stack - density modes
-- font files - layout.gutter
 ```

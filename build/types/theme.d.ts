@@ -239,6 +239,17 @@ export interface DesignTokens {
       '900': string;
       base: string;
     };
+    info: {
+      '100': string;
+      '200': string;
+      '300': string;
+      '400': string;
+      '500': string;
+      '600': string;
+      '700': string;
+      '800': string;
+      '900': string;
+    };
     bg: {
       page: string;
       subtle: string;
@@ -307,6 +318,7 @@ export interface DesignTokens {
       info: string;
       warning: string;
       success: string;
+      neutral: string;
       secondary: {
         lightness: string;
         chroma: string;
@@ -679,6 +691,8 @@ export interface DesignTokens {
         secondary: string;
         accent: string;
         neutral: string;
+        info: string;
+        success: string;
         top: string;
         bottom: string;
         left: string;
@@ -727,6 +741,19 @@ export interface DesignTokens {
         visible: string;
         'x-hidden': string;
         'y-hidden': string;
+      };
+      bg: {
+        primary: string;
+        secondary: string;
+        accent: string;
+        'accent-subtle': string;
+        neutral: string;
+        page: string;
+        subtle: string;
+        elevated: string;
+        inset: string;
+        info: string;
+        success: string;
       };
     };
   };

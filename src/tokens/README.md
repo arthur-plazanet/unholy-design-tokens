@@ -22,9 +22,9 @@ border-radius: var(--radius-lg);
 
 ## Why?
 
-Because if we change a color later, or add themes, or update branding —
+Because if we change a color later, or add themes, or update branding
 
-**we update 1 token instead of 400 files.**
+**We update 1 token instead of 400 files.**
 
 1 Token = **1 variable for design**.
 
@@ -32,7 +32,8 @@ Because if we change a color later, or add themes, or update branding —
 
 ## Naming Schema
 
-The [schema](https://designtokens.fyi/#/terms/schema/) chosen is very close to the CTI (Category, Type, Item) methodology.
+The [schema](https://designtokens.fyi/#/terms/schema/) (how you name your tokens) can vary.
+The one chosen here is very close to the CTI (Category, Type, Item) methodology.
 
 - **Category**: color, spacing, border, shadow, etc.
 - **Type**: to describe the kind of category
@@ -74,7 +75,7 @@ For 99% of components, you only care about:
 
 ### 3. **Border color (`border`)**
 
-Everything else (shadows, spacing, radii…) is standardized.
+Everything else (shadows, spacing, radius…) is standardized.
 
 ---
 
