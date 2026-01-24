@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --space-fluid-min: 1rem;
+  --space-fluid-max: 1.5rem;
+  --space-fluid-min-viewport: 360px;
+  --space-fluid-max-viewport: 1280px;
+  --space-unit-default: 1rem;
+  --space-unit-fluid: clamp(var(--space-fluid-min), calc(var(--space-fluid-min) + (var(--space-fluid-max) - var(--space-fluid-min)) * ((100vw - var(--space-fluid-min-viewport)) / (var(--space-fluid-max-viewport) - var(--space-fluid-min-viewport)))), var(--space-fluid-max));
+  --space-multiplier-unit: 1rem;
+  --space-multiplier-xxs: 0.25;
+  --space-multiplier-xs: 0.5;
+  --space-multiplier-sm: 0.75;
+  --space-multiplier-md: 1;
+  --space-multiplier-lg: 2;
+  --space-multiplier-xl: 3.25;
+  --space-multiplier-xxl: 5.25;
+}

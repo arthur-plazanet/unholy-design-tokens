@@ -2,31 +2,25 @@
   "border": {
     "$type": "color",
     "width": {
+      "default": {
+        "value": "var(--border-width-base)"
+      },
       "xsmall": {
-        "value": "calc(var(--border-width-default) / 2 * var(--border-width-scale))"
+        "value": "calc(var(--border-width-base) / 2 * var(--border-width-scale))"
       },
       "small": {
-        "value": "calc(var(--border-width-default) * var(--border-width-scale))"
+        "value": "calc(var(--border-width-base) * var(--border-width-scale))"
       },
       "medium": {
-        "value": "var(--border-width-default)"
+        "value": "var(--border-width-base)"
       },
       "large": {
-        "value": "calc(var(--border-width-default) * 2 * var(--border-width-scale))"
+        "value": "calc(var(--border-width-base) * 2 * var(--border-width-scale))"
       }
     },
     "style": {
-      "value": "var(--border-style-default)"
-    },
-    "radius": {
-      "light": {
-        "value": "calc(var(--border-radius-default) / var(--border-radius-scale))"
-      },
-      "medium": {
-        "value": "calc(var(--border-radius-default) * var(--border-radius-scale))"
-      },
-      "heavy": {
-        "value": "calc(var(--border-radius-default) * 2 * var(--border-radius-scale))"
+      "default": {
+        "value": "var(--border-style-solid)"
       }
     }
   }

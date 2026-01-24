@@ -1,0 +1,19 @@
+{
+  "shadow": {
+    "xs": {
+      "value": "calc(var(--shadow-base) / 3 * var(--shadow-scale))"
+    },
+    "sm": {
+      "value": "calc(var(--shadow-base) / 2 * var(--shadow-scale))"
+    },
+    "md": {
+      "value": "calc(var(--shadow-base) * var(--shadow-scale))"
+    },
+    "lg": {
+      "value": "calc(var(--shadow-base) * 2 * var(--shadow-scale))"
+    },
+    "xl": {
+      "value": "calc(var(--shadow-base) * 4 * var(--shadow-scale))"
+    }
+  }
+}

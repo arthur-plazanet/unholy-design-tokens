@@ -13,11 +13,11 @@ const __dirname = path.dirname(__filename);
 
 const INPUT_FILE = path.join(
   __dirname,
-  "../src/tokens/1 - primitives/font.json",
+  `../src/tokens/1 - primitives/font.json`,
 );
 const PRIMITIVES_OUT = path.join(
   __dirname,
-  "../src/tokens/1 - primitives/font-scale.json",
+  `../src/tokens/1 - primitives/font-scale.json`,
 );
 const INTENT_OUT = path.join(__dirname, "../src/tokens/3 - intent/font.json");
 

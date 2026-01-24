@@ -1,26 +1,28 @@
 const themeCategories = [
-  "space",
-  "spacing",
-  "border",
-  "border",
-  "shadow",
-  "breakpoint",
-  "font",
-  "text",
-  "component",
-  "cube",
-  "body",
-  "heading",
+  'space',
+  'spacing',
+  'border',
+  'radius',
+  'shadow',
+  'breakpoint',
+  'font',
+  'text',
+  'component',
+  'cube',
+  'body',
+  'heading',
+  'layout',
 
   // Components
-  "components",
-  "highlighted-text",
-];
+  'components',
+  'highlighted-text',
+]
 
 const excludeTypes = [
-  "utility",
+  'utility',
+  'variants',
   // add more types to exclude from theme if needed
-];
+]
 /**
  * List of categories part of the generated private and public theme
  * See category: https://styledictionary.com/info/tokens/#category--type--item
@@ -32,9 +34,9 @@ export function isPartOfTheme(token) {
   return themeCategories.includes(token.attributes?.category) &&
     !excludeTypes.includes(token.attributes?.type)
     ? true
-    : false;
+    : false
 }
 
 export function filterThemeTokens(token) {
-  return isPartOfTheme(token);
+  return isPartOfTheme(token)
 }

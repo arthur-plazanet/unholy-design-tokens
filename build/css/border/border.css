@@ -1,0 +1,50 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --border-width-base: 2px;
+  --border-width-scale: 1.25;
+  --border-width-default: var(--border-width-base);
+  --border-width-xsmall: calc(var(--border-width-base) / 2 * var(--border-width-scale));
+  --border-width-small: calc(var(--border-width-base) * var(--border-width-scale));
+  --border-width-medium: var(--border-width-base);
+  --border-width-large: calc(var(--border-width-base) * 2 * var(--border-width-scale));
+  --border-style-solid: solid;
+  --border-style-dashed: dashed;
+  --border-style-dotted: dotted;
+  --border-style-double: double;
+  --border-style-none: none;
+  --border-style-default: var(--border-style-solid);
+  --border-radius-1: 1px;
+  --border-radius-2: 2px;
+  --border-radius-4: 4px;
+  --border-radius-base: 0;
+  --border-radius-0-5: 0.5px;
+  --border-radius-scale: 1.5;
+  --color-border-subtle: #b5b8b5;
+  --color-border-default: #8f928f;
+  --color-border-strong: #6b6d6b;
+  --color-border-primary: #65572a;
+  --color-border-focus: #b4363b;
+  --color-border-info: #f3cbcc;
+  --color-border-warning: #e3c567;
+  --color-border-success: #c2b382;
+  --color-border-secondary-lightness: var(--color-secondary-lightness, 0);
+  --color-border-secondary-chroma: var(--color-secondary-chroma, 0);
+  --color-border-secondary-hue: var(--color-secondary-hue, 0);
+  --color-border-secondary-opacity: var(--color-secondary-opacity, 1);
+  --color-border-secondary: oklch(var(--color-border-secondary-lightness) var(--color-border-secondary-chroma) var(--color-border-secondary-hue) / var(--color-border-secondary-opacity));
+  --color-border-danger-lightness: var(--color-danger-lightness, 0);
+  --color-border-danger-chroma: var(--color-danger-chroma, 0);
+  --color-border-danger-hue: var(--color-danger-hue, 0);
+  --color-border-danger-opacity: var(--color-danger-opacity, 1);
+  --color-border-danger: oklch(var(--color-border-danger-lightness) var(--color-border-danger-chroma) var(--color-border-danger-hue) / var(--color-border-danger-opacity));
+  --color-border-hue: var(--color-primary-hue) * var(--primary, 1) + var(--color-secondary-hue) * var(--secondary, 0) + var(--color-danger-hue) * var(--danger, 0);
+  --color-border-lightness: var(--color-primary-lightness) * var(--primary, 1) + var(--color-secondary-lightness) * var(--secondary, 0) + var(--color-danger-lightness) * var(--danger, 0);
+  --color-border-opacity: var(--color-primary-opacity);
+  --component-border-lightness: calc(var(--color-border-lightness) + var(--variant-border-lightness) + var(--state-border-lightness));
+  --component-border-chroma: calc(var(--color-border-chroma) + var(--variant-border-chroma) + var(--state-border-chroma));
+  --component-border-hue: calc(var(--color-border-hue));
+  --component-border-opacity: calc(var(--color-border-opacity) + var(--variant-border-opacity) + var(--state-border-opacity));
+}

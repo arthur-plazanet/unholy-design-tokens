@@ -13,6 +13,26 @@ The goal is to make high-level UI glue fully token-driven and consistent.
 
 ---
 
-# Layer Position
+## Layer Position
 
 Cube lives _after_ design tokens:
+
+```text
+Design Tokens → Cube CSS → Components
+```
+
+## Naming Schema
+
+If we refer to the [design token naming schema](../README.md#token-naming-schema), Cube CSS tokens generally follow this pattern:
+
+- **Blocks**
+
+```text
+--<component>-<property>-<state?>
+```
+
+- **Composition**
+
+```text
+--<high-level-recipe/component>-<property>-<state?>
+```

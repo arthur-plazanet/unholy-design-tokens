@@ -63,18 +63,48 @@ Tokens live here:
 
 ---
 
+## Use the package
+
+### A) Local dev (TS, no install)
+
+```bash
+pnpm exec tsx bin/build-tokens.ts ../../lib
+
+```
+
+### B) Local project (compiled CLI)
+
+```bash
+pnpm exec build-tokens ../../lib
+
+```
+
+### C) As a dependency in another repo
+
+```bash
+pnpm add style-dictionary-example-complete
+pnpm exec build-tokens ./tokens
+```
+
+### D) One-off usage
+
+```bash
+npx style-dictionary-example-complete ./tokens
+```
+
+---
+
 ```md
                          ✝️  UNHOLY DESIGN TOKENS
                  "A house, but programmable"
 
-MATERIALS       PARTS             ROOMS
-(Primitives)    (Semantic)        (Intent)
-────────────    ─────────────     ─────────────
-Raw values:     Meaningful:       Purpose-driven:
-- numbers       - surface.card    - success
-- spacers       - text.muted      - danger
-- raw colors    - spacing.stack   - density modes
-- font files    - layout.gutter
+MATERIALS PARTS ROOMS
+(Primitives) (Semantic) (Intent)
+──────────── ───────────── ─────────────
+Raw values: Meaningful: Purpose-driven:
 
+- numbers - surface.card - success
+- spacers - text.muted - danger
+- raw colors - spacing.stack - density modes
+- font files - layout.gutter
 ```
-

@@ -25,7 +25,7 @@ They are the foundation of the design system.
 Some of these categories might be defined as "foundations" in some design systems, and therefore defined only once.
 The most common important token are **colors**. They are usually defined using a palette (100 to 900 scale)
 
-### How primitives tokens are defined
+## How primitives tokens are defined
 
 - **Each individual value is a separate token**
 - **Mostly raw values**
@@ -36,14 +36,14 @@ The most common important token are **colors**. They are usually defined using a
 See this as a "pool" of available raw values that you can pick from later.
 It could technically be a huge base of different colors, spacings, with no direct relation so far.
 
-### Who owns primitives?
+## Who owns primitives?
 
 Usually:
 
 - **Design**: define the palette, spacing scale, etc. → **they choose and own the raw values**
 - **Development** → implement in code, Style Dictionary, etc. → **they only consume these raw values**
 
-### Generate color palette
+## Generate color palette
 
 - Figma plugin: [Color Palette Generator](https://www.figma.com/color-palette-generator/) to create scales from a base color.
 - [Coolors](https://coolors.co/): can generate color palettes and shades in different formats.

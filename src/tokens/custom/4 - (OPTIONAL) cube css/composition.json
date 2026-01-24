@@ -2,23 +2,24 @@
   "cube": {
     "composition": {
       "flow": {
-        "space": { "value": "var(--space-md)" }
+        "space": { "value": "var(--gutter)" }
       },
       "stack": {
-        "gap": { "value": "var(--space-md)" },
-        "align": { "value": "start" }
+        "gap": { "value": "var(--gutter)" },
+        "align": { "value": "start" },
+        "direction": { "value": "var(--layout-direction)" }
       },
       "cluster": {
-        "gap": { "value": "var(--space-sm)" },
+        "gap": { "value": "var(--gutter)" },
         "align": { "value": "center" }
       },
       "center": {
         "maxWidth": { "value": "72ch" },
-        "paddingInline": { "value": "var(--space-md)" }
+        "paddingInline": { "value": "var(--gutter)" }
       },
       "switcher": {
-        "modifier": { "value": "var(--breakpoint-md)" },
-        "gap": { "value": "var(--space-sm)" }
+        "modifier": { "value": "var(--layout-break-at)" },
+        "gap": { "value": "var(--gutter)" }
       }
     }
   }

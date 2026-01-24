@@ -8,7 +8,7 @@ All of the design tokens and assets are in this package. Make any changes to sui
 
 To get started, run
 
-```
+```sh
 $ npm install
 $ npm run build
 ```
