@@ -16,7 +16,7 @@ importers:
         version: 0.13.0
       turbowatch:
         specifier: ^2.29.4
-        version: 2.29.4
+        version: 2.30.0
     devDependencies:
       '@eslint/css':
         specifier: ^0.14.1
@@ -1479,8 +1479,8 @@ packages:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  roarr@7.21.2:
-    resolution: {integrity: sha512-RyXI+aNxwVyfF71a9cqz/jhXWbycnVh7GXnnJUniIBXKTOJQF3rmpNexStXt8TUcKyiXCwyfYzboZLMYUllPDA==}
+  roarr@7.21.4:
+    resolution: {integrity: sha512-qvfUKCrpPzhWmQ4NxRYnuwhkI5lwmObhBU06BCK/lpj6PID9nL4Hk6XDwek2foKI+TMaV+Yw//XZshGF2Lox/Q==}
     engines: {node: '>=18.0'}
 
   run-parallel@1.2.0:
@@ -1660,8 +1660,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  turbowatch@2.29.4:
-    resolution: {integrity: sha512-cdfH1nzLfduhE5iVCAnojtoTzPwNva/TBDrMJBI4Y8SBjBDjMBj2rQqLGqT7qkVk+xDnJrMxgP4c5+Z/GGVFsA==}
+  turbowatch@2.30.0:
+    resolution: {integrity: sha512-xezt4q2t4Z2z9g6zbYoAfgH8BFF/qtu3m/MluNRMsJbl63QEXFAkf1UPxMv90ULJ93Zvr6vGpZkktMtUxVwIsg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -3350,7 +3350,7 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  roarr@7.21.2:
+  roarr@7.21.4:
     dependencies:
       fast-printf: 1.6.10
       safe-stable-stringify: 2.5.0
@@ -3545,7 +3545,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  turbowatch@2.29.4:
+  turbowatch@2.30.0:
     dependencies:
       chalk: 4.1.2
       chokidar: 3.6.0
@@ -3555,7 +3555,7 @@ snapshots:
       micromatch: 4.0.8
       pidtree: 0.6.0
       randomcolor: 0.6.2
-      roarr: 7.21.2
+      roarr: 7.21.4
       semver: 7.7.3
       serialize-error: 11.0.3
       throttle-debounce: 5.0.2
