@@ -4,9 +4,7 @@
 
 See [Figma](https://www.figma.com/design/ALxCJnoWLP4kBiYr59tHqG/useSimpleDesignTokens?node-id=1-5537&t=perH3yNxowfIDyWu-1)
 
-_A brutally clear, developer-friendly design token system using Style Dictionary._
-
-This project is a playground to try to simplify the concept of design tokens and provide a practical framework for implementing and customize them using Style Dictionary.
+This project is a playground to try to simplify the concept of design tokens and provide a practical framework (developer friendly) for implementing and customize them using Style Dictionary.
 
 ## 🏠 Understanding Design Tokens through a House
 
@@ -24,26 +22,6 @@ To represent the concept of design tokens, you can use the following analogies:
 
 ---
 
-## 📁 Repository Structure
-
-```graphql
-/
-├─ README.md                ← you're here
-├─ ANALOGY_HOUSE.md         ← build a house analogy for design tokens
-├─ ANALOGY_I18NEXT.md       ← analogy applied to translations
-├─ WHY_THIS_EXISTS.md       ← motivation behind the repo
-│
-└─ src/
-    └─ tokens/
-        ├─ README.md                    ← token system overview
-        ├─ 1-primitives/                ← raw values (colors, spacing…)
-        ├─ 2-semantic/                  ← meaningful roles
-        ├─ 3-intent/                    ← purpose/state
-        ├─ 4-cube/                      ← layout primitives
-        └─ component/                   ← per-component token mapping
-
-```
-
 ## 🗂 Token source
 
 Tokens live here:  
@@ -54,7 +32,6 @@ Tokens live here:
 ## 📘 Explanations
 
 - ❓ Why this repo exists → [`WHY_THIS_EXISTS.md`](WHY_THIS_EXISTS.md)
-- ⚙️ Style Dictionary pipeline → [`STYLE_DICTIONARY.md`](STYLE_DICTIONARY.md)
 - i18n analogy → [`ANALOGY_I18NEXT.md`](ANALOGY_I18NEXT.md)
 - 🏠 House-building analogy → [`ANALOGY_HOUSE.md`](ANALOGY_HOUSE.md)
 
@@ -87,4 +64,26 @@ pnpm exec build-tokens ./tokens
 
 ```bash
 npx style-dictionary-example-complete ./tokens
+```
+
+---
+
+## 📁 Repository Structure
+
+```graphql
+/
+├─ README.md                ← you're here
+├─ ANALOGY_HOUSE.md         ← build a house analogy for design tokens
+├─ ANALOGY_I18NEXT.md       ← analogy applied to translations
+├─ WHY_THIS_EXISTS.md       ← motivation behind the repo
+│
+└─ src/
+    └─ tokens/
+        ├─ README.md                    ← token system overview
+        ├─ 1-primitives/                ← raw values (colors, spacing…)
+        ├─ 2-semantic/                  ← meaningful roles
+        ├─ 3-intent/                    ← purpose/state
+        ├─ 4-cube/                      ← layout primitives
+        └─ component/                   ← per-component token mapping
+
 ```
