@@ -122,13 +122,6 @@ while everything else stays stable.
 
 ## 🪜 The abstraction protects the user
 
-Just like:
-
-Components don’t care about RGB values
-
-Developers don’t care about the exact blue hex
-
-Designers don’t want to debate spacing values every time
 
 The abstraction protects the user.
 
@@ -136,4 +129,8 @@ The abstraction protects the user.
 - Fix some wall together (which material is it even?)
 - or how to properly install and even isolate a window
 
-But for example, you don't need to know the raw material that was used to create the door,; neither
+As:
+
+- Components don’t care about RGB values
+- Developers don’t care about the exact blue hex
+- Designers don’t want to debate spacing values every time
