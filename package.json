@@ -39,7 +39,7 @@
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^16.5.0",
-    "prettier": "3.7.4",
+    "prettier": "3.8.1",
     "style-dictionary": "^4.0.0-prerelease.30",
     "tinycolor2": "1.6.0",
     "prettier-plugin-organize-imports": "4.1.0",
